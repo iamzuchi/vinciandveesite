@@ -1,0 +1,18 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="vvBg" x1="0" y1="0" x2="64" y2="64" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#182238" />
+      <stop offset="100%" stop-color="#090E1D" />
+    </linearGradient>
+    <linearGradient id="vvGold" x1="0" y1="0" x2="64" y2="64" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FCE588" />
+      <stop offset="45%" stop-color="#D4AF37" />
+      <stop offset="80%" stop-color="#9B6E3B" />
+      <stop offset="100%" stop-color="#6B441B" />
+    </linearGradient>
+  </defs>
+  <rect x="2" y="2" width="60" height="60" rx="14" fill="url(#vvBg)" stroke="url(#vvGold)" stroke-width="2.5" />
+  <!-- Stylized Monogram V & V -->
+  <path d="M16 19L26 43L32 29L38 43L48 19H42L35 36L32 27L29 36L22 19H16Z" fill="url(#vvGold)" />
+  <circle cx="32" cy="18" r="2.5" fill="#FCE588" />
+</svg>
