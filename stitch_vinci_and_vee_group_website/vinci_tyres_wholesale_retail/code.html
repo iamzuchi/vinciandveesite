@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Vinci &amp; Vee Tyre Distribution - Wholesale &amp; Retail</title>
+<!-- Google Fonts: Space Grotesk & Hanken Grotesk -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS CDN -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Configuration verbatim from theme -->
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "tertiary": "#000000",
+            "surface-tint": "#565e74",
+            "on-tertiary-container": "#b87500",
+            "surface-bright": "#f8f9ff",
+            "inverse-on-surface": "#eaf1ff",
+            "secondary-container": "#5bb8fe",
+            "surface-container-highest": "#d3e4fe",
+            "on-surface-variant": "#45464d",
+            "secondary": "#006398",
+            "surface-container": "#e5eeff",
+            "surface-container-low": "#eff4ff",
+            "tertiary-fixed-dim": "#ffb95f",
+            "on-tertiary-fixed-variant": "#653e00",
+            "surface-container-high": "#dce9ff",
+            "error": "#ba1a1a",
+            "on-error": "#ffffff",
+            "tertiary-container": "#2a1700",
+            "surface": "#f8f9ff",
+            "primary-fixed": "#dae2fd",
+            "on-tertiary": "#ffffff",
+            "surface-dim": "#cbdbf5",
+            "on-primary-fixed-variant": "#3f465c",
+            "surface-variant": "#d3e4fe",
+            "on-error-container": "#93000a",
+            "surface-container-lowest": "#ffffff",
+            "on-secondary-container": "#00476e",
+            "primary": "#000000",
+            "on-primary-container": "#7c839b",
+            "on-primary-fixed": "#131b2e",
+            "primary-container": "#131b2e",
+            "error-container": "#ffdad6",
+            "on-secondary-fixed": "#001d31",
+            "on-background": "#0b1c30",
+            "outline": "#76777d",
+            "tertiary-fixed": "#ffddb8",
+            "on-tertiary-fixed": "#2a1700",
+            "on-primary": "#ffffff",
+            "secondary-fixed": "#cce5ff",
+            "secondary-fixed-dim": "#93ccff",
+            "inverse-primary": "#bec6e0",
+            "on-secondary": "#ffffff",
+            "background": "#f8f9ff",
+            "primary-fixed-dim": "#bec6e0",
+            "inverse-surface": "#213145",
+            "on-surface": "#0b1c30",
+            "outline-variant": "#c6c6cd",
+            "on-secondary-fixed-variant": "#004b73"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.125rem",
+            "lg": "0.25rem",
+            "xl": "0.5rem",
+            "full": "0.75rem"
+          },
+          "spacing": {
+            "margin": "3rem",
+            "gutter-mobile": "1rem",
+            "margin-mobile": "1.25rem",
+            "space-xs": "0.25rem",
+            "space-xl": "2.5rem",
+            "space-md": "1rem",
+            "space-lg": "1.5rem",
+            "gutter": "1.5rem",
+            "space-sm": "0.5rem"
+          },
+          "fontFamily": {
+            "label-sm": ["Hanken Grotesk"],
+            "body-sm": ["Hanken Grotesk"],
+            "display-mobile": ["Space Grotesk"],
+            "label-md": ["Hanken Grotesk"],
+            "label-lg": ["Hanken Grotesk"],
+            "headline-lg-mobile": ["Space Grotesk"],
+            "title-md": ["Hanken Grotesk"],
+            "title-lg": ["Hanken Grotesk"],
+            "headline-sm": ["Space Grotesk"],
+            "display": ["Space Grotesk"],
+            "headline-md": ["Space Grotesk"],
+            "body-md": ["Hanken Grotesk"],
+            "body-lg": ["Hanken Grotesk"],
+            "headline-lg": ["Space Grotesk"]
+          },
+          "fontSize": {
+            "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.05em", "fontWeight": "700" }],
+            "body-sm": ["12px", { "lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "400" }],
+            "display-mobile": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+            "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.03em", "fontWeight": "600" }],
+            "label-lg": ["14px", { "lineHeight": "18px", "letterSpacing": "0.02em", "fontWeight": "600" }],
+            "headline-lg-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "title-md": ["16px", { "lineHeight": "22px", "letterSpacing": "0em", "fontWeight": "600" }],
+            "title-lg": ["18px", { "lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "headline-sm": ["20px", { "lineHeight": "28px", "letterSpacing": "0em", "fontWeight": "600" }],
+            "display": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.03em", "fontWeight": "700" }],
+            "headline-md": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "body-md": ["14px", { "lineHeight": "22px", "letterSpacing": "0em", "fontWeight": "400" }],
+            "body-lg": ["16px", { "lineHeight": "26px", "letterSpacing": "0em", "fontWeight": "400" }],
+            "headline-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "600" }]
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-surface antialiased font-body-md selection:bg-secondary selection:text-on-secondary min-h-screen flex flex-col">
+<!-- Mobile Drawer Backdrop & Overlay -->
+<div class="fixed inset-0 bg-primary/60 backdrop-blur-sm z-50 hidden opacity-0 transition-opacity duration-300" id="drawer-backdrop" onclick="toggleDrawer()"></div>
+<!-- Shared Component: NavigationDrawer -->
+<aside class="fixed inset-y-0 left-0 w-80 z-50 bg-surface-container-lowest dark:bg-inverse-surface border-r border-outline-variant dark:border-outline shadow-xl dark:shadow-none flex flex-col h-full p-6 space-y-4 -translate-x-full transition-transform duration-300 ease-in-out" id="nav-drawer">
+<div class="flex items-center justify-between pb-3 border-b border-outline-variant">
+<div>
+<p class="font-title-lg text-title-lg font-bold text-on-surface dark:text-inverse-on-surface">Vinci &amp; Vee Group</p>
+<p class="font-label-sm text-label-sm text-on-tertiary-container mt-0.5">Achieving Dreams by making Connection</p>
+</div>
+<button aria-label="Close Drawer" class="p-2 text-on-surface hover:bg-surface-container rounded-lg transition-colors" onclick="toggleDrawer()">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<nav class="flex-1 space-y-1 overflow-y-auto pt-2">
+<a class="flex items-center gap-3 px-4 py-3 rounded-lg text-on-surface-variant dark:text-outline hover:bg-surface-container transition-colors duration-150" href="#">
+<span class="material-symbols-outlined text-secondary">corporate_fare</span>
+<span class="font-label-lg text-label-lg">Group Corporate</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-lg text-on-surface-variant dark:text-outline hover:bg-surface-container transition-colors duration-150" href="#">
+<span class="material-symbols-outlined text-secondary">router</span>
+<span class="font-label-lg text-label-lg">Telecom &amp; Fibre</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-lg text-on-surface-variant dark:text-outline hover:bg-surface-container transition-colors duration-150" href="#">
+<span class="material-symbols-outlined text-secondary">anchor</span>
+<span class="font-label-lg text-label-lg">Shipping &amp; Sweden Route</span>
+</a>
+<!-- Active item matching the Tyre Distribution context -->
+<a class="flex items-center gap-3 px-4 py-3 rounded-lg bg-surface-container text-secondary dark:text-secondary-fixed font-bold border-l-4 border-secondary" href="#">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">directions_car</span>
+<span class="font-label-lg text-label-lg">Tyre Wholesale &amp; Retail</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-lg text-on-surface-variant dark:text-outline hover:bg-surface-container transition-colors duration-150" href="#">
+<span class="material-symbols-outlined text-secondary">cloud_sync</span>
+<span class="font-label-lg text-label-lg">Cloud SaaS Solutions</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-lg text-on-surface-variant dark:text-outline hover:bg-surface-container transition-colors duration-150" href="#">
+<span class="material-symbols-outlined text-secondary">location_on</span>
+<span class="font-label-lg text-label-lg">Contact &amp; Enugu HQ</span>
+</a>
+</nav>
+<div class="pt-4 border-t border-outline-variant text-on-surface-variant">
+<div class="flex items-center gap-2 mb-2">
+<span class="material-symbols-outlined text-on-tertiary-container">support_agent</span>
+<span class="font-label-md text-label-md text-on-surface font-bold">Logistics &amp; Tyre Desk</span>
+</div>
+<p class="font-body-sm text-body-sm">Plot 80, Jedidiah Gardens, Enugu</p>
+<a class="inline-block mt-1 font-label-md text-label-md text-secondary font-bold" href="tel:07013476095">0701 347 6095</a>
+</div>
+</aside>
+<!-- Shared Component: TopAppBar -->
+<header class="bg-surface-container-lowest dark:bg-inverse-surface sticky top-0 z-40 w-full shadow-sm">
+<div class="max-w-7xl mx-auto px-4 h-16 flex justify-between items-center">
+<div class="flex items-center gap-3">
+<button aria-label="Open Navigation" class="p-2 -ml-2 rounded-lg text-on-surface hover:bg-surface-container-high transition-colors active:scale-95 duration-150" onclick="toggleDrawer()">
+<span class="material-symbols-outlined">menu</span>
+</button>
+<div>
+<span class="text-title-lg font-title-lg font-bold text-on-surface dark:text-inverse-on-surface tracking-tight block">Vinci &amp; Vee Group</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-tertiary-container -mt-1 block">Tyre Division</span>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<a aria-label="Call Tyre Desk" class="p-2 rounded-lg text-secondary bg-surface-container hover:bg-surface-container-high transition-colors active:scale-95 duration-150 flex items-center justify-center" href="tel:07013476095">
+<span class="material-symbols-outlined">phone_in_talk</span>
+</a>
+</div>
+</div>
+</header>
+<!-- Main Content Container with bottom margin to clear safe bottom bar -->
+<main class="flex-1 pb-24">
+<!-- Hero Sector Banner Section -->
+<section class="bg-surface-container-lowest px-4 py-6 border-b border-outline-variant">
+<div class="max-w-md mx-auto">
+<!-- Vertical Accent Indicator Tag -->
+<div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm uppercase tracking-wider mb-3">
+<span class="w-1.5 h-1.5 rounded-full bg-on-tertiary-container animate-pulse"></span>
+          Industrial &amp; Automotive Logistics
+        </div>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface font-bold tracking-tight">
+          Vinci &amp; Vee Tyre Distribution - Wholesale &amp; Retail
+        </h1>
+<p class="mt-2 font-body-md text-body-md text-on-surface-variant leading-relaxed">
+          Our tyre business supplies quality products to retailers and end users at competitive prices. Reliable road safety and durability.
+        </p>
+<!-- Quick Telemetry & Status Matrix -->
+<div class="mt-5 grid grid-cols-2 gap-3 pt-3 border-t border-outline-variant/60">
+<div class="p-3 bg-surface-container-low rounded-xl border border-outline-variant/50">
+<div class="flex items-center gap-1 text-on-tertiary-container">
+<span class="material-symbols-outlined text-title-md">verified</span>
+<span class="font-label-sm text-label-sm uppercase">Road Safety</span>
+</div>
+<p class="mt-1 font-title-lg text-title-lg font-bold text-on-surface">DOT Certified</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Severe duty rated</p>
+</div>
+<div class="p-3 bg-surface-container-low rounded-xl border border-outline-variant/50">
+<div class="flex items-center gap-1 text-secondary">
+<span class="material-symbols-outlined text-title-md">local_shipping</span>
+<span class="font-label-sm text-label-sm uppercase">Enugu Depots</span>
+</div>
+<p class="mt-1 font-title-lg text-title-lg font-bold text-on-surface">Immediate</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Same-day dispatch</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Visual Banner / Warehouse Context Image -->
+<section class="px-4 py-4 max-w-md mx-auto">
+<div class="relative overflow-hidden rounded-xl border border-outline-variant shadow-sm group">
+<img class="w-full h-44 object-cover transition-transform duration-500 group-hover:scale-105" data-alt="A clean, modern heavy automotive logistics warehouse showing stacked commercial truck tyres and passenger radial tires under bright daylight illumination. High contrast industrial facility with organized shipping aisles, yellow forklift guidance markings, and architectural steel beams reflecting Vinci and Vee Group precision." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC548CD7wLP71wQ7HHkHpcDbUytKvsOhldyICtn4_sxvQgaeiifDFBa5lh7TsQ9-GPIaY6cEtVUYhy6sVKSV2uloSAInUJNDc1NNW0RetZQb-2hqt8ypD79V1ksZovnNNmd_4h_rUhtoLJ7tWymFXbEO20wECfllVMnCsLUJpbIYgdc6nShFkmbLE4of55KsGKNBJQ99LQm-eEsn-KM9Y5yOPlgkeUMJ9tnkTQoWu0"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent flex flex-end items-end p-4">
+<div class="text-on-primary">
+<span class="font-label-sm text-label-sm tracking-wider uppercase bg-secondary px-2 py-0.5 rounded text-on-secondary">Centenary City Warehouse Hub</span>
+<p class="font-title-md text-title-md font-bold mt-1">Direct Import Logistics &amp; Bulk Stock</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Component: 'Find Your Tyre Size' Selector -->
+<section class="px-4 py-2 max-w-md mx-auto">
+<div class="bg-surface-container-lowest rounded-xl p-5 border border-outline-variant shadow-sm relative overflow-hidden">
+<!-- Sector Accent Edge: Amber for Logistics/Tyre Distribution -->
+<div class="absolute top-0 left-0 right-0 h-1 bg-on-tertiary-container"></div>
+<div class="flex items-center justify-between mb-4">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary">tune</span>
+<h2 class="font-title-lg text-title-lg text-on-surface font-bold">Find Your Tyre Size</h2>
+</div>
+<span class="font-label-sm text-label-sm uppercase bg-surface-container text-secondary px-2 py-0.5 rounded">Precision Match</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-4">
+          Specify rim fitment from your vehicle sidewall (e.g. 215 / 55 R16) for instant warehouse availability.
+        </p>
+<form class="space-y-3" id="tyre-filter-form" onsubmit="event.preventDefault(); applySizeSearch();">
+<div class="grid grid-cols-3 gap-2">
+<!-- Width Input -->
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface-variant uppercase mb-1" for="tyre-width">Width (mm)</label>
+<select class="w-full h-11 px-2.5 rounded-lg border border-outline-variant bg-surface text-on-surface font-body-md focus:border-secondary focus:ring-1 focus:ring-secondary text-sm" id="tyre-width">
+<option value="all">Any</option>
+<option value="195">195</option>
+<option value="205">205</option>
+<option selected="" value="215">215</option>
+<option value="225">225</option>
+<option value="265">265</option>
+<option value="315">315 (TBR)</option>
+</select>
+</div>
+<!-- Profile / Aspect Ratio Input -->
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface-variant uppercase mb-1" for="tyre-profile">Profile (%)</label>
+<select class="w-full h-11 px-2.5 rounded-lg border border-outline-variant bg-surface text-on-surface font-body-md focus:border-secondary focus:ring-1 focus:ring-secondary text-sm" id="tyre-profile">
+<option value="all">Any</option>
+<option value="50">50</option>
+<option selected="" value="55">55</option>
+<option value="60">60</option>
+<option value="65">65</option>
+<option value="70">70</option>
+<option value="80">80 (TBR)</option>
+</select>
+</div>
+<!-- Rim Diameter Input -->
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface-variant uppercase mb-1" for="tyre-rim">Rim (Inches)</label>
+<select class="w-full h-11 px-2.5 rounded-lg border border-outline-variant bg-surface text-on-surface font-body-md focus:border-secondary focus:ring-1 focus:ring-secondary text-sm" id="tyre-rim">
+<option value="all">Any</option>
+<option value="15">R15</option>
+<option selected="" value="16">R16</option>
+<option value="17">R17</option>
+<option value="18">R18</option>
+<option value="20">R20</option>
+<option value="22.5">R22.5</option>
+</select>
+</div>
+</div>
+<div class="pt-1 flex gap-2">
+<button class="flex-1 h-11 bg-secondary hover:bg-on-secondary-container text-on-secondary font-label-lg text-label-lg rounded-lg flex items-center justify-center gap-2 transition-colors active:scale-98" type="submit">
+<span class="material-symbols-outlined text-title-md">search</span>
+              Check Stock
+            </button>
+<button class="h-11 px-3 border border-outline-variant bg-surface hover:bg-surface-container rounded-lg text-on-surface font-label-md text-label-md transition-colors" onclick="resetFilter()" type="button">
+              Reset
+            </button>
+</div>
+</form>
+<div class="mt-3 p-2 bg-surface-container-low rounded text-center hidden" id="search-feedback">
+<p class="font-label-sm text-label-sm text-secondary font-bold">Showing matches for 215 / 55 R16 in Enugu Regional Stock</p>
+</div>
+</div>
+</section>
+<!-- Catalog Filter Tabs (Scrollable Mobile) -->
+<section class="mt-6 px-4 max-w-md mx-auto">
+<div class="flex items-center justify-between mb-2">
+<h2 class="font-title-lg text-title-lg font-bold text-on-surface">Category Catalog</h2>
+<span class="font-label-sm text-label-sm text-on-surface-variant">4 Segments</span>
+</div>
+<!-- Horizontal Pills Segment Selector -->
+<div class="flex overflow-x-auto space-x-2 pb-2 scrollbar-none no-scrollbar -mx-4 px-4">
+<button class="cat-pill whitespace-nowrap px-3.5 py-2 rounded-full font-label-md text-label-md bg-secondary text-on-secondary transition-all" onclick="filterCategory('all', this)">
+          All Tyres
+        </button>
+<button class="cat-pill whitespace-nowrap px-3.5 py-2 rounded-full font-label-md text-label-md bg-surface-container text-on-surface-variant hover:bg-surface-container-high transition-all" onclick="filterCategory('pcr', this)">
+          PCR (Passenger)
+        </button>
+<button class="cat-pill whitespace-nowrap px-3.5 py-2 rounded-full font-label-md text-label-md bg-surface-container text-on-surface-variant hover:bg-surface-container-high transition-all" onclick="filterCategory('suv', this)">
+          SUV &amp; 4x4 A/T
+        </button>
+<button class="cat-pill whitespace-nowrap px-3.5 py-2 rounded-full font-label-md text-label-md bg-surface-container text-on-surface-variant hover:bg-surface-container-high transition-all" onclick="filterCategory('tbr', this)">
+          Commercial TBR
+        </button>
+<button class="cat-pill whitespace-nowrap px-3.5 py-2 rounded-full font-label-md text-label-md bg-surface-container text-on-surface-variant hover:bg-surface-container-high transition-all" onclick="filterCategory('industrial', this)">
+          Industrial &amp; Agri
+        </button>
+</div>
+</section>
+<!-- Product Matrix / Asymmetric Cards -->
+<section class="mt-3 px-4 max-w-md mx-auto space-y-4" id="tyre-catalog-list">
+<!-- Card 1: Passenger Car Radial (PCR) -->
+<article class="tyre-card bg-surface-container-lowest rounded-xl border border-outline-variant p-4 shadow-sm relative overflow-hidden transition-all duration-200 hover:shadow-md" data-category="pcr">
+<div class="absolute top-0 left-0 right-0 h-0.5 bg-secondary"></div>
+<div class="flex items-start justify-between gap-2">
+<div>
+<span class="font-label-sm text-label-sm uppercase bg-surface-container text-secondary px-2 py-0.5 rounded tracking-wider">
+              PCR Series
+            </span>
+<h3 class="font-title-lg text-title-lg font-bold text-on-surface mt-1.5">
+              Passenger Car Radial (PCR) Tyres
+            </h3>
+</div>
+<span class="p-2 rounded-lg bg-surface-container-low text-secondary flex-shrink-0">
+<span class="material-symbols-outlined text-title-lg">directions_car</span>
+</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">
+          Engineered for wet grip safety, silent highway acoustic damping, and optimized fuel economy across sedans and hatchbacks.
+        </p>
+<!-- Spec Data Chips -->
+<div class="mt-3 grid grid-cols-3 gap-2 p-2 bg-surface rounded-lg border border-outline-variant/40 text-center">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase block">Tread Life</span>
+<span class="font-title-md text-title-md font-bold text-on-surface">65k km</span>
+</div>
+<div class="border-x border-outline-variant/50">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase block">Speed Rating</span>
+<span class="font-title-md text-title-md font-bold text-on-surface">V / W</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase block">Warranty</span>
+<span class="font-title-md text-title-md font-bold text-secondary">3 Years</span>
+</div>
+</div>
+<!-- Pricing & Order Action -->
+<div class="mt-4 flex items-center justify-between pt-3 border-t border-outline-variant/50">
+<div>
+<span class="font-label-sm text-label-sm uppercase text-on-surface-variant block">Retail / Wholesale Tier</span>
+<p class="font-title-lg text-title-lg font-bold text-on-surface">Competitive Quote</p>
+</div>
+<a class="h-10 px-4 bg-primary text-on-primary hover:bg-primary-container font-label-md text-label-md rounded-lg flex items-center gap-1.5 transition-colors" href="tel:07013476095">
+<span class="material-symbols-outlined text-sm">shopping_cart_checkout</span>
+            Order
+          </a>
+</div>
+</article>
+<!-- Card 2: SUV & 4x4 All-Terrain Tyres -->
+<article class="tyre-card bg-surface-container-lowest rounded-xl border border-outline-variant p-4 shadow-sm relative overflow-hidden transition-all duration-200 hover:shadow-md" data-category="suv">
+<div class="absolute top-0 left-0 right-0 h-0.5 bg-on-tertiary-container"></div>
+<div class="flex items-start justify-between gap-2">
+<div>
+<span class="font-label-sm text-label-sm uppercase bg-tertiary-fixed text-on-tertiary-fixed px-2 py-0.5 rounded tracking-wider">
+              All-Terrain 4WD
+            </span>
+<h3 class="font-title-lg text-title-lg font-bold text-on-surface mt-1.5">
+              SUV &amp; 4x4 All-Terrain Tyres
+            </h3>
+</div>
+<span class="p-2 rounded-lg bg-surface-container-low text-on-tertiary-container flex-shrink-0">
+<span class="material-symbols-outlined text-title-lg">terrain</span>
+</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">
+          Reinforced sidewall ply protection against stone drilling, rugged shoulder blocks for off-road traction, and stable asphalt performance.
+        </p>
+<!-- Spec Data Chips -->
+<div class="mt-3 grid grid-cols-3 gap-2 p-2 bg-surface rounded-lg border border-outline-variant/40 text-center">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase block">Sidewall</span>
+<span class="font-title-md text-title-md font-bold text-on-surface">3-Ply Armour</span>
+</div>
+<div class="border-x border-outline-variant/50">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase block">Tread Depth</span>
+<span class="font-title-md text-title-md font-bold text-on-surface">11.5 mm</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase block">Bulk Tier</span>
+<span class="font-title-md text-title-md font-bold text-on-tertiary-container">Vol. Rebate</span>
+</div>
+</div>
+<!-- Pricing & Order Action -->
+<div class="mt-4 flex items-center justify-between pt-3 border-t border-outline-variant/50">
+<div>
+<span class="font-label-sm text-label-sm uppercase text-on-surface-variant block">Available Sizes</span>
+<p class="font-title-md text-title-md font-bold text-on-surface">16" to 22" Rim</p>
+</div>
+<a class="h-10 px-4 bg-primary text-on-primary hover:bg-primary-container font-label-md text-label-md rounded-lg flex items-center gap-1.5 transition-colors" href="tel:07013476095">
+<span class="material-symbols-outlined text-sm">call</span>
+            Reserve Lot
+          </a>
+</div>
+</article>
+<!-- Card 3: Heavy Commercial Truck & Bus Radial (TBR) -->
+<article class="tyre-card bg-surface-container-lowest rounded-xl border border-outline-variant p-4 shadow-sm relative overflow-hidden transition-all duration-200 hover:shadow-md" data-category="tbr">
+<div class="absolute top-0 left-0 right-0 h-0.5 bg-secondary"></div>
+<div class="flex items-start justify-between gap-2">
+<div>
+<span class="font-label-sm text-label-sm uppercase bg-surface-container text-secondary px-2 py-0.5 rounded tracking-wider">
+              Fleet &amp; Haulage
+            </span>
+<h3 class="font-title-lg text-title-lg font-bold text-on-surface mt-1.5">
+              Heavy Commercial Truck &amp; Bus Radial (TBR)
+            </h3>
+</div>
+<span class="p-2 rounded-lg bg-surface-container-low text-secondary flex-shrink-0">
+<span class="material-symbols-outlined text-title-lg">local_shipping</span>
+</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">
+          High-mileage steel-belted casings built for interstate commercial cargo fleets, multi-retread longevity, and heat dispersion.
+        </p>
+<!-- Spec Data Chips -->
+<div class="mt-3 grid grid-cols-3 gap-2 p-2 bg-surface rounded-lg border border-outline-variant/40 text-center">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase block">Load Index</span>
+<span class="font-title-md text-title-md font-bold text-on-surface">156/150K</span>
+</div>
+<div class="border-x border-outline-variant/50">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase block">Casings</span>
+<span class="font-title-md text-title-md font-bold text-on-surface">Full Steel</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase block">Fleet Program</span>
+<span class="font-title-md text-title-md font-bold text-secondary">SLA Ready</span>
+</div>
+</div>
+<!-- Pricing & Order Action -->
+<div class="mt-4 flex items-center justify-between pt-3 border-t border-outline-variant/50">
+<div>
+<span class="font-label-sm text-label-sm uppercase text-on-surface-variant block">Standard Fitment</span>
+<p class="font-title-md text-title-md font-bold text-on-surface">315/80R22.5 &amp; 12R22.5</p>
+</div>
+<a class="h-10 px-4 bg-secondary text-on-secondary hover:bg-on-secondary-container font-label-lg text-label-lg rounded-lg flex items-center gap-1.5 transition-colors" href="tel:07013476095">
+<span class="material-symbols-outlined text-sm">local_shipping</span>
+            Fleet Dispatch
+          </a>
+</div>
+</article>
+<!-- Card 4: Industrial & Agricultural Machinery Tyres -->
+<article class="tyre-card bg-surface-container-lowest rounded-xl border border-outline-variant p-4 shadow-sm relative overflow-hidden transition-all duration-200 hover:shadow-md" data-category="industrial">
+<div class="absolute top-0 left-0 right-0 h-0.5 bg-on-tertiary-container"></div>
+<div class="flex items-start justify-between gap-2">
+<div>
+<span class="font-label-sm text-label-sm uppercase bg-tertiary-fixed text-on-tertiary-fixed px-2 py-0.5 rounded tracking-wider">
+              Heavy Machinery
+            </span>
+<h3 class="font-title-lg text-title-lg font-bold text-on-surface mt-1.5">
+              Industrial &amp; Agricultural Machinery Tyres
+            </h3>
+</div>
+<span class="p-2 rounded-lg bg-surface-container-low text-on-tertiary-container flex-shrink-0">
+<span class="material-symbols-outlined text-title-lg">agriculture</span>
+</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">
+          Tough puncture-resistant lug patterns for tractors, earthmoving loaders, warehouse forklifts, and industrial port equipment.
+        </p>
+<!-- Spec Data Chips -->
+<div class="mt-3 grid grid-cols-3 gap-2 p-2 bg-surface rounded-lg border border-outline-variant/40 text-center">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase block">Ply Rating</span>
+<span class="font-title-md text-title-md font-bold text-on-surface">14 - 24 PR</span>
+</div>
+<div class="border-x border-outline-variant/50">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase block">Compound</span>
+<span class="font-title-md text-title-md font-bold text-on-surface">Anti-Cut</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase block">Availability</span>
+<span class="font-title-md text-title-md font-bold text-on-tertiary-container">In Stock</span>
+</div>
+</div>
+<!-- Pricing & Order Action -->
+<div class="mt-4 flex items-center justify-between pt-3 border-t border-outline-variant/50">
+<div>
+<span class="font-label-sm text-label-sm uppercase text-on-surface-variant block">Deployment</span>
+<p class="font-title-md text-title-md font-bold text-on-surface">Forklift &amp; Tractor Rims</p>
+</div>
+<a class="h-10 px-4 bg-primary text-on-primary hover:bg-primary-container font-label-md text-label-md rounded-lg flex items-center gap-1.5 transition-colors" href="tel:07013476095">
+<span class="material-symbols-outlined text-sm">request_quote</span>
+            RFQ Quote
+          </a>
+</div>
+</article>
+</section>
+<!-- Wholesale Dealership Program Bento Section -->
+<section class="mt-8 px-4 max-w-md mx-auto">
+<div class="bg-primary-container text-on-primary rounded-2xl p-5 border border-outline-variant/20 shadow-md">
+<div class="flex items-center gap-2 mb-2">
+<span class="material-symbols-outlined text-secondary-container">handshake</span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary-container">Enterprise Partnership</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm font-bold text-on-primary tracking-tight">
+          Wholesale Dealership Program
+        </h2>
+<p class="font-body-sm text-body-sm text-primary-fixed-dim mt-1.5 leading-relaxed">
+          Empowering Nigerian distributors and major fleets with direct manufacturer allocations, reliable credit windows, and tier-1 warranties.
+        </p>
+<!-- Program Pillars Bento Grid -->
+<div class="mt-5 space-y-3">
+<!-- Pillar 1 -->
+<div class="bg-inverse-surface/60 p-3.5 rounded-xl border border-outline/30 flex items-start gap-3">
+<div class="p-2 bg-secondary/20 rounded-lg text-secondary-fixed">
+<span class="material-symbols-outlined text-title-lg">percent</span>
+</div>
+<div>
+<h3 class="font-title-md text-title-md font-bold text-on-primary">Bulk Order Discounts</h3>
+<p class="font-body-sm text-body-sm text-inverse-on-surface/80 mt-0.5">
+                Volume scale pricing tiers for fleet operators and certified regional retailers across the South-East and nationwide.
+              </p>
+</div>
+</div>
+<!-- Pillar 2 -->
+<div class="bg-inverse-surface/60 p-3.5 rounded-xl border border-outline/30 flex items-start gap-3">
+<div class="p-2 bg-tertiary-fixed/20 rounded-lg text-tertiary-fixed">
+<span class="material-symbols-outlined text-title-lg">local_shipping</span>
+</div>
+<div>
+<h3 class="font-title-md text-title-md font-bold text-on-primary">Nationwide Warehouse Logistics</h3>
+<p class="font-body-sm text-body-sm text-inverse-on-surface/80 mt-0.5">
+                Centralized transit from Enugu HQ with verified tread life guarantees and instant container drops.
+              </p>
+</div>
+</div>
+<!-- Pillar 3 -->
+<div class="bg-inverse-surface/60 p-3.5 rounded-xl border border-outline/30 flex items-start gap-3">
+<div class="p-2 bg-secondary/20 rounded-lg text-secondary-fixed">
+<span class="material-symbols-outlined text-title-lg">contract</span>
+</div>
+<div>
+<h3 class="font-title-md text-title-md font-bold text-on-primary">Direct Order Placement</h3>
+<p class="font-body-sm text-body-sm text-inverse-on-surface/80 mt-0.5">
+                Transparent multi-tier pricing contracts with manufacturer-backed replacement guarantees against manufacturing defects.
+              </p>
+</div>
+</div>
+</div>
+<!-- Dealership CTA Button -->
+<div class="mt-5">
+<a class="w-full h-12 bg-secondary hover:bg-secondary-container text-on-secondary hover:text-on-secondary-container font-label-lg text-label-lg rounded-xl flex items-center justify-center gap-2 font-bold transition-all shadow-sm active:scale-98" href="tel:07013476095">
+<span class="material-symbols-outlined">badge</span>
+            Register as Certified Dealer
+          </a>
+</div>
+</div>
+</section>
+<!-- Operational HQ & Hotline Card -->
+<section class="mt-6 px-4 max-w-md mx-auto">
+<div class="bg-surface-container-lowest rounded-xl p-5 border border-outline-variant shadow-sm">
+<div class="flex items-start justify-between">
+<div>
+<h2 class="font-title-lg text-title-lg font-bold text-on-surface">Order Hotline &amp; Warehouse HQ</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Direct warehouse distribution inquiry desk</p>
+</div>
+<span class="p-2 bg-tertiary-fixed text-on-tertiary-fixed rounded-lg">
+<span class="material-symbols-outlined">warehouse</span>
+</span>
+</div>
+<div class="mt-4 space-y-3 pt-3 border-t border-outline-variant/60">
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary mt-0.5">phone_in_talk</span>
+<div>
+<span class="font-label-sm text-label-sm uppercase text-on-surface-variant block">Order Hotline &amp; Wholesale Inquiry</span>
+<a class="font-title-lg text-title-lg font-bold text-secondary hover:underline" href="tel:07013476095">
+                Call 0701 347 6095
+              </a>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-on-tertiary-container mt-0.5">location_on</span>
+<div>
+<span class="font-label-sm text-label-sm uppercase text-on-surface-variant block">Warehouse &amp; Group HQ</span>
+<p class="font-body-md text-body-md text-on-surface">
+                Plot 80, Jedidiah Gardens Centenary City, Enugu 400706.
+              </p>
+</div>
+</div>
+</div>
+<div class="mt-4 pt-3 border-t border-outline-variant/60 flex items-center justify-between text-on-surface-variant">
+<div class="flex items-center gap-1.5 font-label-sm text-label-sm">
+<span class="w-2 h-2 rounded-full bg-secondary animate-ping"></span>
+            Warehouse Open: Mon - Sat 08:00 - 18:00
+          </div>
+<a class="font-label-md text-label-md text-secondary font-bold hover:underline" href="tel:07013476095">Directions</a>
+</div>
+</div>
+</section>
+</main>
+<!-- Shared Component: Footer -->
+<footer class="bg-surface-container-low dark:bg-inverse-surface border-t border-outline-variant dark:border-outline pb-24 md:pb-8 w-full">
+<div class="max-w-7xl mx-auto px-6 py-8 flex flex-col md:flex-row justify-between items-center gap-4 text-center md:text-left">
+<div class="space-y-1">
+<p class="font-title-md text-title-md font-bold text-on-surface dark:text-inverse-on-surface">Vinci and Vee Group</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant dark:text-outline max-w-xl">
+          © 2025 Vinci and Vee Group. All Rights Reserved. Enugu HQ: Plot 80, Jedidiah Gardens Centenary City, Enugu 400706. Tel: 0701 347 6095
+        </p>
+</div>
+<div class="flex flex-wrap justify-center gap-4 pt-2 md:pt-0">
+<a class="font-label-sm text-label-sm text-on-surface-variant dark:text-outline hover:text-secondary dark:hover:text-secondary-fixed underline transition-colors duration-150" href="#">Privacy Policy</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant dark:text-outline hover:text-secondary dark:hover:text-secondary-fixed underline transition-colors duration-150" href="#">Terms of Service</a>
+<a class="font-label-sm text-label-sm text-secondary dark:text-secondary-fixed font-bold hover:underline transition-colors duration-150" href="#">Wholesale Portal</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant dark:text-outline hover:text-secondary dark:hover:text-secondary-fixed underline transition-colors duration-150" href="#">SLA Inquiries</a>
+</div>
+</div>
+</footer>
+<!-- Shared Component: BottomNavBar (Active Destination: 'Tyres') -->
+<nav aria-label="Bottom Navigation" class="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-2 py-2 bg-surface-container-lowest dark:bg-inverse-surface shadow-md dark:shadow-none border-t-0">
+<!-- Tab 1: Overview -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-150 active:scale-95 py-1 px-2" href="#">
+<span class="material-symbols-outlined text-2xl">domain</span>
+<span class="font-label-sm text-label-sm mt-0.5">Overview</span>
+</a>
+<!-- Tab 2: Telecom -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-150 active:scale-95 py-1 px-2" href="#">
+<span class="material-symbols-outlined text-2xl">lan</span>
+<span class="font-label-sm text-label-sm mt-0.5">Telecom</span>
+</a>
+<!-- Tab 3: Logistics -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-150 active:scale-95 py-1 px-2" href="#">
+<span class="material-symbols-outlined text-2xl">local_shipping</span>
+<span class="font-label-sm text-label-sm mt-0.5">Logistics</span>
+</a>
+<!-- Tab 4: Tyres (ACTIVE MATCH FOR THIS SCREEN) -->
+<a aria-current="page" class="flex flex-col items-center justify-center text-secondary dark:text-secondary-fixed font-bold py-1 px-2 relative" href="#">
+<span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1;">tire_repair</span>
+<span class="font-label-sm text-label-sm mt-0.5">Tyres</span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary absolute -bottom-1"></span>
+</a>
+<!-- Tab 5: Cloud SaaS -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-150 active:scale-95 py-1 px-2" href="#">
+<span class="material-symbols-outlined text-2xl">cloud_done</span>
+<span class="font-label-sm text-label-sm mt-0.5">Cloud SaaS</span>
+</a>
+</nav>
+<!-- Interactive JavaScript logic for Size Search & Category Filtering -->
+<script>
+    // Drawer Toggle Logic
+    function toggleDrawer() {
+      const drawer = document.getElementById('nav-drawer');
+      const backdrop = document.getElementById('drawer-backdrop');
+      const isOpen = !drawer.classList.contains('-translate-x-full');
+      
+      if (isOpen) {
+        drawer.classList.add('-translate-x-full');
+        backdrop.classList.add('opacity-0');
+        setTimeout(() => {
+          backdrop.classList.add('hidden');
+        }, 300);
+      } else {
+        backdrop.classList.remove('hidden');
+        setTimeout(() => {
+          backdrop.classList.remove('opacity-0');
+          drawer.classList.remove('-translate-x-full');
+        }, 10);
+      }
+    }
+
+    // Category Filtering Pill Handler
+    function filterCategory(category, buttonEl) {
+      // Update button styling
+      const pills = document.querySelectorAll('.cat-pill');
+      pills.forEach(pill => {
+        pill.classList.remove('bg-secondary', 'text-on-secondary');
+        pill.classList.add('bg-surface-container', 'text-on-surface-variant');
+      });
+
+      buttonEl.classList.remove('bg-surface-container', 'text-on-surface-variant');
+      buttonEl.classList.add('bg-secondary', 'text-on-secondary');
+
+      // Filter product cards
+      const cards = document.querySelectorAll('.tyre-card');
+      cards.forEach(card => {
+        if (category === 'all' || card.dataset.category === category) {
+          card.classList.remove('hidden');
+          card.style.opacity = '1';
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+    }
+
+    // Interactive Size Finder Feedback
+    function applySizeSearch() {
+      const w = document.getElementById('tyre-width').value;
+      const p = document.getElementById('tyre-profile').value;
+      const r = document.getElementById('tyre-rim').value;
+      const feedback = document.getElementById('search-feedback');
+      
+      feedback.classList.remove('hidden');
+      feedback.innerHTML = `<p class="font-label-sm text-label-sm text-secondary font-bold">Checking central warehouse for ${w !== 'all' ? w : 'Any'} / ${p !== 'all' ? p : 'Any'} R${r !== 'all' ? r : 'Any'}... Instant reservation available at 0701 347 6095</p>`;
+    }
+
+    function resetFilter() {
+      document.getElementById('tyre-width').value = 'all';
+      document.getElementById('tyre-profile').value = 'all';
+      document.getElementById('tyre-rim').value = 'all';
+      const feedback = document.getElementById('search-feedback');
+      feedback.classList.add('hidden');
+    }
+  </script>
+</body></html>

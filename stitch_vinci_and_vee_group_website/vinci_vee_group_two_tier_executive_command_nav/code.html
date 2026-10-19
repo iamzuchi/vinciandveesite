@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Vinci &amp; Vee Group | Achieving Dreams by making Connection</title>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Google Fonts: Space Grotesk & Plus Jakarta Sans & Inter -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@500;600;700&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "on-background": "#131b2e",
+            "primary": "#000000",
+            "on-secondary": "#ffffff",
+            "primary-container": "#0d1c32",
+            "tertiary-container": "#301400",
+            "on-secondary-container": "#794c21",
+            "on-tertiary-container": "#ae7850",
+            "inverse-surface": "#283044",
+            "secondary": "#835429",
+            "on-error-container": "#93000a",
+            "surface-variant": "#dae2fd",
+            "inverse-primary": "#b9c7e4",
+            "on-tertiary-fixed-variant": "#683c19",
+            "primary-fixed-dim": "#b9c7e4",
+            "surface-container": "#eaedff",
+            "on-surface-variant": "#44474d",
+            "surface-container-lowest": "#ffffff",
+            "primary-fixed": "#d6e3ff",
+            "error": "#ba1a1a",
+            "tertiary-fixed": "#ffdcc5",
+            "error-container": "#ffdad6",
+            "surface-tint": "#515f78",
+            "tertiary-fixed-dim": "#f9b98c",
+            "on-tertiary-fixed": "#301400",
+            "on-primary-fixed": "#0d1c32",
+            "inverse-on-surface": "#eef0ff",
+            "on-tertiary": "#ffffff",
+            "on-secondary-fixed-variant": "#673d13",
+            "secondary-fixed-dim": "#f8ba86",
+            "surface-container-high": "#e2e7ff",
+            "on-surface": "#131b2e",
+            "background": "#faf8ff",
+            "surface-bright": "#faf8ff",
+            "surface": "#faf8ff",
+            "on-primary-container": "#76849f",
+            "on-error": "#ffffff",
+            "outline": "#75777e",
+            "on-secondary-fixed": "#2e1500",
+            "tertiary": "#000000",
+            "secondary-container": "#febf8b",
+            "surface-dim": "#d2d9f4",
+            "on-primary-fixed-variant": "#39475f",
+            "surface-container-highest": "#dae2fd",
+            "outline-variant": "#c5c6cd",
+            "surface-container-low": "#f2f3ff",
+            "on-primary": "#ffffff",
+            "secondary-fixed": "#ffdcc2"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.125rem",
+            "lg": "0.25rem",
+            "xl": "0.5rem",
+            "full": "0.75rem"
+          },
+          "spacing": {
+            "space-lg": "1.75rem",
+            "margin": "1.25rem",
+            "space-md": "1rem",
+            "space-xl": "3rem",
+            "margin-tablet": "2.5rem",
+            "space-sm": "0.5rem",
+            "margin-desktop": "4rem",
+            "space-xs": "0.25rem",
+            "gutter": "1.5rem",
+            "gutter-desktop": "2rem"
+          },
+          "fontFamily": {
+            "label-md": ["Plus Jakarta Sans"],
+            "title-sm": ["Plus Jakarta Sans"],
+            "label-sm": ["Plus Jakarta Sans"],
+            "headline-lg": ["Space Grotesk"],
+            "body-sm": ["Inter"],
+            "display-hero-mobile": ["Space Grotesk"],
+            "body-lg": ["Inter"],
+            "headline-sm": ["Space Grotesk"],
+            "headline-lg-mobile": ["Space Grotesk"],
+            "display-hero": ["Space Grotesk"],
+            "title-md": ["Plus Jakarta Sans"],
+            "body-md": ["Inter"],
+            "headline-md": ["Space Grotesk"]
+          },
+          "fontSize": {
+            "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.06em", "fontWeight": "600" }],
+            "title-sm": ["15px", { "lineHeight": "22px", "letterSpacing": "0em", "fontWeight": "600" }],
+            "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.08em", "fontWeight": "700" }],
+            "headline-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "500" }],
+            "body-sm": ["13px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "400" }],
+            "display-hero-mobile": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "600" }],
+            "body-lg": ["18px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "400" }],
+            "headline-sm": ["22px", { "lineHeight": "30px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "headline-lg-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "500" }],
+            "display-hero": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.03em", "fontWeight": "600" }],
+            "title-md": ["18px", { "lineHeight": "26px", "letterSpacing": "-0.005em", "fontWeight": "600" }],
+            "body-md": ["15px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "400" }],
+            "headline-md": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.015em", "fontWeight": "500" }]
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+    /* Subtle architectural borders & warm metallic touch */
+    .border-metallic-subtle {
+      border-color: rgba(131, 84, 41, 0.25);
+    }
+    .shadow-executive-elevation {
+      box-shadow: 0 12px 32px -8px rgba(10, 25, 47, 0.06), 0 4px 12px -2px rgba(10, 25, 47, 0.03);
+    }
+  </style>
+</head>
+<body class="bg-surface text-on-surface antialiased selection:bg-secondary-fixed selection:text-primary-container">
+<!-- ========================================================================= -->
+<!-- 1. Ultra-Premium Executive Two-Tier Header (Corporate Architectural Command Header) -->
+<!-- ========================================================================= -->
+<header class="fixed top-0 left-0 w-full z-50 transition-all duration-200 ease-in-out">
+<!-- Tier 1: Top Utility / Ticker Bar (Dark Midnight Navy #07101e) -->
+<div class="bg-[#07101e] text-white/90 border-b border-white/10 text-xs py-2 px-margin-desktop shadow-inner">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row md:items-center justify-between gap-2">
+<!-- Left: Conglomerate Headquarters & Corridors Ticker -->
+<div class="flex flex-wrap items-center gap-2 sm:gap-3 font-label-sm text-[11px] tracking-wide text-white/80">
+<div class="flex items-center gap-1.5 text-secondary-fixed">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+<span class="font-semibold text-white">Status:</span>
+<span class="px-1.5 py-0.5 rounded bg-emerald-500/20 text-emerald-300 font-bold tracking-wider">Operational Tier-1</span>
+</div>
+<span class="hidden sm:inline text-white/30">•</span>
+<div class="flex items-center gap-1 text-white/75 truncate">
+<span class="material-symbols-outlined text-[13px] text-secondary-fixed" data-icon="location_on">location_on</span>
+<span><strong class="text-white">Enugu HQ:</strong> Plot 80, Jedidiah Gardens Centenary City, Enugu 400706</span>
+</div>
+<span class="hidden md:inline text-white/30">•</span>
+<div class="hidden md:flex items-center gap-1 text-white/75">
+<span class="material-symbols-outlined text-[13px] text-secondary-fixed" data-icon="hub">hub</span>
+<span><strong class="text-white">Nordic Office:</strong> Gothenburg &amp; Stockholm Corridor</span>
+</div>
+</div>
+<!-- Right: Quick Contact, Direct Telephony / RFQ Portal, Region Indicator -->
+<div class="flex items-center gap-4 text-[11px] font-label-sm text-white/80 shrink-0">
+<a class="flex items-center gap-1.5 hover:text-secondary-fixed transition-colors text-white/90 font-medium" href="tel:07013476095">
+<span class="material-symbols-outlined text-[14px] text-secondary-fixed" data-icon="phone">phone</span>
+<span>0701 347 6095</span>
+</a>
+<span class="text-white/20">|</span>
+<a class="hidden sm:inline-flex items-center gap-1 text-white/80 hover:text-white transition-colors" href="#hq-contact">
+<span class="material-symbols-outlined text-[13px] text-secondary-fixed" data-icon="contract">contract</span>
+<span>Direct Telephony / RFQ Portal</span>
+</a>
+<span class="hidden sm:inline text-white/20">|</span>
+<!-- Regional Matrix indicator (NG / SE) -->
+<div class="flex items-center gap-1 bg-white/10 px-2 py-0.5 rounded text-[10px] tracking-widest font-mono text-secondary-fixed border border-white/10">
+<span class="text-white font-bold">NG</span>
+<span class="text-white/40">/</span>
+<span class="text-secondary-fixed font-bold">SE</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Tier 2: Main Navigation Bar (Clean Frosted Glass Backdrop with Warm Bronze Accents) -->
+<div class="w-full bg-surface/90 dark:bg-primary-container/90 backdrop-blur-md border-b border-outline-variant/30 dark:border-outline/20 shadow-sm transition-all">
+<div class="max-w-7xl mx-auto px-margin-desktop h-20 flex items-center justify-between">
+<!-- Brand Lockup with Architectural Geometric Monograph & Subtitle Badges -->
+<a class="flex items-center gap-3.5 group shrink-0" href="#overview">
+<!-- Architectural Geometric Monograph Logo Mark -->
+<div class="relative w-11 h-11 rounded-lg bg-primary-container flex items-center justify-center border border-secondary/50 shadow-md transition-transform duration-200 group-hover:scale-105">
+<div class="absolute inset-0.5 rounded border border-secondary/20 pointer-events-none"></div>
+<span class="text-secondary font-headline-sm font-bold text-headline-sm tracking-tighter">V</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm font-bold tracking-tight text-primary dark:text-inverse-primary leading-tight">
+              Vinci &amp; Vee Group
+            </span>
+<span class="hidden lg:inline-block text-[9px] font-label-sm font-bold tracking-widest px-1.5 py-0.5 rounded bg-primary-container/10 dark:bg-white/10 text-secondary border border-secondary/30 uppercase">
+              Holding Conglomerate
+            </span>
+</div>
+<span class="font-label-sm text-[10px] tracking-wider uppercase text-secondary font-semibold flex items-center gap-1">
+<span class="w-1 h-1 rounded-full bg-secondary"></span>
+            Achieving Dreams by making Connection
+          </span>
+</div>
+</a>
+<!-- Primary Navigation with Sector Pill Indicators & Refined Badges -->
+<nav class="hidden xl:flex items-center space-x-1 font-title-sm text-title-sm">
+<!-- Overview (Active State with refined bronze underline & badge) -->
+<a class="relative px-3 py-2 text-secondary dark:text-secondary-fixed font-semibold transition-colors duration-150 flex items-center gap-1.5 group" href="#overview">
+<span>Overview</span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary inline-block"></span>
+<span class="absolute bottom-0 left-3 right-3 h-[2px] bg-secondary dark:bg-secondary-fixed"></span>
+</a>
+<!-- Telecom & Fibre (with optical pulse micro-badge) -->
+<a class="relative px-3 py-2 text-on-surface-variant dark:text-outline-variant hover:text-on-surface dark:hover:text-inverse-on-surface transition-colors duration-150 flex items-center gap-1.5 group" href="#sectors">
+<span class="material-symbols-outlined text-[16px] text-secondary opacity-70 group-hover:opacity-100 transition-opacity" data-icon="cable">cable</span>
+<span>Telecom &amp; Fibre</span>
+<span class="relative flex h-2 w-2 ml-0.5">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-secondary"></span>
+</span>
+</a>
+<!-- Sweden Shipping (with Nordic route icon) -->
+<a class="px-3 py-2 text-on-surface-variant dark:text-outline-variant hover:text-on-surface dark:hover:text-inverse-on-surface transition-colors duration-150 flex items-center gap-1.5 group" href="#sectors">
+<span class="material-symbols-outlined text-[16px] text-secondary opacity-70 group-hover:opacity-100 transition-opacity" data-icon="sailing">sailing</span>
+<span>Sweden Shipping</span>
+<span class="text-[9px] font-mono px-1 py-0.2 rounded bg-surface-container border border-outline-variant/40 text-on-surface-variant">GOT-LOS</span>
+</a>
+<!-- Tyre Distribution -->
+<a class="px-3 py-2 text-on-surface-variant dark:text-outline-variant hover:text-on-surface dark:hover:text-inverse-on-surface transition-colors duration-150 flex items-center gap-1.5 group" href="#sectors">
+<span class="material-symbols-outlined text-[16px] text-secondary opacity-70 group-hover:opacity-100 transition-opacity" data-icon="tire_repair">tire_repair</span>
+<span>Tyre Distribution</span>
+</a>
+<!-- Cloud SaaS -->
+<a class="px-3 py-2 text-on-surface-variant dark:text-outline-variant hover:text-on-surface dark:hover:text-inverse-on-surface transition-colors duration-150 flex items-center gap-1.5 group" href="#sectors">
+<span class="material-symbols-outlined text-[16px] text-secondary opacity-70 group-hover:opacity-100 transition-opacity" data-icon="cloud_sync">cloud_sync</span>
+<span>Cloud SaaS</span>
+</a>
+<!-- Construction & Interiors -->
+<a class="px-3 py-2 text-on-surface-variant dark:text-outline-variant hover:text-on-surface dark:hover:text-inverse-on-surface transition-colors duration-150 flex items-center gap-1.5 group" href="#sectors">
+<span class="material-symbols-outlined text-[16px] text-secondary opacity-70 group-hover:opacity-100 transition-opacity" data-icon="domain">domain</span>
+<span>Construction &amp; Interiors</span>
+</a>
+</nav>
+<!-- Trailing Actions: Direct Phone and Prominent RFQ Tender CTA with Chevron -->
+<div class="flex items-center space-x-3 shrink-0">
+<a class="hidden sm:inline-flex items-center gap-2 font-label-md text-label-md text-on-surface hover:text-secondary transition-colors duration-150 px-3.5 py-2.5 rounded-lg border border-outline-variant/40 bg-surface-container-low" href="tel:07013476095">
+<span class="material-symbols-outlined text-base text-secondary" data-icon="call">call</span>
+<span class="font-medium">0701 347 6095</span>
+</a>
+<a class="inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-lg bg-primary-container text-on-secondary font-label-md text-label-md font-semibold border border-secondary/40 hover:border-secondary hover:bg-tertiary shadow-sm transition-all duration-200 group" href="#hq-contact">
+<span>Engage Group HQ / RFQ Tender</span>
+<span class="material-symbols-outlined text-sm text-secondary transition-transform duration-200 group-hover:translate-x-0.5" data-icon="chevron_right">chevron_right</span>
+</a>
+</div>
+</div>
+</div>
+</header>
+<!-- ========================================================================= -->
+<!-- 2. Executive Desktop Hero (Split-Screen Layout) -->
+<!-- ========================================================================= -->
+<section class="pt-40 pb-space-xl relative overflow-hidden bg-surface" id="overview">
+<!-- Subtle architectural background geometry -->
+<div class="absolute inset-0 pointer-events-none opacity-40 bg-[radial-gradient(#835429_1px,transparent_1px)] [background-size:24px_24px]"></div>
+<div class="max-w-7xl mx-auto px-margin-desktop relative z-10">
+<!-- Top Conglomerate Motto Banner -->
+<div class="mb-8 inline-flex items-center gap-3 px-3 py-1.5 rounded-lg bg-surface-container border border-metallic-subtle">
+<span class="px-2 py-0.5 rounded text-[10px] uppercase tracking-wider font-label-sm bg-primary-container text-secondary-fixed">
+          Corporate Sovereign
+        </span>
+<span class="font-title-sm text-title-sm text-secondary font-semibold">
+          Achieving Dreams by making Connection.
+        </span>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop items-center">
+<!-- Hero Left Column: Editorial Strategy & Verbatim Corporate Overview -->
+<div class="lg:col-span-7 space-y-6">
+<h1 class="font-display-hero text-display-hero tracking-tight text-on-surface">
+            Strategic Global Infrastructure <span class="text-secondary">&amp;</span> Scaled Ventures.
+          </h1>
+<!-- Verbatim Mandated Corporate Overview Text Block -->
+<div class="p-space-md rounded-lg bg-surface-container-low border-l-4 border-secondary shadow-sm">
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed text-justify">
+              "We are a diversified technology and infrastructure company delivering solutions across fibre optic installation, Software as a Service (SaaS), tyre wholesale and retail, and construction. We provide end-to-end fibre deployment services, ensuring reliable high-speed connectivity for residential, commercial, and enterprise clients. As a SaaS provider, we develop scalable cloud-based software that improves operational efficiency and supports digital transformation. Our tyre business supplies quality products to retailers and end users at competitive prices. In construction, we execute residential and commercial projects with a focus on quality, safety, and timely delivery. Our operations are driven by professionalism, innovation, and customer"
+            </p>
+</div>
+<!-- Executive CTAs -->
+<div class="pt-2 flex flex-wrap items-center gap-4">
+<a class="inline-flex items-center justify-center px-6 py-3.5 rounded-lg bg-primary-container text-on-secondary font-title-sm text-title-sm font-semibold border border-secondary/40 hover:border-secondary hover:bg-tertiary transition-all duration-200 shadow-executive-elevation" href="#sectors">
+              Explore Multi-Sector Portfolio
+              <span class="material-symbols-outlined ml-2 text-base text-secondary" data-icon="arrow_forward">arrow_forward</span>
+</a>
+<a class="inline-flex items-center justify-center px-6 py-3.5 rounded-lg bg-surface-container-low border border-outline-variant/60 text-on-surface font-title-sm text-title-sm font-semibold hover:border-secondary hover:text-secondary transition-all duration-200" href="#hq-contact">
+              Request Corporate Partnership
+            </a>
+</div>
+<!-- Institutional Governance Assurance Pills -->
+<div class="pt-4 flex items-center gap-6 border-t border-outline-variant/30">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-sm bg-secondary"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Dual-Corridor Logistical Control</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-sm bg-primary-container"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">ISO-Aligned Quality Protocols</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-sm bg-secondary"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Sub-Saharan Telecom Backbones</span>
+</div>
+</div>
+</div>
+<!-- Hero Right Column: Curated Multi-Sector Operational Mosaic -->
+<div class="lg:col-span-5 relative">
+<div class="relative bg-surface-container rounded-xl p-3 border border-outline-variant/40 shadow-executive-elevation">
+<!-- Lead High-Impact Sector Mosaic Image -->
+<div class="relative h-72 sm:h-80 w-full overflow-hidden rounded-lg">
+<img class="w-full h-full object-cover transition-transform duration-700 hover:scale-105" data-alt="An expansive aerial view of cutting-edge industrial operations with glowing optical fibre underground conduits, international cargo shipping lines, and architectural modern construction towers. Ambient lighting is soft dawn with midnight navy and burnished bronze tones reflecting off sleek glass and titanium surfaces. The mood is sovereign, disciplined, and institutional." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZ6pKOv-2P3LVZiVvotHSNxDaDAbGwYenutwXPMPP_mR42x19UERvNfO_LqCTC7gQ3hehJhqrpXql-FNPyUhxSn8OJn1OIpWPwUnOc9NZBehtnrR_F-znXykqes9cCs6Nn5yL5xZxkeysTW2x3IONZY0Nkq3Etr_MkabuVvcIkyZOxvnI2r7G89cpcDgGsuZXEuBWMmzg6j3q7ib04O5i9uqMZ9d6Q_mKdXu8IwPE"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary-container/90 via-primary-container/20 to-transparent"></div>
+<!-- Static Executive Badge -->
+<div class="absolute bottom-4 left-4 right-4 flex items-center justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-secondary-fixed uppercase tracking-wider block">Integrated Footprint</span>
+<p class="font-title-md text-title-md text-on-secondary font-bold">Pan-African &amp; Nordic Matrix</p>
+</div>
+<div class="px-2.5 py-1 rounded-sm bg-surface-container-lowest/90 border border-secondary/30 backdrop-blur-sm">
+<span class="font-label-md text-label-md text-primary-container font-semibold">Tier-1 Sovereign</span>
+</div>
+</div>
+</div>
+<!-- Operational Sub-Nodes Grid -->
+<div class="grid grid-cols-2 gap-3 mt-3">
+<div class="p-3 bg-surface-container-lowest rounded-lg border border-outline-variant/30 flex items-center gap-3">
+<div class="w-9 h-9 rounded bg-surface-container flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-lg" data-icon="settings_ethernet">settings_ethernet</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase block">Optical Core</span>
+<span class="font-title-sm text-title-sm text-on-surface font-semibold">Metro DWDM</span>
+</div>
+</div>
+<div class="p-3 bg-surface-container-lowest rounded-lg border border-outline-variant/30 flex items-center gap-3">
+<div class="w-9 h-9 rounded bg-surface-container flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-lg" data-icon="directions_boat">directions_boat</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase block">Baltic Route</span>
+<span class="font-title-sm text-title-sm text-on-surface font-semibold">Stockholm Line</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ========================================================================= -->
+<!-- 3. 6-Sector Conglomerate Ecosystem Grid -->
+<!-- ========================================================================= -->
+<section class="py-space-xl bg-surface-container-low border-y border-outline-variant/30 relative" id="sectors">
+<div class="max-w-7xl mx-auto px-margin-desktop">
+<!-- Section Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+<div class="space-y-2 max-w-2xl">
+<div class="inline-flex items-center gap-2 font-label-md text-label-md text-secondary uppercase tracking-widest">
+<span class="w-4 h-0.5 bg-secondary"></span>
+            Operational Subsidiaries
+          </div>
+<h2 class="font-headline-lg text-headline-lg tracking-tight text-on-surface">
+            Six Autonomous Pillars of Industrial Execution
+          </h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Disciplined allocation across telecommunications, trans-continental shipping, automotive distribution, scalable cloud architectures, and commercial civil engineering.
+          </p>
+</div>
+<div class="mt-4 md:mt-0 flex items-center gap-2">
+<span class="px-3 py-1 bg-surface-container rounded-sm border border-secondary/30 font-label-sm text-label-sm text-secondary font-bold">
+            GROUP VERIFIED ARCHITECTURE
+          </span>
+</div>
+</div>
+<!-- 6-Sector Desktop Bento Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter-desktop">
+<!-- Sector 1: Telecom & Fibre Infrastructure -->
+<div class="group bg-surface-container-lowest rounded-lg border border-outline-variant/40 hover:border-secondary/60 transition-all duration-300 overflow-hidden shadow-sm flex flex-col justify-between">
+<div class="relative h-44 overflow-hidden border-b border-outline-variant/20">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Telecommunication engineers deploying high-capacity dark fibre optical cables into urban infrastructure trenches. Clean modern technical precision, deep navy twilight skies with subtle amber and bronze LED testing monitors visible on equipment. Cinematic corporate realism." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCJt4P8UcCIqtfuqTljY8-ibhP2xq9egeF5n7YCHRgrHVXHXyH525yNh6JHeEzYSqcddoOyMLGGOQJNALjbTXKWnQhGEGBMGLk6x8KU0-xqdboZKxAf0rFF76rLlzef_b-BfpLCMeqzNkjthuOvGJUiXlqIJgYpmspOxw7mXU__eZfPIRXxGmoRkRAZyOwUgCOsKz3iE8KU8q4xeoQjOfg0Afui9UyNGs_W1IvCjDM"/>
+<div class="absolute top-3 right-3 px-2 py-0.5 rounded bg-primary-container text-on-secondary font-label-sm text-label-sm">
+              01 // CONNECTIVITY
+            </div>
+</div>
+<div class="p-space-lg flex-1 flex flex-col justify-between space-y-4">
+<div>
+<div class="flex items-center gap-2 text-secondary mb-1">
+<span class="material-symbols-outlined text-lg" data-icon="cable">cable</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Telecommunications</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface font-bold">Telecom &amp; Fibre Infrastructure</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2 leading-relaxed">
+                End-to-end fibre optic engineering covering FTTH rollout, metropolitan trenching, splicing, and mission-critical enterprise dedicated lease lines.
+              </p>
+</div>
+<div class="pt-4 border-t border-outline-variant/20 flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary font-semibold">99.9% Fiber Uptime SLA</span>
+<span class="material-symbols-outlined text-on-surface-variant group-hover:text-secondary transition-colors" data-icon="arrow_outward">arrow_outward</span>
+</div>
+</div>
+</div>
+<!-- Sector 2: Sweden Shipping & Maritime Logistics -->
+<div class="group bg-surface-container-lowest rounded-lg border border-outline-variant/40 hover:border-secondary/60 transition-all duration-300 overflow-hidden shadow-sm flex flex-col justify-between">
+<div class="relative h-44 overflow-hidden border-b border-outline-variant/20">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Large container logistics terminal connecting Gothenburg harbor and Lagos ports, featuring heavy industrial gantry cranes, container vessels under overcast Nordic sky with warm architectural floodlights. Deep midnight ocean tones accented by warm bronze container accents." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAexTXIlhQjyJ73zqK08P5WJyjnH1isJvsa6rbrdga_a26zUi4Rh787WxFQFuVdKf2FoA6GaxKJ5vZvuqlog8X6FuQEmfZFG3UGpnkPBgnmCFfGk-f97Ct5KrF7Dz-Bz0ik5f9v2ohdfgarohE7Q8xmvxKs9xguPJIBS7ZPuMPAvWQJ1umFUPDcwe9y9D9l_u1UX7ePGdHo1RwqxcyQWAdfhVZSJac-upPjzGGCsIw"/>
+<div class="absolute top-3 right-3 px-2 py-0.5 rounded bg-primary-container text-on-secondary font-label-sm text-label-sm">
+              02 // LOGISTICS
+            </div>
+</div>
+<div class="p-space-lg flex-1 flex flex-col justify-between space-y-4">
+<div>
+<div class="flex items-center gap-2 text-secondary mb-1">
+<span class="material-symbols-outlined text-lg" data-icon="sailing">sailing</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Maritime Corridor</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface font-bold">Sweden Shipping &amp; Logistics</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2 leading-relaxed">
+                Dedicated direct maritime and air consolidation corridor operating seamlessly between Gothenburg/Stockholm and West African seaports with guaranteed customs clearance.
+              </p>
+</div>
+<div class="pt-4 border-t border-outline-variant/20 flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary font-semibold">Gothenburg – Lagos Route</span>
+<span class="material-symbols-outlined text-on-surface-variant group-hover:text-secondary transition-colors" data-icon="arrow_outward">arrow_outward</span>
+</div>
+</div>
+</div>
+<!-- Sector 3: Tyre Wholesale & Retail Distribution -->
+<div class="group bg-surface-container-lowest rounded-lg border border-outline-variant/40 hover:border-secondary/60 transition-all duration-300 overflow-hidden shadow-sm flex flex-col justify-between">
+<div class="relative h-44 overflow-hidden border-b border-outline-variant/20">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="A massive, pristine automated automotive tyre distribution hub warehouse with structured rows of commercial truck and passenger tyres. Warm lighting illuminates the logistics floor with slate grey industrial floors and deep navy corporate steel beams." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBAMPdM6TGEO_OVY8w84u9PRI4kWg3lsDFkcgzjFJ6RUynqgZ2LnJvZg_5BRgQ-K4p-NapVJWuy1V5LTA4XmMuBbb1gCj6J26l_AZF6Ft0bLRsiV1OAYFVAuWz8jVYaAj4SL4A2gXvPoZcUQ7NkWajviAZt8ljaC_bG8e3RLykaGAhv8SgTzPMpBHlzg4S-tocubg9rVKOnf9Wt4MVYdDh-az-5ellUsN4eG78Cpho"/>
+<div class="absolute top-3 right-3 px-2 py-0.5 rounded bg-primary-container text-on-secondary font-label-sm text-label-sm">
+              03 // AUTOMOTIVE
+            </div>
+</div>
+<div class="p-space-lg flex-1 flex flex-col justify-between space-y-4">
+<div>
+<div class="flex items-center gap-2 text-secondary mb-1">
+<span class="material-symbols-outlined text-lg" data-icon="tire_repair">tire_repair</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Tyre Distribution</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface font-bold">Tyre Wholesale &amp; Retail</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2 leading-relaxed">
+                Direct supply chains for PCR, All-Terrain, TBR commercial transport, and industrial earth-moving equipment, maintaining competitive wholesale pricing and authentic grade certifications.
+              </p>
+</div>
+<div class="pt-4 border-t border-outline-variant/20 flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary font-semibold">TBR / PCR / Heavy Duty</span>
+<span class="material-symbols-outlined text-on-surface-variant group-hover:text-secondary transition-colors" data-icon="arrow_outward">arrow_outward</span>
+</div>
+</div>
+</div>
+<!-- Sector 4: Enterprise Cloud SaaS -->
+<div class="group bg-surface-container-lowest rounded-lg border border-outline-variant/40 hover:border-secondary/60 transition-all duration-300 overflow-hidden shadow-sm flex flex-col justify-between">
+<div class="relative h-44 overflow-hidden border-b border-outline-variant/20">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="An executive enterprise control center with sleek multi-display data dashboards showing cloud telemetry and software architecture metrics. The room is quiet and minimal with dark navy matte finishes and amber metric indicators." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDRX7b8Pa7IxPDwwcxQv6mv32ZyFqTY0GGAJn1sQdz9GSfIN0BZZ2bpeo9FiHE5dTpDE9q8kSf43fvL70t4jrVJNG2rmy5TKm6k9mQf5c3S_Wt8mvfQ4Wqsz544FHdtP21W-O7Q2a18deWW37E_HdnR1VT5XSHg4-d4kZJhQN1k_FwXvIHMAb07dcqCzQqVV7HkXIR--0tKXnVjho2v8mxLjXbOX-vTUezS6g_kvw4"/>
+<div class="absolute top-3 right-3 px-2 py-0.5 rounded bg-primary-container text-on-secondary font-label-sm text-label-sm">
+              04 // ENTERPRISE SOFTWARE
+            </div>
+</div>
+<div class="p-space-lg flex-1 flex flex-col justify-between space-y-4">
+<div>
+<div class="flex items-center gap-2 text-secondary mb-1">
+<span class="material-symbols-outlined text-lg" data-icon="cloud_sync">cloud_sync</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Cloud Platforms</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface font-bold">Cloud SaaS &amp; Digital Solutions</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2 leading-relaxed">
+                Proprietary cloud platforms including VinciFlow ERP and VinciConnect CRM engineered to accelerate operational clarity and streamline organizational digital transformation.
+              </p>
+</div>
+<div class="pt-4 border-t border-outline-variant/20 flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary font-semibold">VinciFlow ERP Suite</span>
+<span class="material-symbols-outlined text-on-surface-variant group-hover:text-secondary transition-colors" data-icon="arrow_outward">arrow_outward</span>
+</div>
+</div>
+</div>
+<!-- Sector 5: Construction & Civil Engineering -->
+<div class="group bg-surface-container-lowest rounded-lg border border-outline-variant/40 hover:border-secondary/60 transition-all duration-300 overflow-hidden shadow-sm flex flex-col justify-between">
+<div class="relative h-44 overflow-hidden border-b border-outline-variant/20">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="An impressive modern commercial architectural edifice under construction with geometric steel framing, post-tensioned concrete, and precision structural safety nets. Clean architectural lighting with twilight sky, deep charcoal tones, and bronze reflective glass accents." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2HVJuQ8nTfm8GOKcQVG8NP4ILwM9TfxjiYprFR7WrpHeo9v4kMUSSF4cLT9JcmbGjGBpqD3O31VlEyiXTht_gmhP3Zs85LC4ggJeqY1o505XIbT8qBzZu-3JDtrFHhWTwfbpL9mOyQIwvPF_LwRlPfCyLdYllrrmMcC8GrLRxjQJKMOfHqgZp7RlhSjHtHZLqjYqQYE-gSm52CZKdbWWdzY-f9H6s3Cimozdo2Yg"/>
+<div class="absolute top-3 right-3 px-2 py-0.5 rounded bg-primary-container text-on-secondary font-label-sm text-label-sm">
+              05 // CIVIL ENGINEERING
+            </div>
+</div>
+<div class="p-space-lg flex-1 flex flex-col justify-between space-y-4">
+<div>
+<div class="flex items-center gap-2 text-secondary mb-1">
+<span class="material-symbols-outlined text-lg" data-icon="domain">domain</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Infrastructure</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface font-bold">Construction &amp; Civil Engineering</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2 leading-relaxed">
+                Executing flagship residential builds across Centenary City and major commercial structures governed by uncompromising structural safety and deadline delivery.
+              </p>
+</div>
+<div class="pt-4 border-t border-outline-variant/20 flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary font-semibold">Centenary City Masterbuilds</span>
+<span class="material-symbols-outlined text-on-surface-variant group-hover:text-secondary transition-colors" data-icon="arrow_outward">arrow_outward</span>
+</div>
+</div>
+</div>
+<!-- Sector 6: Luxury Interior Design & Fit-Outs -->
+<div class="group bg-surface-container-lowest rounded-lg border border-outline-variant/40 hover:border-secondary/60 transition-all duration-300 overflow-hidden shadow-sm flex flex-col justify-between">
+<div class="relative h-44 overflow-hidden border-b border-outline-variant/20">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="A refined executive boardroom and luxury residential penthouse interior showcasing bespoke fluted walnut wall panels, brushed brass and bronze accents, deep midnight navy leather armchairs, and concealed warm cove architectural lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDmsTnkGp9whp2CdD7kPvR6kbVAdk8s2eH9D9BRz_llOGF_NAeHlH9PEcUBOUTxmFyoBWkIf3YypAe0D9jUyTyHPB3THzSkCpPj0IRpFJRugmbvSK2ACBqL6HyTUtdZadodWyHrq2B4JDRROkmyCe9LHZ7FTIrUk7JmBC_hVx2DgapsUu0xJk8bbGgRp51dRfQEXT4oBf8daVIbHsixhVm7tOstMfa1OeqxcIHm-9A"/>
+<div class="absolute top-3 right-3 px-2 py-0.5 rounded bg-primary-container text-on-secondary font-label-sm text-label-sm">
+              06 // ARCHITECTURAL FIT-OUT
+            </div>
+</div>
+<div class="p-space-lg flex-1 flex flex-col justify-between space-y-4">
+<div>
+<div class="flex items-center gap-2 text-secondary mb-1">
+<span class="material-symbols-outlined text-lg" data-icon="architecture">architecture</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Interiors &amp; Fit-Out</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface font-bold">Luxury Interiors &amp; Turnkey Fit-Outs</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2 leading-relaxed">
+                Turnkey architectural finishing for institutional headquarters, executive suites, and luxury residences crafted with warm metallic joinery and bespoke materials.
+              </p>
+</div>
+<div class="pt-4 border-t border-outline-variant/20 flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary font-semibold">Turnkey C-Suite Delivery</span>
+<span class="material-symbols-outlined text-on-surface-variant group-hover:text-secondary transition-colors" data-icon="arrow_outward">arrow_outward</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ========================================================================= -->
+<!-- 4. Key Corporate Benchmarks -->
+<!-- ========================================================================= -->
+<section class="py-space-xl bg-primary-container text-on-secondary relative overflow-hidden">
+<!-- Subtle bronze atmospheric radial highlight -->
+<div class="absolute -top-40 right-0 w-96 h-96 bg-secondary/15 rounded-full blur-3xl pointer-events-none"></div>
+<div class="max-w-7xl mx-auto px-margin-desktop relative z-10">
+<div class="border-b border-outline-variant/20 pb-8 mb-12 flex flex-col md:flex-row md:items-end justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-secondary-fixed uppercase tracking-widest block mb-2">
+            Institutional Standing
+          </span>
+<h2 class="font-headline-lg text-headline-lg text-on-secondary font-semibold">
+            Institutional Scale &amp; Operating Performance
+          </h2>
+</div>
+<p class="font-body-md text-body-md text-inverse-primary max-w-md mt-4 md:mt-0">
+          Quantifiable execution across telecommunication networks, cross-border freight conduits, and physical infrastructure assets.
+        </p>
+</div>
+<!-- Benchmarks Quad Ledger -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter-desktop">
+<!-- Benchmark 1 -->
+<div class="p-6 rounded-lg bg-surface-container-low/5 border border-secondary/20">
+<div class="flex items-center justify-between mb-4">
+<span class="material-symbols-outlined text-secondary-fixed text-2xl" data-icon="hub">hub</span>
+<span class="px-2 py-0.5 rounded text-[10px] font-label-sm bg-secondary/20 text-secondary-fixed">DIVERSIFIED</span>
+</div>
+<div class="font-headline-lg text-headline-lg font-bold text-on-secondary tracking-tight">5+</div>
+<div class="font-title-sm text-title-sm text-secondary-fixed mt-1 font-semibold">Operating Verticals</div>
+<p class="font-body-sm text-body-sm text-inverse-primary/80 mt-2">
+            Independent divisional leadership orchestrating coherent multi-sector market share.
+          </p>
+</div>
+<!-- Benchmark 2 -->
+<div class="p-6 rounded-lg bg-surface-container-low/5 border border-secondary/20">
+<div class="flex items-center justify-between mb-4">
+<span class="material-symbols-outlined text-secondary-fixed text-2xl" data-icon="speed">speed</span>
+<span class="px-2 py-0.5 rounded text-[10px] font-label-sm bg-secondary/20 text-secondary-fixed">FIBRE SLA</span>
+</div>
+<div class="font-headline-lg text-headline-lg font-bold text-on-secondary tracking-tight">99.9%</div>
+<div class="font-title-sm text-title-sm text-secondary-fixed mt-1 font-semibold">Optical Network SLA</div>
+<p class="font-body-sm text-body-sm text-inverse-primary/80 mt-2">
+            Zero-jitter carrier grade redundancy guaranteed across our metro and backhaul paths.
+          </p>
+</div>
+<!-- Benchmark 3 -->
+<div class="p-6 rounded-lg bg-surface-container-low/5 border border-secondary/20">
+<div class="flex items-center justify-between mb-4">
+<span class="material-symbols-outlined text-secondary-fixed text-2xl" data-icon="public">public</span>
+<span class="px-2 py-0.5 rounded text-[10px] font-label-sm bg-secondary/20 text-secondary-fixed">DUAL AXIS</span>
+</div>
+<div class="font-headline-lg text-headline-lg font-bold text-on-secondary tracking-tight">2 Zones</div>
+<div class="font-title-sm text-title-sm text-secondary-fixed mt-1 font-semibold">Direct Corridor Reach</div>
+<p class="font-body-sm text-body-sm text-inverse-primary/80 mt-2">
+            Proprietary trade bridges seamlessly connecting West African markets with Scandinavian nodes.
+          </p>
+</div>
+<!-- Benchmark 4 -->
+<div class="p-6 rounded-lg bg-surface-container-low/5 border border-secondary/20">
+<div class="flex items-center justify-between mb-4">
+<span class="material-symbols-outlined text-secondary-fixed text-2xl" data-icon="verified">verified</span>
+<span class="px-2 py-0.5 rounded text-[10px] font-label-sm bg-secondary/20 text-secondary-fixed">QUALITY</span>
+</div>
+<div class="font-headline-lg text-headline-lg font-bold text-on-secondary tracking-tight">ISO</div>
+<div class="font-title-sm text-title-sm text-secondary-fixed mt-1 font-semibold">Aligned Safety &amp; QA</div>
+<p class="font-body-sm text-body-sm text-inverse-primary/80 mt-2">
+            Rigorous international civil compliance and materials testing protocols on every site.
+          </p>
+</div>
+</div>
+</div>
+</section>
+<!-- ========================================================================= -->
+<!-- 5. Group Executive Contact & Centenary City Headquarters -->
+<!-- ========================================================================= -->
+<section class="py-space-xl bg-surface relative" id="hq-contact">
+<div class="max-w-7xl mx-auto px-margin-desktop">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop items-start">
+<!-- Left Column: Executive Headquarters Dossier -->
+<div class="lg:col-span-5 space-y-6">
+<div class="space-y-2">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest block">
+              Direct Engagement
+            </span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-semibold">
+              Engage Group HQ
+            </h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Submit formal RFQ, partnership, tender submissions, or divisional procurement inquiries directly to the executive secretariat.
+            </p>
+</div>
+<!-- Structured Location & Phone Ledger -->
+<div class="p-space-lg rounded-lg bg-surface-container-low border border-outline-variant/40 space-y-6">
+<div class="flex items-start gap-4">
+<div class="w-10 h-10 rounded bg-primary-container text-secondary flex items-center justify-center shrink-0 border border-secondary/30">
+<span class="material-symbols-outlined text-xl" data-icon="apartment">apartment</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold block">Centenary City Headquarters</span>
+<p class="font-title-sm text-title-sm text-on-surface font-semibold mt-1">
+                  Plot 80, Jedidiah Gardens Centenary City,
+                </p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                  Enugu 400706, Nigeria
+                </p>
+</div>
+</div>
+<div class="flex items-start gap-4 pt-4 border-t border-outline-variant/30">
+<div class="w-10 h-10 rounded bg-primary-container text-secondary flex items-center justify-center shrink-0 border border-secondary/30">
+<span class="material-symbols-outlined text-xl" data-icon="phone_in_talk">phone_in_talk</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold block">Executive Telephone Line</span>
+<a class="font-title-md text-title-md text-on-surface font-bold hover:text-secondary transition-colors block mt-1" href="tel:07013476095">
+                  0701 347 6095
+                </a>
+<span class="font-body-sm text-body-sm text-on-surface-variant">
+                  Monday to Friday: 08:00 – 17:00 WAT
+                </span>
+</div>
+</div>
+<div class="flex items-start gap-4 pt-4 border-t border-outline-variant/30">
+<div class="w-10 h-10 rounded bg-primary-container text-secondary flex items-center justify-center shrink-0 border border-secondary/30">
+<span class="material-symbols-outlined text-xl" data-icon="alternate_email">alternate_email</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold block">Corporate Correspondence</span>
+<p class="font-title-sm text-title-sm text-on-surface font-semibold mt-1">
+                  corporate@vinciandvee.com
+                </p>
+<span class="font-body-sm text-body-sm text-on-surface-variant">
+                  Direct encrypted route to executive desk
+                </span>
+</div>
+</div>
+</div>
+<!-- Headquarters Architectural Visual Anchor -->
+<div class="relative h-48 rounded-lg overflow-hidden border border-outline-variant/30 shadow-sm">
+<img class="w-full h-full object-cover" data-alt="Modern administrative corporate entrance of Jedidiah Gardens in Centenary City, showcasing structured landscaped driveways, warm architectural exterior up-lighting, stone masonry, and deep executive navy bronze signage." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCAVKv0jIVB0l44Lfn1OC8Cm5w-ePYMowaz2PgYXMcYqyYA99Z-PSTTcnrSNxYlf5nv-mXU-wJsq6PlFWSK5zQdl5hI5rgxNOP1JrC97c1BKFGL6l-_EqQhiQd1_WMqklpsabj9m7rqL7jBIYhQG3D_EjEigVrWpyW2w4opNLysj5TEwsmoVBHE7Ak-5GCTGCoI6iE0-YmkbhoMJ2zaYgnWUu-EwKsmNItbyPKW5LU"/>
+<div class="absolute inset-0 bg-primary-container/20"></div>
+<div class="absolute bottom-3 left-3 px-3 py-1 bg-surface-container-lowest/90 backdrop-blur-sm rounded text-primary-container font-label-sm text-label-sm font-semibold border border-outline-variant/40">
+              Jedidiah Gardens Campus // Enugu
+            </div>
+</div>
+</div>
+<!-- Right Column: Comprehensive RFQ & Tender Inquiry Dispatch Form -->
+<div class="lg:col-span-7">
+<div class="p-space-lg rounded-lg bg-surface-container-lowest border border-outline-variant/50 shadow-executive-elevation">
+<div class="mb-6 pb-4 border-b border-outline-variant/20">
+<h3 class="font-title-md text-title-md text-on-surface font-bold">
+                Corporate Dispatch &amp; RFQ Tender Form
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+                Please specify your sector requirement for expedited routing to the corresponding division director.
+              </p>
+</div>
+<form class="space-y-4" onsubmit="event.preventDefault(); alert('Inquiry recorded. The Executive Secretariat will connect shortly.');">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface uppercase tracking-wider mb-1.5">
+                    Full Legal Name / Title
+                  </label>
+<input class="w-full px-3.5 py-2.5 rounded bg-surface border border-outline-variant/60 text-on-surface font-body-sm text-body-sm focus:border-secondary focus:ring-1 focus:ring-secondary outline-none transition" placeholder="e.g. Chief Executive / Director" required="" type="text"/>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface uppercase tracking-wider mb-1.5">
+                    Official Corporate Email
+                  </label>
+<input class="w-full px-3.5 py-2.5 rounded bg-surface border border-outline-variant/60 text-on-surface font-body-sm text-body-sm focus:border-secondary focus:ring-1 focus:ring-secondary outline-none transition" placeholder="executive@institution.com" required="" type="email"/>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface uppercase tracking-wider mb-1.5">
+                    Direct Telephone
+                  </label>
+<input class="w-full px-3.5 py-2.5 rounded bg-surface border border-outline-variant/60 text-on-surface font-body-sm text-body-sm focus:border-secondary focus:ring-1 focus:ring-secondary outline-none transition" placeholder="+234 / +46 ..." required="" type="tel"/>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface uppercase tracking-wider mb-1.5">
+                    Sector Specification
+                  </label>
+<select class="w-full px-3.5 py-2.5 rounded bg-surface border border-outline-variant/60 text-on-surface font-body-sm text-body-sm focus:border-secondary focus:ring-1 focus:ring-secondary outline-none transition">
+<option>Telecom &amp; Fibre Installation</option>
+<option>Sweden Shipping &amp; Logistics</option>
+<option>Tyre Wholesale &amp; Retail</option>
+<option>Cloud SaaS Platforms (VinciFlow / CRM)</option>
+<option>Construction &amp; Civil Engineering</option>
+<option>Luxury Interiors &amp; Fit-Outs</option>
+<option>Group Executive Partnership / Tender</option>
+</select>
+</div>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface uppercase tracking-wider mb-1.5">
+                  Scope of Tender / Engagement Details
+                </label>
+<textarea class="w-full px-3.5 py-2.5 rounded bg-surface border border-outline-variant/60 text-on-surface font-body-sm text-body-sm focus:border-secondary focus:ring-1 focus:ring-secondary outline-none transition resize-none" placeholder="Outline project coordinates, volumes, SLA metrics, or architectural specifications..." required="" rows="4"></textarea>
+</div>
+<div class="pt-2 flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary text-sm" data-icon="lock">lock</span>
+                  Confidential Corporate Routing
+                </span>
+<button class="px-6 py-3 rounded bg-primary-container text-on-secondary font-title-sm text-title-sm font-semibold border border-secondary/40 hover:border-secondary hover:bg-tertiary transition-all duration-150 shadow-sm" type="submit">
+                  Dispatch to HQ Secretariat
+                </button>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ========================================================================= -->
+<!-- 6. Desktop Conglomerate Footer (Shared Component from JSON) -->
+<!-- ========================================================================= -->
+<footer class="w-full bg-surface-container-low dark:bg-primary-container border-t border-outline-variant/30 dark:border-outline/20">
+<div class="max-w-7xl mx-auto px-margin-desktop py-space-xl">
+<!-- Upper Footer Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 mb-12">
+<!-- Conglomerate Identity & Mission -->
+<div class="lg:col-span-5 space-y-4">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded bg-primary-container flex items-center justify-center border border-secondary/40">
+<span class="text-secondary font-headline-sm font-bold text-headline-sm tracking-tighter">V</span>
+</div>
+<span class="font-headline-sm text-headline-sm font-bold tracking-tight text-primary dark:text-inverse-primary">
+              Vinci &amp; Vee Group
+            </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant dark:text-outline-variant max-w-sm leading-relaxed">
+            Achieving Dreams by making Connection. A diversified sovereign entity executing long-term infrastructure, maritime logistics, software ecosystems, and high-precision civil engineering.
+          </p>
+<div class="pt-2 flex items-center gap-4 text-on-surface-variant dark:text-outline-variant">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">
+              Headquarters: Centenary City, Enugu
+            </span>
+</div>
+</div>
+<!-- Sector Links Column -->
+<div class="lg:col-span-4 space-y-3">
+<h4 class="font-title-md text-title-md font-bold text-primary dark:text-inverse-primary">
+            Conglomerate Portfolios
+          </h4>
+<ul class="space-y-2">
+<li>
+<a class="text-on-surface-variant dark:text-outline-variant font-body-sm text-body-sm hover:text-on-surface dark:hover:text-inverse-on-surface transition-colors duration-150" href="#sectors">
+                Telecom &amp; Fibre
+              </a>
+</li>
+<li>
+<a class="text-on-surface-variant dark:text-outline-variant font-body-sm text-body-sm hover:text-on-surface dark:hover:text-inverse-on-surface transition-colors duration-150" href="#sectors">
+                Sweden Shipping
+              </a>
+</li>
+<li>
+<a class="text-on-surface-variant dark:text-outline-variant font-body-sm text-body-sm hover:text-on-surface dark:hover:text-inverse-on-surface transition-colors duration-150" href="#sectors">
+                Tyre Distribution
+              </a>
+</li>
+<li>
+<a class="text-on-surface-variant dark:text-outline-variant font-body-sm text-body-sm hover:text-on-surface dark:hover:text-inverse-on-surface transition-colors duration-150" href="#sectors">
+                Cloud SaaS
+              </a>
+</li>
+<li>
+<a class="text-on-surface-variant dark:text-outline-variant font-body-sm text-body-sm hover:text-on-surface dark:hover:text-inverse-on-surface transition-colors duration-150" href="#sectors">
+                Construction &amp; Interiors
+              </a>
+</li>
+</ul>
+</div>
+<!-- Corporate Governance & Compliance Column -->
+<div class="lg:col-span-3 space-y-3">
+<h4 class="font-title-md text-title-md font-bold text-primary dark:text-inverse-primary">
+            Institutional Oversight
+          </h4>
+<ul class="space-y-2">
+<li>
+<a class="text-secondary dark:text-secondary-fixed font-title-sm text-title-sm" href="#overview">
+                Overview
+              </a>
+</li>
+<li>
+<a class="text-on-surface-variant dark:text-outline-variant font-body-sm text-body-sm hover:text-on-surface dark:hover:text-inverse-on-surface transition-colors duration-150" href="#hq-contact">
+                Corporate Governance
+              </a>
+</li>
+<li>
+<a class="text-on-surface-variant dark:text-outline-variant font-body-sm text-body-sm hover:text-on-surface dark:hover:text-inverse-on-surface transition-colors duration-150" href="#hq-contact">
+                Investor Relations
+              </a>
+</li>
+<li>
+<a class="text-on-surface-variant dark:text-outline-variant font-body-sm text-body-sm hover:text-on-surface dark:hover:text-inverse-on-surface transition-colors duration-150" href="#hq-contact">
+                Legal &amp; Compliance
+              </a>
+</li>
+<li>
+<a class="text-on-surface-variant dark:text-outline-variant font-body-sm text-body-sm hover:text-on-surface dark:hover:text-inverse-on-surface transition-colors duration-150" href="#hq-contact">
+                Privacy Notice
+              </a>
+</li>
+</ul>
+</div>
+</div>
+<!-- Verbatim Mandatory Footer Copyright & Legal Statement -->
+<div class="pt-8 border-t border-outline-variant/30 dark:border-outline/20 flex flex-col md:flex-row items-center justify-between text-center md:text-left gap-4">
+<p class="font-body-sm text-body-sm text-on-surface-variant dark:text-outline-variant max-w-4xl">
+          © 2025 Vinci and Vee Group. Achieving Dreams by making Connection. All rights reserved. Plot 80, Jedidiah Gardens Centenary City, Enugu 400706. Tel: 0701 347 6095
+        </p>
+<div class="flex items-center gap-3 shrink-0">
+<span class="px-2.5 py-1 rounded bg-surface dark:bg-surface-container-lowest/10 border border-outline-variant/30 font-label-sm text-label-sm text-secondary">
+            ISO / CAC REGISTERED
+          </span>
+</div>
+</div>
+</div>
+</footer>
+</body></html>

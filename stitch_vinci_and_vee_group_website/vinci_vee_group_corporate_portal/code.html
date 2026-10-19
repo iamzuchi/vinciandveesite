@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Vinci &amp; Vee Group | Achieving Dreams by making Connection</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,300..900;1,300..900&amp;family=Space+Grotesk:wght@300..700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS with Forms & Container Queries -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "tertiary": "#000000",
+            "surface-tint": "#565e74",
+            "on-tertiary-container": "#b87500",
+            "surface-bright": "#f8f9ff",
+            "inverse-on-surface": "#eaf1ff",
+            "secondary-container": "#5bb8fe",
+            "surface-container-highest": "#d3e4fe",
+            "on-surface-variant": "#45464d",
+            "secondary": "#006398",
+            "surface-container": "#e5eeff",
+            "surface-container-low": "#eff4ff",
+            "tertiary-fixed-dim": "#ffb95f",
+            "on-tertiary-fixed-variant": "#653e00",
+            "surface-container-high": "#dce9ff",
+            "error": "#ba1a1a",
+            "on-error": "#ffffff",
+            "tertiary-container": "#2a1700",
+            "surface": "#f8f9ff",
+            "primary-fixed": "#dae2fd",
+            "on-tertiary": "#ffffff",
+            "surface-dim": "#cbdbf5",
+            "on-primary-fixed-variant": "#3f465c",
+            "surface-variant": "#d3e4fe",
+            "on-error-container": "#93000a",
+            "surface-container-lowest": "#ffffff",
+            "on-secondary-container": "#00476e",
+            "primary": "#000000",
+            "on-primary-container": "#7c839b",
+            "on-primary-fixed": "#131b2e",
+            "primary-container": "#131b2e",
+            "error-container": "#ffdad6",
+            "on-secondary-fixed": "#001d31",
+            "on-background": "#0b1c30",
+            "outline": "#76777d",
+            "tertiary-fixed": "#ffddb8",
+            "on-tertiary-fixed": "#2a1700",
+            "on-primary": "#ffffff",
+            "secondary-fixed": "#cce5ff",
+            "secondary-fixed-dim": "#93ccff",
+            "inverse-primary": "#bec6e0",
+            "on-secondary": "#ffffff",
+            "background": "#f8f9ff",
+            "primary-fixed-dim": "#bec6e0",
+            "inverse-surface": "#213145",
+            "on-surface": "#0b1c30",
+            "outline-variant": "#c6c6cd",
+            "on-secondary-fixed-variant": "#004b73"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.125rem",
+            "lg": "0.25rem",
+            "xl": "0.5rem",
+            "full": "0.75rem"
+          },
+          "spacing": {
+            "margin": "3rem",
+            "gutter-mobile": "1rem",
+            "margin-mobile": "1.25rem",
+            "space-xs": "0.25rem",
+            "space-xl": "2.5rem",
+            "space-md": "1rem",
+            "space-lg": "1.5rem",
+            "gutter": "1.5rem",
+            "space-sm": "0.5rem"
+          },
+          "fontFamily": {
+            "label-sm": ["Hanken Grotesk"],
+            "body-sm": ["Hanken Grotesk"],
+            "display-mobile": ["Space Grotesk"],
+            "label-md": ["Hanken Grotesk"],
+            "label-lg": ["Hanken Grotesk"],
+            "headline-lg-mobile": ["Space Grotesk"],
+            "title-md": ["Hanken Grotesk"],
+            "title-lg": ["Hanken Grotesk"],
+            "headline-sm": ["Space Grotesk"],
+            "display": ["Space Grotesk"],
+            "headline-md": ["Space Grotesk"],
+            "body-md": ["Hanken Grotesk"],
+            "body-lg": ["Hanken Grotesk"],
+            "headline-lg": ["Space Grotesk"]
+          },
+          "fontSize": {
+            "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.05em", "fontWeight": "700" }],
+            "body-sm": ["12px", { "lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "400" }],
+            "display-mobile": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+            "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.03em", "fontWeight": "600" }],
+            "label-lg": ["14px", { "lineHeight": "18px", "letterSpacing": "0.02em", "fontWeight": "600" }],
+            "headline-lg-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "title-md": ["16px", { "lineHeight": "22px", "letterSpacing": "0em", "fontWeight": "600" }],
+            "title-lg": ["18px", { "lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "headline-sm": ["20px", { "lineHeight": "28px", "letterSpacing": "0em", "fontWeight": "600" }],
+            "display": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.03em", "fontWeight": "700" }],
+            "headline-md": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "body-md": ["14px", { "lineHeight": "22px", "letterSpacing": "0em", "fontWeight": "400" }],
+            "body-lg": ["16px", { "lineHeight": "26px", "letterSpacing": "0em", "fontWeight": "400" }],
+            "headline-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "600" }]
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+    .material-symbols-outlined[data-weight="fill"] {
+      font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+    .safe-bottom {
+      padding-bottom: max(0.5rem, env(safe-area-inset-bottom));
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-surface antialiased font-body-md text-body-md min-h-screen flex flex-col selection:bg-secondary-fixed selection:text-on-secondary-fixed">
+<!-- ================= TOP APP BAR (Shared Component) ================= -->
+<!-- Applied style_component_shape, style_bg_color, style_separation_logic (border removed per Shell Border Ban rule: subtle shadow instead), style_shell_layout -->
+<header class="sticky top-0 z-40 w-full bg-surface-container-lowest shadow-sm">
+<div class="max-w-7xl mx-auto flex justify-between items-center px-4 h-16">
+<!-- Leading Menu Trigger with Navigation Drawer Toggle -->
+<div class="flex items-center gap-3">
+<button aria-label="Open Navigation Drawer" class="p-2 rounded-lg text-primary hover:bg-surface-container-high transition-colors duration-150 active:scale-95 transition-transform duration-150 flex items-center justify-center" id="open-drawer-btn">
+<span class="material-symbols-outlined">menu</span>
+</button>
+<!-- Brand Title & Motto Anchor -->
+<a class="flex flex-col" href="#overview">
+<span class="text-title-lg font-title-lg font-bold text-on-surface tracking-tight leading-tight">Vinci &amp; Vee Group</span>
+<span class="text-label-sm font-label-sm text-secondary tracking-widest hidden sm:inline-block">ACHIEVING DREAMS BY MAKING CONNECTION</span>
+</a>
+</div>
+<!-- Desktop Nav Hub Links (hidden md:flex) -->
+<nav class="hidden md:flex items-center space-x-6 text-label-md font-label-md text-on-surface-variant">
+<a class="text-secondary font-bold hover:text-secondary transition-colors duration-150" href="#overview">Overview</a>
+<a class="hover:text-secondary transition-colors duration-150" href="#sectors">Enterprises</a>
+<a class="hover:text-secondary transition-colors duration-150" href="#pillars">Pillars</a>
+<a class="hover:text-secondary transition-colors duration-150" href="#metrics">Operations</a>
+<a class="hover:text-secondary transition-colors duration-150" href="#contact">Contact &amp; HQ</a>
+</nav>
+<!-- Trailing Action: Contact Direct Hotline -->
+<div class="flex items-center gap-3">
+<a class="inline-flex items-center gap-2 bg-surface-container px-3 py-2 rounded-xl text-secondary hover:bg-surface-container-high transition-colors duration-150 active:scale-95 text-label-md font-label-md font-semibold" href="tel:07013476095">
+<span class="material-symbols-outlined text-secondary">phone_in_talk</span>
+<span class="hidden sm:inline">0701 347 6095</span>
+</a>
+</div>
+</div>
+</header>
+<!-- ================= NAVIGATION DRAWER (Shared Component) ================= -->
+<div class="fixed inset-0 bg-primary/40 z-50 opacity-0 pointer-events-none transition-opacity duration-300" id="drawer-backdrop"></div>
+<aside class="fixed inset-y-0 left-0 w-80 z-50 bg-surface-container-lowest shadow-xl -translate-x-full transition-transform duration-300 flex flex-col h-full p-6 space-y-4" id="nav-drawer">
+<div class="flex items-center justify-between pb-4 border-b border-outline-variant">
+<div>
+<h2 class="text-title-lg font-title-lg font-bold text-on-surface">Vinci &amp; Vee Group</h2>
+<p class="text-label-sm font-label-sm text-secondary uppercase font-semibold">Achieving Dreams by making Connection</p>
+</div>
+<button class="p-2 text-on-surface-variant hover:bg-surface-container rounded-lg" id="close-drawer-btn">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<div class="text-label-md font-label-md text-on-surface-variant font-semibold px-2">CORPORATE DIVISIONS</div>
+<nav class="flex-1 space-y-1 overflow-y-auto">
+<a class="flex items-center gap-3 px-4 py-3 rounded-lg bg-surface-container text-secondary font-bold transition-colors duration-150" href="#overview">
+<span class="material-symbols-outlined">corporate_fare</span>
+<span class="text-label-lg font-label-lg">Group Corporate</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-lg text-on-surface-variant hover:bg-surface-container transition-colors duration-150" href="#telecom">
+<span class="material-symbols-outlined">router</span>
+<span class="text-label-lg font-label-lg">Telecom &amp; Fibre</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-lg text-on-surface-variant hover:bg-surface-container transition-colors duration-150" href="#shipping">
+<span class="material-symbols-outlined">anchor</span>
+<span class="text-label-lg font-label-lg">Shipping &amp; Sweden Route</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-lg text-on-surface-variant hover:bg-surface-container transition-colors duration-150" href="#tyres">
+<span class="material-symbols-outlined">directions_car</span>
+<span class="text-label-lg font-label-lg">Tyre Wholesale &amp; Retail</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-lg text-on-surface-variant hover:bg-surface-container transition-colors duration-150" href="#saas">
+<span class="material-symbols-outlined">cloud_sync</span>
+<span class="text-label-lg font-label-lg">Cloud SaaS Solutions</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-lg text-on-surface-variant hover:bg-surface-container transition-colors duration-150" href="#contact">
+<span class="material-symbols-outlined">location_on</span>
+<span class="text-label-lg font-label-lg">Contact &amp; Enugu HQ</span>
+</a>
+</nav>
+<div class="pt-4 border-t border-outline-variant text-body-sm font-body-sm text-outline">
+      Plot 80, Jedidiah Gardens, Centenary City, Enugu.
+    </div>
+</aside>
+<!-- ================= MAIN CONTENT CANVAS ================= -->
+<main class="flex-grow">
+<!-- Hero Section with Architectural Rigor & Technological Edge -->
+<section class="relative overflow-hidden bg-surface-bright pt-8 pb-16 md:py-24 border-b border-surface-container-high" id="overview">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+<!-- Hero Copy -->
+<div class="lg:col-span-7 space-y-6">
+<!-- Strategic Badge -->
+<div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-container text-secondary border border-secondary-fixed">
+<span class="w-2 h-2 rounded-full bg-secondary animate-ping"></span>
+<span class="text-label-sm font-label-sm uppercase tracking-wider font-bold">Consortium Ecosystem</span>
+<span class="text-outline text-label-sm">|</span>
+<span class="text-label-sm font-label-sm text-on-surface">West Africa &amp; Sweden Transit Lines</span>
+</div>
+<!-- Primary Headline -->
+<div class="space-y-3">
+<h1 class="font-display-mobile md:font-display text-display-mobile md:text-display text-on-surface tracking-tight leading-tight">
+                Achieving Dreams by making <span class="text-secondary underline decoration-secondary-container decoration-4 underline-offset-8">Connection</span>.
+              </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl leading-relaxed">
+                We are a diversified technology and infrastructure company delivering solutions across fibre optic installation, Software as a Service (SaaS), tyre wholesale and retail, and construction.
+              </p>
+</div>
+<!-- Call to Actions -->
+<div class="flex flex-wrap items-center gap-4 pt-2">
+<a class="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-secondary text-on-secondary font-label-lg text-label-lg font-semibold hover:bg-on-secondary-container shadow-sm hover:shadow transition-all duration-150 active:scale-95" href="#sectors">
+                Explore Core Verticals
+                <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+<a class="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-surface-container-lowest border border-outline-variant text-on-surface font-label-lg text-label-lg font-semibold hover:bg-surface-container-low transition-all duration-150 active:scale-95" href="#contact">
+<span class="material-symbols-outlined">business</span>
+                Partner With Us
+              </a>
+</div>
+<!-- Live Network Telemetry Strip -->
+<div class="flex items-center gap-6 pt-4 text-body-sm font-body-sm text-on-surface-variant">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+<span class="font-semibold text-on-surface">Carrier-grade Uptime:</span> 99.98%
+              </div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-base">verified</span>
+<span>ISO Aligned Standards</span>
+</div>
+</div>
+</div>
+<!-- Hero Architectural Visual / Card Matrix -->
+<div class="lg:col-span-5">
+<div class="relative bg-surface-container-lowest rounded-xl p-3 border border-outline-variant shadow-sm space-y-3">
+<!-- Visual Framing Element -->
+<div class="relative h-64 sm:h-80 w-full overflow-hidden rounded-lg bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="A sophisticated architectural and technological operations center displaying illuminated optical fibre maps and European logistics shipping routes. The setting is clean, modern, and high-contrast, bathed in natural morning light balanced with subtle cyan and deep slate monitors. The style embodies precision engineering and corporate infrastructure excellence." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAnbSeo32n6lzteHkRVl9-PtSx1eJjtTDNrafYGbPxxF53h4v4LzvlBfpXEvS3idqjDi5qDd4-Om5c0b3QZeQ6gHmzodb3OjvM7ekY8AbgwQhA5IGVf1MA379MEIQnFvEX-MmeFHafJhSI3HZRfvrylzP4-OAMzL_62aCGdXxrS2DvrowCwPy-C8l7ZI44U8Lc-Qzepalo7k8plXevpwGa2sJcyq9p6xtfdXjQUE5A"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/60 via-transparent to-transparent flex items-end p-4">
+<div class="text-on-primary space-y-1">
+<span class="px-2 py-0.5 rounded text-label-sm font-label-sm bg-secondary uppercase font-bold tracking-wider">Multi-Domain Fleet</span>
+<h3 class="text-title-lg font-title-lg font-bold">Integrated Infrastructure Command</h3>
+</div>
+</div>
+</div>
+<!-- Real-time corridor telemetry snippet -->
+<div class="grid grid-cols-2 gap-2 p-2 bg-surface-container-low rounded-lg text-body-sm font-body-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary">lan</span>
+<div>
+<div class="text-label-sm font-label-sm text-outline">METRO FIBRE</div>
+<div class="font-bold text-on-surface">Enugu &amp; Regional</div>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-on-tertiary-container">sailing</span>
+<div>
+<div class="text-label-sm font-label-sm text-outline">MARITIME FREIGHT</div>
+<div class="font-bold text-on-surface">Sweden Corridor</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ================= QUICK STATS BAR ================= -->
+<section class="bg-surface-container-lowest border-y border-surface-container-high py-8" id="metrics">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+<div class="p-4 rounded-xl bg-surface-bright border border-surface-container-high flex flex-col items-start">
+<span class="text-headline-lg font-headline-lg font-bold text-secondary">5+</span>
+<span class="text-title-md font-title-md text-on-surface font-semibold">Core Verticals</span>
+<span class="text-body-sm font-body-sm text-outline">Telecom, Tech, Logistics, Supply &amp; Build</span>
+</div>
+<div class="p-4 rounded-xl bg-surface-bright border border-surface-container-high flex flex-col items-start">
+<span class="text-headline-lg font-headline-lg font-bold text-secondary">99.9%</span>
+<span class="text-title-md font-title-md text-on-surface font-semibold">Network Uptime</span>
+<span class="text-body-sm font-body-sm text-outline">Optical fibre SLA reliability</span>
+</div>
+<div class="p-4 rounded-xl bg-surface-bright border border-surface-container-high flex flex-col items-start">
+<span class="text-headline-lg font-headline-lg font-bold text-on-tertiary-container">100%</span>
+<span class="text-title-md font-title-md text-on-surface font-semibold">Quality Assured</span>
+<span class="text-body-sm font-body-sm text-outline">Tier-1 tyres &amp; certified builds</span>
+</div>
+<div class="p-4 rounded-xl bg-surface-bright border border-surface-container-high flex flex-col items-start">
+<span class="text-headline-lg font-headline-lg font-bold text-on-surface">Dual Reach</span>
+<span class="text-title-md font-title-md text-on-surface font-semibold">West Africa &amp; Europe</span>
+<span class="text-body-sm font-body-sm text-outline">Direct Sweden shipping routes</span>
+</div>
+</div>
+</div>
+</section>
+<!-- ================= MISSION & CORE PILLARS ================= -->
+<section class="py-16 md:py-20 bg-surface" id="pillars">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+<div class="max-w-3xl space-y-3">
+<div class="text-label-md font-label-md uppercase tracking-wider text-secondary font-bold">Group Foundation</div>
+<h2 class="text-headline-md md:text-headline-lg font-headline-md md:font-headline-lg text-on-surface">
+            Rooted in Professionalism, Driven by Innovation, Centered on You.
+          </h2>
+<p class="text-body-lg font-body-lg text-on-surface-variant">
+            Our mission is to bridge infrastructural divides and catalyze business growth through dependable connectivity, resilient freight links, reliable industrial materials, and agile cloud software.
+          </p>
+</div>
+<!-- The 3 Pillars Bento Display -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Pillar 1: Professionalism -->
+<div class="p-6 rounded-xl bg-surface-container-lowest border border-outline-variant shadow-sm hover:border-secondary transition-all duration-200 space-y-4">
+<div class="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-2xl">verified_user</span>
+</div>
+<div class="space-y-2">
+<h3 class="text-title-lg font-title-lg font-bold text-on-surface">Professionalism</h3>
+<p class="text-body-md font-body-md text-on-surface-variant leading-relaxed">
+                Stringent governance, regulatory adherence across international jurisdictions, safety protocols in construction, and carrier-grade SLAs across all physical deployments.
+              </p>
+</div>
+<div class="pt-2 flex items-center gap-2 text-label-md font-label-md text-secondary font-semibold">
+<span>Standard of Integrity</span>
+<span class="material-symbols-outlined text-sm">check_circle</span>
+</div>
+</div>
+<!-- Pillar 2: Innovation -->
+<div class="p-6 rounded-xl bg-surface-container-lowest border border-outline-variant shadow-sm hover:border-secondary transition-all duration-200 space-y-4">
+<div class="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-2xl">lightbulb</span>
+</div>
+<div class="space-y-2">
+<h3 class="text-title-lg font-title-lg font-bold text-on-surface">Innovation</h3>
+<p class="text-body-md font-body-md text-on-surface-variant leading-relaxed">
+                Pioneering high-density optical routing, intelligent microservice SaaS architectures, and automated Swedish freight corridor tracking designed to eliminate bottlenecks.
+              </p>
+</div>
+<div class="pt-2 flex items-center gap-2 text-label-md font-label-md text-secondary font-semibold">
+<span>Future-Facing Engineering</span>
+<span class="material-symbols-outlined text-sm">bolt</span>
+</div>
+</div>
+<!-- Pillar 3: Customer-centric execution -->
+<div class="p-6 rounded-xl bg-surface-container-lowest border border-outline-variant shadow-sm hover:border-secondary transition-all duration-200 space-y-4">
+<div class="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-2xl">groups</span>
+</div>
+<div class="space-y-2">
+<h3 class="text-title-lg font-title-lg font-bold text-on-surface">Customer-Centric Execution</h3>
+<p class="text-body-md font-body-md text-on-surface-variant leading-relaxed">
+                Tailored SLA contracts for enterprises, rapid turnaround times for wholesale tyre fleets, transparent clearing processes, and dedicated regional support at our Enugu headquarters.
+              </p>
+</div>
+<div class="pt-2 flex items-center gap-2 text-label-md font-label-md text-secondary font-semibold">
+<span>Uncompromised Partnership</span>
+<span class="material-symbols-outlined text-sm">handshake</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ================= INTERACTIVE SECTOR NAVIGATION GRID (All 5 Core Divisions) ================= -->
+<section class="py-16 md:py-24 bg-surface-container-low border-y border-surface-container-high" id="sectors">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
+<div class="space-y-2 max-w-2xl">
+<div class="text-label-md font-label-md uppercase tracking-wider text-secondary font-bold">Operational Verticals</div>
+<h2 class="text-headline-md md:text-headline-lg font-headline-md md:font-headline-lg text-on-surface">
+              Multi-Industry Portfolio Built for Seamless Scale
+            </h2>
+<p class="text-body-md font-body-md text-on-surface-variant">
+              Every vertical within Vinci and Vee Group operates with autonomous operational agility while sharing consolidated supply chains and corporate governance.
+            </p>
+</div>
+<div class="text-label-sm font-label-sm text-outline uppercase font-semibold">
+            5 Distinct Capabilities • Universal Integrity
+          </div>
+</div>
+<!-- 5 Division Bento Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- Division 1: Telecom & Fibre Optics (Spans 2 cols on lg) -->
+<div class="lg:col-span-2 rounded-xl bg-surface-container-lowest border border-outline-variant shadow-sm hover:shadow-md transition-all duration-200 overflow-hidden flex flex-col justify-between" id="telecom">
+<div class="h-1 bg-secondary w-full"></div>
+<div class="p-6 md:p-8 space-y-6">
+<div class="flex items-center justify-between">
+<span class="px-3 py-1 rounded text-label-sm font-label-sm bg-surface-container text-secondary font-bold uppercase tracking-wider">
+                  Division 01 • Connectivity
+                </span>
+<span class="material-symbols-outlined text-secondary text-2xl">router</span>
+</div>
+<div class="space-y-3">
+<h3 class="text-headline-sm font-headline-sm font-bold text-on-surface">Telecom &amp; Fibre Optics</h3>
+<p class="text-body-lg font-body-lg text-on-surface-variant leading-relaxed">
+                  End-to-end fibre deployment, high-speed connectivity for residential, commercial &amp; enterprise clients. From trenching and dark-fibre leasing to multi-gigabit enterprise interconnects.
+                </p>
+</div>
+<!-- Metrics Mini Grid -->
+<div class="grid grid-cols-3 gap-4 pt-4 border-t border-surface-container-high text-body-sm font-body-sm">
+<div>
+<div class="text-outline text-label-sm font-label-sm">SPEED CAP</div>
+<div class="font-bold text-on-surface">Up to 10 Gbps</div>
+</div>
+<div>
+<div class="text-outline text-label-sm font-label-sm">DEPLOYMENT</div>
+<div class="font-bold text-on-surface">FTTH &amp; FTTB</div>
+</div>
+<div>
+<div class="text-outline text-label-sm font-label-sm">SLA RESPONSE</div>
+<div class="font-bold text-on-surface">&lt; 4 Hours</div>
+</div>
+</div>
+</div>
+<div class="px-6 md:px-8 py-4 bg-surface-bright border-t border-outline-variant flex items-center justify-between">
+<span class="text-label-md font-label-md font-semibold text-secondary">Carrier Infrastructure Inquiries</span>
+<a class="inline-flex items-center gap-1 text-label-md font-label-md font-bold text-secondary hover:text-on-secondary-container" href="#contact">
+                Request Survey <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Division 2: Sweden Shipping & Logistics -->
+<div class="rounded-xl bg-surface-container-lowest border border-outline-variant shadow-sm hover:shadow-md transition-all duration-200 overflow-hidden flex flex-col justify-between" id="shipping">
+<div class="h-1 bg-on-tertiary-container w-full"></div>
+<div class="p-6 md:p-8 space-y-6">
+<div class="flex items-center justify-between">
+<span class="px-3 py-1 rounded text-label-sm font-label-sm bg-tertiary-fixed text-on-tertiary-fixed font-bold uppercase tracking-wider">
+                  Division 02 • Europe • Freight
+                </span>
+<span class="material-symbols-outlined text-on-tertiary-container text-2xl">anchor</span>
+</div>
+<div class="space-y-3">
+<h3 class="text-headline-sm font-headline-sm font-bold text-on-surface">Sweden Shipping &amp; Logistics</h3>
+<p class="text-body-md font-body-md text-on-surface-variant leading-relaxed">
+                  Specialized freight forwarding on the Sweden route with reliable clearing. Direct maritime corridors from Nordic terminals right through West African ports.
+                </p>
+</div>
+<div class="space-y-2 pt-2 border-t border-surface-container-high text-body-sm font-body-sm">
+<div class="flex justify-between">
+<span class="text-outline">Corridor:</span>
+<span class="font-semibold text-on-surface">Gothenburg / Stockholm → West Africa</span>
+</div>
+<div class="flex justify-between">
+<span class="text-outline">Clearing:</span>
+<span class="font-semibold text-on-surface">Full Custom Port Clearance</span>
+</div>
+</div>
+</div>
+<div class="px-6 md:px-8 py-4 bg-surface-bright border-t border-outline-variant flex items-center justify-between">
+<span class="text-label-md font-label-md font-semibold text-on-tertiary-container">Vessel Manifest &amp; Cargo</span>
+<a class="inline-flex items-center gap-1 text-label-md font-label-md font-bold text-on-tertiary-container hover:text-secondary" href="#contact">
+                Track / Book <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Division 3: Tyre Wholesale & Retail Distribution -->
+<div class="rounded-xl bg-surface-container-lowest border border-outline-variant shadow-sm hover:shadow-md transition-all duration-200 overflow-hidden flex flex-col justify-between" id="tyres">
+<div class="h-1 bg-on-tertiary-container w-full"></div>
+<div class="p-6 md:p-8 space-y-6">
+<div class="flex items-center justify-between">
+<span class="px-3 py-1 rounded text-label-sm font-label-sm bg-surface-container text-on-surface font-bold uppercase tracking-wider">
+                  Division 03 • Distribution
+                </span>
+<span class="material-symbols-outlined text-primary text-2xl">tire_repair</span>
+</div>
+<div class="space-y-3">
+<h3 class="text-headline-sm font-headline-sm font-bold text-on-surface">Tyre Wholesale &amp; Retail Distribution</h3>
+<p class="text-body-md font-body-md text-on-surface-variant leading-relaxed">
+                  Premium passenger &amp; heavy-duty tyres at competitive prices. Providing long-haul logistics fleets, mining machinery, and consumer motorists with certified rubber compounds.
+                </p>
+</div>
+<div class="space-y-2 pt-2 border-t border-surface-container-high text-body-sm font-body-sm">
+<div class="flex justify-between">
+<span class="text-outline">Inventory:</span>
+<span class="font-semibold text-on-surface">OTR, Truck, Commercial, Light SUV</span>
+</div>
+<div class="flex justify-between">
+<span class="text-outline">Wholesale:</span>
+<span class="font-semibold text-on-surface">Bulk Fleet Procurement Programs</span>
+</div>
+</div>
+</div>
+<div class="px-6 md:px-8 py-4 bg-surface-bright border-t border-outline-variant flex items-center justify-between">
+<span class="text-label-md font-label-md font-semibold text-on-surface">Catalogue &amp; Batch Orders</span>
+<a class="inline-flex items-center gap-1 text-label-md font-label-md font-bold text-secondary hover:text-on-secondary-container" href="#contact">
+                Price Index <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Division 4: Scalable Cloud SaaS -->
+<div class="rounded-xl bg-surface-container-lowest border border-outline-variant shadow-sm hover:shadow-md transition-all duration-200 overflow-hidden flex flex-col justify-between" id="saas">
+<div class="h-1 bg-secondary w-full"></div>
+<div class="p-6 md:p-8 space-y-6">
+<div class="flex items-center justify-between">
+<span class="px-3 py-1 rounded text-label-sm font-label-sm bg-surface-container text-secondary font-bold uppercase tracking-wider">
+                  Division 04 • Digital
+                </span>
+<span class="material-symbols-outlined text-secondary text-2xl">cloud_done</span>
+</div>
+<div class="space-y-3">
+<h3 class="text-headline-sm font-headline-sm font-bold text-on-surface">Scalable Cloud SaaS</h3>
+<p class="text-body-md font-body-md text-on-surface-variant leading-relaxed">
+                  Operational efficiency &amp; cloud software driving enterprise transformation. Bespoke ERP integration, supply chain telemetry, and customer billing workflows built on scalable stacks.
+                </p>
+</div>
+<div class="space-y-2 pt-2 border-t border-surface-container-high text-body-sm font-body-sm">
+<div class="flex justify-between">
+<span class="text-outline">Architecture:</span>
+<span class="font-semibold text-on-surface">Multi-tenant Cloud Native</span>
+</div>
+<div class="flex justify-between">
+<span class="text-outline">Compliance:</span>
+<span class="font-semibold text-on-surface">End-to-End Encrypted Data Stores</span>
+</div>
+</div>
+</div>
+<div class="px-6 md:px-8 py-4 bg-surface-bright border-t border-outline-variant flex items-center justify-between">
+<span class="text-label-md font-label-md font-semibold text-secondary">Software Demonstration</span>
+<a class="inline-flex items-center gap-1 text-label-md font-label-md font-bold text-secondary hover:text-on-secondary-container" href="#contact">
+                Access Portal <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Division 5: Infrastructure & Construction -->
+<div class="rounded-xl bg-surface-container-lowest border border-outline-variant shadow-sm hover:shadow-md transition-all duration-200 overflow-hidden flex flex-col justify-between" id="construction">
+<div class="h-1 bg-primary w-full"></div>
+<div class="p-6 md:p-8 space-y-6">
+<div class="flex items-center justify-between">
+<span class="px-3 py-1 rounded text-label-sm font-label-sm bg-surface-container-high text-on-surface font-bold uppercase tracking-wider">
+                  Division 05 • Civil Works
+                </span>
+<span class="material-symbols-outlined text-primary text-2xl">construction</span>
+</div>
+<div class="space-y-3">
+<h3 class="text-headline-sm font-headline-sm font-bold text-on-surface">Infrastructure &amp; Construction</h3>
+<p class="text-body-md font-body-md text-on-surface-variant leading-relaxed">
+                  Residential &amp; commercial projects with safety, quality &amp; timely delivery. Civil ducting, commercial office parks, master-planned housing, and road connectivity projects.
+                </p>
+</div>
+<div class="space-y-2 pt-2 border-t border-surface-container-high text-body-sm font-body-sm">
+<div class="flex justify-between">
+<span class="text-outline">Specialty:</span>
+<span class="font-semibold text-on-surface">Urban Ducting &amp; Commercial Edifices</span>
+</div>
+<div class="flex justify-between">
+<span class="text-outline">Execution:</span>
+<span class="font-semibold text-on-surface">Strict Timeline Assurance</span>
+</div>
+</div>
+</div>
+<div class="px-6 md:px-8 py-4 bg-surface-bright border-t border-outline-variant flex items-center justify-between">
+<span class="text-label-md font-label-md font-semibold text-on-surface">EPC &amp; Tenders</span>
+<a class="inline-flex items-center gap-1 text-label-md font-label-md font-bold text-primary hover:text-secondary" href="#contact">
+                Project Dossier <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ================= CORPORATE CONTACT & HEADQUARTERS ================= -->
+<section class="py-16 md:py-24 bg-surface-bright" id="contact">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+<!-- HQ Details Card -->
+<div class="lg:col-span-5 space-y-6">
+<div class="space-y-2">
+<div class="text-label-md font-label-md uppercase tracking-wider text-secondary font-bold">Group Headquarters</div>
+<h2 class="text-headline-md font-headline-md text-on-surface">Direct Connectivity &amp; Corporate Engagement</h2>
+<p class="text-body-md font-body-md text-on-surface-variant">
+                Whether you require dark fibre deployment, container forwarding on the Sweden route, fleet tyres, or enterprise software, our executive team is on stand-by.
+              </p>
+</div>
+<div class="rounded-xl bg-surface-container-lowest border border-outline-variant p-6 shadow-sm space-y-6">
+<!-- Address Item -->
+<div class="flex items-start gap-4">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-secondary shrink-0">
+<span class="material-symbols-outlined">location_on</span>
+</div>
+<div class="space-y-1">
+<h4 class="text-title-md font-title-md text-on-surface font-semibold">Enugu Headquarters</h4>
+<p class="text-body-md font-body-md text-on-surface-variant">
+                    Plot 80, Jedidiah Gardens Centenary City, Enugu 400706, Enugu State, Nigeria
+                  </p>
+</div>
+</div>
+<!-- Phone Hotline Item with Click-to-Call -->
+<div class="flex items-start gap-4">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-secondary shrink-0">
+<span class="material-symbols-outlined">call</span>
+</div>
+<div class="space-y-2">
+<h4 class="text-title-md font-title-md text-on-surface font-semibold">Direct Telephone Line</h4>
+<p class="text-body-md font-body-md text-on-surface-variant">
+                    Official inquiries, clearing updates, and SLA support desk.
+                  </p>
+<div>
+<a class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-secondary text-on-secondary font-label-md text-label-md font-bold hover:bg-on-secondary-container transition-all duration-150 active:scale-95 shadow-sm" href="tel:07013476095">
+<span class="material-symbols-outlined text-sm">phone_in_talk</span>
+                      Call Now: 0701 347 6095
+                    </a>
+</div>
+</div>
+</div>
+<!-- Working Hours -->
+<div class="flex items-start gap-4 pt-2 border-t border-surface-container-high">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-secondary shrink-0">
+<span class="material-symbols-outlined">schedule</span>
+</div>
+<div class="space-y-1">
+<h4 class="text-title-md font-title-md text-on-surface font-semibold">Working Hours</h4>
+<div class="text-body-sm font-body-sm text-on-surface-variant space-y-0.5">
+<div>Monday – Friday: 08:00 AM – 05:30 PM (WAT)</div>
+<div>Saturday (Logistics &amp; Tyre Depot): 09:00 AM – 02:00 PM</div>
+<div>Telecom NOC: 24/7/365 Continuous Monitoring</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Inquiry Form Card -->
+<div class="lg:col-span-7">
+<div class="rounded-xl bg-surface-container-lowest border border-outline-variant p-6 sm:p-8 shadow-sm space-y-6">
+<div class="space-y-1">
+<h3 class="text-title-lg font-title-lg font-bold text-on-surface">Initiate Corporate Inquiry</h3>
+<p class="text-body-sm font-body-sm text-outline">
+                  Submit project specifications or wholesale orders directly to the designated department.
+                </p>
+</div>
+<form class="space-y-4" id="contact-form" onsubmit="event.preventDefault(); alert('Inquiry recorded. A Vinci &amp; Vee Group representative will respond within 24 hours.');">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div class="space-y-1.5">
+<label class="text-label-md font-label-md text-on-surface font-semibold" for="full-name">Full Name / Representative</label>
+<input class="w-full rounded-lg border-outline-variant bg-surface-container-lowest text-on-surface text-body-md focus:border-secondary focus:ring-1 focus:ring-secondary py-2.5 px-3" id="full-name" placeholder="e.g. Victor Okafor" required="" type="text"/>
+</div>
+<div class="space-y-1.5">
+<label class="text-label-md font-label-md text-on-surface font-semibold" for="email">Corporate Email</label>
+<input class="w-full rounded-lg border-outline-variant bg-surface-container-lowest text-on-surface text-body-md focus:border-secondary focus:ring-1 focus:ring-secondary py-2.5 px-3" id="email" placeholder="name@company.com" required="" type="email"/>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div class="space-y-1.5">
+<label class="text-label-md font-label-md text-on-surface font-semibold" for="division">Target Operational Division</label>
+<select class="w-full rounded-lg border-outline-variant bg-surface-container-lowest text-on-surface text-body-md focus:border-secondary focus:ring-1 focus:ring-secondary py-2.5 px-3" id="division">
+<option value="telecom">Telecom &amp; Fibre Optics</option>
+<option value="shipping">Sweden Shipping &amp; Logistics</option>
+<option value="tyres">Tyre Wholesale &amp; Retail Distribution</option>
+<option value="saas">Scalable Cloud SaaS Solutions</option>
+<option value="construction">Infrastructure &amp; Construction</option>
+<option value="general">Executive Group Partnerships</option>
+</select>
+</div>
+<div class="space-y-1.5">
+<label class="text-label-md font-label-md text-on-surface font-semibold" for="contact-phone">Phone Number</label>
+<input class="w-full rounded-lg border-outline-variant bg-surface-container-lowest text-on-surface text-body-md focus:border-secondary focus:ring-1 focus:ring-secondary py-2.5 px-3" id="contact-phone" placeholder="e.g. 0701 347 6095" type="tel"/>
+</div>
+</div>
+<div class="space-y-1.5">
+<label class="text-label-md font-label-md text-on-surface font-semibold" for="message">Scope, Volume or SLA Requirements</label>
+<textarea class="w-full rounded-lg border-outline-variant bg-surface-container-lowest text-on-surface text-body-md focus:border-secondary focus:ring-1 focus:ring-secondary py-2.5 px-3" id="message" placeholder="Specify your fibre link requirements, tyre batch volume, Swedish freight cargo schedule, or construction RFP..." required="" rows="4"></textarea>
+</div>
+<div class="pt-2 flex flex-col sm:flex-row items-center justify-between gap-4">
+<div class="text-body-sm font-body-sm text-outline flex items-center gap-1.5">
+<span class="material-symbols-outlined text-base text-secondary">lock</span>
+                    Protected by corporate NDA policy.
+                  </div>
+<button class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-3 rounded-xl bg-primary text-on-primary font-label-lg text-label-lg font-bold hover:bg-surface-container-high hover:text-on-surface transition-all duration-150 active:scale-95" type="submit">
+<span>Submit Inquiry</span>
+<span class="material-symbols-outlined text-sm">send</span>
+</button>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- ================= FOOTER (Shared Component) ================= -->
+<!-- Applied style_bg_color, style_typography, style_shell_layout, links, exact copyright_text -->
+<footer class="bg-surface-container-low border-t border-outline-variant pb-20 md:pb-8">
+<div class="w-full px-6 py-8 flex flex-col md:flex-row justify-between items-center gap-4 max-w-7xl mx-auto">
+<!-- Brand & Copyright -->
+<div class="flex flex-col items-center md:items-start text-center md:text-left space-y-1">
+<span class="text-title-md font-title-md font-bold text-on-surface">Vinci &amp; Vee Group</span>
+<p class="text-body-sm font-body-sm text-on-surface-variant max-w-xl">
+          © 2025 Vinci and Vee Group. All Rights Reserved. Enugu HQ: Plot 80, Jedidiah Gardens Centenary City, Enugu 400706. Tel: 0701 347 6095
+        </p>
+</div>
+<!-- Footer Links Array -->
+<div class="flex flex-wrap items-center justify-center gap-6 text-label-sm font-label-sm text-on-surface-variant">
+<a class="hover:text-secondary underline transition-colors duration-150 active:opacity-80" href="#privacy">Privacy Policy</a>
+<a class="hover:text-secondary underline transition-colors duration-150 active:opacity-80" href="#terms">Terms of Service</a>
+<a class="hover:text-secondary underline transition-colors duration-150 active:opacity-80" href="#wholesale">Wholesale Portal</a>
+<a class="hover:text-secondary underline transition-colors duration-150 active:opacity-80" href="#sla">SLA Inquiries</a>
+</div>
+</div>
+</footer>
+<!-- ================= BOTTOM NAVIGATION BAR (Shared Component Mobile Only: md:hidden) ================= -->
+<!-- Applied style_bg_color, style_shell_layout, labels, icons, style_active_navigation vs style_inactive_navigation -->
+<!-- Destination Rule: Overview is active matching the landing page primary destination intent -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-2 py-2 safe-bottom bg-surface-container-lowest shadow-md">
+<!-- Tab 1: Overview (ACTIVE) -->
+<a class="flex flex-col items-center justify-center text-secondary font-bold hover:text-secondary transition-colors duration-150 active:scale-95" href="#overview">
+<span class="material-symbols-outlined text-2xl" data-weight="fill">domain</span>
+<span class="text-label-sm font-label-sm">Overview</span>
+</a>
+<!-- Tab 2: Telecom -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant hover:text-secondary transition-colors duration-150 active:scale-95" href="#telecom">
+<span class="material-symbols-outlined text-2xl">lan</span>
+<span class="text-label-sm font-label-sm">Telecom</span>
+</a>
+<!-- Tab 3: Logistics -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant hover:text-secondary transition-colors duration-150 active:scale-95" href="#shipping">
+<span class="material-symbols-outlined text-2xl">local_shipping</span>
+<span class="text-label-sm font-label-sm">Logistics</span>
+</a>
+<!-- Tab 4: Tyres -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant hover:text-secondary transition-colors duration-150 active:scale-95" href="#tyres">
+<span class="material-symbols-outlined text-2xl">tire_repair</span>
+<span class="text-label-sm font-label-sm">Tyres</span>
+</a>
+<!-- Tab 5: Cloud SaaS -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant hover:text-secondary transition-colors duration-150 active:scale-95" href="#saas">
+<span class="material-symbols-outlined text-2xl">cloud_done</span>
+<span class="text-label-sm font-label-sm">Cloud SaaS</span>
+</a>
+</nav>
+<!-- Micro-interactions Script -->
+<script>
+    const openBtn = document.getElementById('open-drawer-btn');
+    const closeBtn = document.getElementById('close-drawer-btn');
+    const drawer = document.getElementById('nav-drawer');
+    const backdrop = document.getElementById('drawer-backdrop');
+
+    function toggleDrawer(open) {
+      if (open) {
+        drawer.classList.remove('-translate-x-full');
+        backdrop.classList.remove('opacity-0', 'pointer-events-none');
+        backdrop.classList.add('opacity-100');
+        document.body.style.overflow = 'hidden';
+      } else {
+        drawer.classList.add('-translate-x-full');
+        backdrop.classList.add('opacity-0', 'pointer-events-none');
+        backdrop.classList.remove('opacity-100');
+        document.body.style.overflow = '';
+      }
+    }
+
+    if (openBtn) openBtn.addEventListener('click', () => toggleDrawer(true));
+    if (closeBtn) closeBtn.addEventListener('click', () => toggleDrawer(false));
+    if (backdrop) backdrop.addEventListener('click', () => toggleDrawer(false));
+
+    // Close drawer when clicking nav links
+    drawer.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => toggleDrawer(false));
+    });
+  </script>
+</body></html>

@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Shipping Logistics &amp; Sweden Route Services | Vinci &amp; Vee Group</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;600;700&amp;family=Space+Grotesk:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "tertiary": "#000000",
+            "surface-tint": "#565e74",
+            "on-tertiary-container": "#b87500",
+            "surface-bright": "#f8f9ff",
+            "inverse-on-surface": "#eaf1ff",
+            "secondary-container": "#5bb8fe",
+            "surface-container-highest": "#d3e4fe",
+            "on-surface-variant": "#45464d",
+            "secondary": "#006398",
+            "surface-container": "#e5eeff",
+            "surface-container-low": "#eff4ff",
+            "tertiary-fixed-dim": "#ffb95f",
+            "on-tertiary-fixed-variant": "#653e00",
+            "surface-container-high": "#dce9ff",
+            "error": "#ba1a1a",
+            "on-error": "#ffffff",
+            "tertiary-container": "#2a1700",
+            "surface": "#f8f9ff",
+            "primary-fixed": "#dae2fd",
+            "on-tertiary": "#ffffff",
+            "surface-dim": "#cbdbf5",
+            "on-primary-fixed-variant": "#3f465c",
+            "surface-variant": "#d3e4fe",
+            "on-error-container": "#93000a",
+            "surface-container-lowest": "#ffffff",
+            "on-secondary-container": "#00476e",
+            "primary": "#000000",
+            "on-primary-container": "#7c839b",
+            "on-primary-fixed": "#131b2e",
+            "primary-container": "#131b2e",
+            "error-container": "#ffdad6",
+            "on-secondary-fixed": "#001d31",
+            "on-background": "#0b1c30",
+            "outline": "#76777d",
+            "tertiary-fixed": "#ffddb8",
+            "on-tertiary-fixed": "#2a1700",
+            "on-primary": "#ffffff",
+            "secondary-fixed": "#cce5ff",
+            "secondary-fixed-dim": "#93ccff",
+            "inverse-primary": "#bec6e0",
+            "on-secondary": "#ffffff",
+            "background": "#f8f9ff",
+            "primary-fixed-dim": "#bec6e0",
+            "inverse-surface": "#213145",
+            "on-surface": "#0b1c30",
+            "outline-variant": "#c6c6cd",
+            "on-secondary-fixed-variant": "#004b73"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.125rem",
+            "lg": "0.25rem",
+            "xl": "0.5rem",
+            "full": "0.75rem"
+          },
+          "spacing": {
+            "margin": "3rem",
+            "gutter-mobile": "1rem",
+            "margin-mobile": "1.25rem",
+            "space-xs": "0.25rem",
+            "space-xl": "2.5rem",
+            "space-md": "1rem",
+            "space-lg": "1.5rem",
+            "gutter": "1.5rem",
+            "space-sm": "0.5rem"
+          },
+          "fontFamily": {
+            "label-sm": ["Hanken Grotesk"],
+            "body-sm": ["Hanken Grotesk"],
+            "display-mobile": ["Space Grotesk"],
+            "label-md": ["Hanken Grotesk"],
+            "label-lg": ["Hanken Grotesk"],
+            "headline-lg-mobile": ["Space Grotesk"],
+            "title-md": ["Hanken Grotesk"],
+            "title-lg": ["Hanken Grotesk"],
+            "headline-sm": ["Space Grotesk"],
+            "display": ["Space Grotesk"],
+            "headline-md": ["Space Grotesk"],
+            "body-md": ["Hanken Grotesk"],
+            "body-lg": ["Hanken Grotesk"],
+            "headline-lg": ["Space Grotesk"]
+          },
+          "fontSize": {
+            "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.05em", "fontWeight": "700" }],
+            "body-sm": ["12px", { "lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "400" }],
+            "display-mobile": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+            "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.03em", "fontWeight": "600" }],
+            "label-lg": ["14px", { "lineHeight": "18px", "letterSpacing": "0.02em", "fontWeight": "600" }],
+            "headline-lg-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "title-md": ["16px", { "lineHeight": "22px", "letterSpacing": "0em", "fontWeight": "600" }],
+            "title-lg": ["18px", { "lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "headline-sm": ["20px", { "lineHeight": "28px", "letterSpacing": "0em", "fontWeight": "600" }],
+            "display": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.03em", "fontWeight": "700" }],
+            "headline-md": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "body-md": ["14px", { "lineHeight": "22px", "letterSpacing": "0em", "fontWeight": "400" }],
+            "body-lg": ["16px", { "lineHeight": "26px", "letterSpacing": "0em", "fontWeight": "400" }],
+            "headline-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "600" }]
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-surface antialiased font-body-md text-body-md min-h-screen pb-24">
+<!-- TopAppBar (From Shared Components JSON) -->
+<header class="sticky top-0 z-40 w-full bg-surface-container-lowest shadow-sm">
+<div class="sticky top-0 w-full flex justify-between items-center px-4 h-16 max-w-7xl mx-auto">
+<button aria-label="Open Navigation Menu" class="p-2 rounded-lg text-primary hover:bg-surface-container-high transition-colors duration-150 active:scale-95" type="button">
+<span class="material-symbols-outlined text-primary">menu</span>
+</button>
+<div class="flex items-center gap-2">
+<span class="text-title-lg font-title-lg font-bold text-on-surface tracking-tight">Vinci &amp; Vee Group</span>
+</div>
+<a aria-label="Call Dispatch" class="p-2 rounded-lg text-primary hover:bg-surface-container-high transition-colors duration-150 active:scale-95 flex items-center justify-center" href="tel:07013476095">
+<span class="material-symbols-outlined text-primary">phone_in_talk</span>
+</a>
+</div>
+</header>
+<!-- Route Operational Notice / Status Ticker -->
+<aside class="bg-surface-container-low px-4 py-2 flex items-center justify-between text-body-sm font-body-sm shadow-[0_1px_2px_rgba(15,23,42,0.03)]">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-secondary animate-ping"></span>
+<span class="font-label-md text-label-md text-secondary">LIVE ROUTE CORRIDOR:</span>
+<span class="text-on-surface-variant truncate max-w-[200px]">Gothenburg → Lagos Direct</span>
+</div>
+<span class="px-2 py-0.5 rounded-lg bg-surface-container text-on-surface font-label-sm text-label-sm uppercase">Weekly Sailings</span>
+</aside>
+<!-- Main Content Layout -->
+<main class="px-4 py-6 max-w-lg mx-auto space-y-6">
+<!-- Sector Hero Header -->
+<section class="space-y-3">
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg bg-surface-container text-secondary font-label-md text-label-md">
+<span class="material-symbols-outlined text-sm">anchor</span>
+<span>Maritime &amp; Cargo Freight</span>
+</div>
+<h1 class="text-headline-lg-mobile font-headline-lg-mobile text-on-surface font-bold tracking-tight">
+        Vinci &amp; Vee International Shipping &amp; Logistics - The Sweden Route
+      </h1>
+<p class="text-body-md font-body-md text-on-surface-variant leading-relaxed">
+        Seamless Scandinavian to West African cargo freight, container forwarding, and door-to-door delivery.
+      </p>
+<!-- Quick Metrics Strip -->
+<div class="grid grid-cols-3 gap-2 pt-2">
+<div class="bg-surface-container-lowest p-3 rounded-xl border border-outline-variant shadow-sm text-center">
+<p class="font-headline-sm text-headline-sm text-secondary">18-22</p>
+<p class="text-label-sm font-label-sm text-on-surface-variant">Transit Days</p>
+</div>
+<div class="bg-surface-container-lowest p-3 rounded-xl border border-outline-variant shadow-sm text-center">
+<p class="font-headline-sm text-headline-sm text-on-surface">100%</p>
+<p class="text-label-sm font-label-sm text-on-surface-variant">Customs Clear</p>
+</div>
+<div class="bg-surface-container-lowest p-3 rounded-xl border border-outline-variant shadow-sm text-center">
+<p class="font-headline-sm text-headline-sm text-secondary">2x</p>
+<p class="text-label-sm font-label-sm text-on-surface-variant">Monthly FCL</p>
+</div>
+</div>
+</section>
+<!-- Visual Vessel / Route Showcase -->
+<section class="relative rounded-xl overflow-hidden border border-outline-variant bg-surface-container-lowest shadow-sm">
+<div class="relative h-48 w-full bg-slate-900 overflow-hidden">
+<img class="w-full h-full object-cover opacity-90" data-alt="A massive modern commercial container ship navigating calm Nordic deep blue waters under clear morning Scandinavian skies, representing Scandinavian freight maritime logistics. The vessel carries color-coded cargo containers under pristine industrial sunlight with a minimalist corporate aesthetic, high contrast architectural lines, and vibrant ocean textures." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC3my1jyiDECV_KTMIy-AeNGQ9UATgNKFRbLCEKJ5U8szuiG5yp_XAii-stCKh2cD8VoySUN-CHajIAHlt6B0PgwUYuXEH3gsSiS3S8Q5-2w3rFDQOUDYz_r-FAWUGM5T78QSbNKRqRTZC1uiCd0MlH3GIxhjvYRKWcRN9rAwpB5rKwdM5OBHaVKkWWqaJeOTLTtPpbXJljEJGfOO__17IpIRh5TJM7EHj9ZqlAC4Y"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex items-end p-4">
+<div class="text-on-primary space-y-1">
+<span class="text-label-sm font-label-sm bg-secondary px-2 py-0.5 rounded-lg text-on-secondary inline-block">Direct Consolidation</span>
+<p class="font-title-md text-title-md text-white">Stockholm / Gothenburg → Lagos Hub</p>
+</div>
+</div>
+</div>
+<div class="p-4 space-y-2">
+<div class="flex items-center justify-between text-body-sm font-body-sm">
+<span class="text-on-surface-variant">Next Vessel Cut-off:</span>
+<span class="font-label-md text-label-md text-on-surface">Every Thursday, 17:00 CET</span>
+</div>
+<div class="flex items-center justify-between text-body-sm font-body-sm">
+<span class="text-on-surface-variant">Primary Terminals:</span>
+<span class="font-label-md text-label-md text-secondary">Frihamnen &amp; Skandiahamnen</span>
+</div>
+</div>
+</section>
+<!-- Service Highlights (Asymmetric Bento Grid) -->
+<section class="space-y-4">
+<div class="flex items-center justify-between">
+<h2 class="font-title-lg text-title-lg text-on-surface">Service Highlights</h2>
+<span class="text-label-sm font-label-sm text-secondary">5 Core Capabilities</span>
+</div>
+<div class="space-y-3">
+<!-- Card 1 -->
+<article class="bg-surface-container-lowest p-4 rounded-xl border border-outline-variant shadow-sm relative overflow-hidden">
+<div class="absolute top-0 left-0 right-0 h-0.5 bg-secondary"></div>
+<div class="flex items-start gap-3">
+<div class="p-2.5 rounded-xl bg-surface-container text-secondary flex-shrink-0">
+<span class="material-symbols-outlined">local_shipping</span>
+</div>
+<div class="space-y-1">
+<h3 class="font-title-md text-title-md text-on-surface">Direct Sweden Route Cargo</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant leading-normal">
+                Stockholm and Gothenburg consolidations routed directly to Lagos port and regional distribution hubs throughout Nigeria.
+              </p>
+<div class="flex gap-2 pt-2">
+<span class="text-label-sm font-label-sm px-2 py-0.5 rounded-lg bg-surface-container text-secondary">Stockholm Hub</span>
+<span class="text-label-sm font-label-sm px-2 py-0.5 rounded-lg bg-surface-container text-secondary">Gothenburg Terminal</span>
+</div>
+</div>
+</div>
+</article>
+<!-- Card 2 -->
+<article class="bg-surface-container-lowest p-4 rounded-xl border border-outline-variant shadow-sm relative overflow-hidden">
+<div class="absolute top-0 left-0 right-0 h-0.5 bg-secondary"></div>
+<div class="flex items-start gap-3">
+<div class="p-2.5 rounded-xl bg-surface-container text-secondary flex-shrink-0">
+<span class="material-symbols-outlined">directions_boat</span>
+</div>
+<div class="space-y-1">
+<h3 class="font-title-md text-title-md text-on-surface">FCL &amp; LCL Container Shipping</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant leading-normal">
+                Full Container Load for bulk machinery and commercial inventory, plus Less than Container Load for modular consignments.
+              </p>
+</div>
+</div>
+</article>
+<!-- Card 3 -->
+<article class="bg-surface-container-lowest p-4 rounded-xl border border-outline-variant shadow-sm relative overflow-hidden">
+<div class="absolute top-0 left-0 right-0 h-0.5 bg-secondary"></div>
+<div class="flex items-start gap-3">
+<div class="p-2.5 rounded-xl bg-surface-container text-secondary flex-shrink-0">
+<span class="material-symbols-outlined">verified_user</span>
+</div>
+<div class="space-y-1">
+<h3 class="font-title-md text-title-md text-on-surface">Customs Clearance &amp; Port Handling</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant leading-normal">
+                Comprehensive duty facilitation at Apapa &amp; Tin Can Island ports with guaranteed zero-demurrage protocol handling.
+              </p>
+</div>
+</div>
+</article>
+<!-- Card 4 -->
+<article class="bg-surface-container-lowest p-4 rounded-xl border border-outline-variant shadow-sm relative overflow-hidden">
+<div class="absolute top-0 left-0 right-0 h-0.5 bg-secondary"></div>
+<div class="flex items-start gap-3">
+<div class="p-2.5 rounded-xl bg-surface-container text-secondary flex-shrink-0">
+<span class="material-symbols-outlined">phonelink_ring</span>
+</div>
+<div class="space-y-1">
+<h3 class="font-title-md text-title-md text-on-surface">Consignment Tracking &amp; SMS Alerts</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant leading-normal">
+                Automated waybill telemetry dispatching live SMS stage updates directly to Nigerian receiver mobile devices.
+              </p>
+</div>
+</div>
+</article>
+<!-- Card 5 -->
+<article class="bg-surface-container-lowest p-4 rounded-xl border border-outline-variant shadow-sm relative overflow-hidden">
+<div class="absolute top-0 left-0 right-0 h-0.5 bg-secondary"></div>
+<div class="flex items-start gap-3">
+<div class="p-2.5 rounded-xl bg-surface-container text-secondary flex-shrink-0">
+<span class="material-symbols-outlined">flight_takeoff</span>
+</div>
+<div class="space-y-1">
+<h3 class="font-title-md text-title-md text-on-surface">Air Freight Express</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant leading-normal">
+                Priority 3 to 5 business day delivery for high-value commercial tech gear, urgent spare parts, and critical documentation.
+              </p>
+</div>
+</div>
+</article>
+</div>
+</section>
+<!-- Interactive Freight Estimator / Rate Calculator -->
+<section class="bg-surface-container-lowest rounded-xl border border-outline-variant p-5 shadow-sm space-y-4">
+<div class="border-b border-surface-container pb-3">
+<div class="flex items-center gap-2 text-secondary">
+<span class="material-symbols-outlined text-lg">calculate</span>
+<h2 class="font-title-lg text-title-lg text-on-surface">Freight Rate Calculator</h2>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant mt-1">Estimate sea and air freight tariffs from Sweden to Nigeria.</p>
+</div>
+<form class="space-y-4" id="rateForm" onsubmit="event.preventDefault(); calculateFreight();">
+<!-- Origin & Destination -->
+<div class="grid grid-cols-2 gap-3">
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1" for="originHub">Origin (Sweden)</label>
+<select class="w-full text-body-sm rounded-lg border border-outline-variant bg-surface-container-lowest text-on-surface focus:border-secondary focus:ring-1 focus:ring-secondary py-2 px-2.5" id="originHub">
+<option value="GOT">Gothenburg Terminal</option>
+<option value="ARN">Stockholm Arlanda Hub</option>
+<option value="MAL">Malmö Consolidation</option>
+</select>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1" for="destHub">Destination (Nigeria)</label>
+<select class="w-full text-body-sm rounded-lg border border-outline-variant bg-surface-container-lowest text-on-surface focus:border-secondary focus:ring-1 focus:ring-secondary py-2 px-2.5" id="destHub">
+<option value="LOS">Lagos (Apapa Hub)</option>
+<option value="ENU">Enugu HQ Depot</option>
+<option value="ABJ">Abuja Logistics Terminal</option>
+<option value="PHC">Port Harcourt Station</option>
+</select>
+</div>
+</div>
+<!-- Shipping Type -->
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1.5">Freight Mode</label>
+<div class="grid grid-cols-3 gap-2">
+<label class="cursor-pointer">
+<input checked="" class="peer sr-only" name="freightMode" type="radio" value="sea_lcl"/>
+<div class="p-2.5 rounded-lg border border-outline-variant text-center peer-checked:border-secondary peer-checked:bg-surface-container peer-checked:text-secondary text-on-surface-variant font-label-sm text-label-sm">
+                Sea LCL (m³)
+              </div>
+</label>
+<label class="cursor-pointer">
+<input class="peer sr-only" name="freightMode" type="radio" value="sea_fcl"/>
+<div class="p-2.5 rounded-lg border border-outline-variant text-center peer-checked:border-secondary peer-checked:bg-surface-container peer-checked:text-secondary text-on-surface-variant font-label-sm text-label-sm">
+                Sea 20ft FCL
+              </div>
+</label>
+<label class="cursor-pointer">
+<input class="peer sr-only" name="freightMode" type="radio" value="air"/>
+<div class="p-2.5 rounded-lg border border-outline-variant text-center peer-checked:border-secondary peer-checked:bg-surface-container peer-checked:text-secondary text-on-surface-variant font-label-sm text-label-sm">
+                Air Express
+              </div>
+</label>
+</div>
+</div>
+<!-- Cargo Metrics -->
+<div class="grid grid-cols-2 gap-3">
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1" for="weightInput">Weight (KG)</label>
+<input class="w-full text-body-sm rounded-lg border border-outline-variant bg-surface-container-lowest text-on-surface focus:border-secondary focus:ring-1 focus:ring-secondary py-2 px-3" id="weightInput" min="1" type="number" value="120"/>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1" for="volumeInput">Volume (CBM / m³)</label>
+<input class="w-full text-body-sm rounded-lg border border-outline-variant bg-surface-container-lowest text-on-surface focus:border-secondary focus:ring-1 focus:ring-secondary py-2 px-3" id="volumeInput" min="0.1" step="0.1" type="number" value="1.5"/>
+</div>
+</div>
+<button class="w-full py-2.5 px-4 rounded-lg bg-secondary text-on-secondary font-label-lg text-label-lg font-bold shadow-sm hover:opacity-95 active:scale-98 transition-all flex items-center justify-center gap-2" onclick="calculateFreight()" type="button">
+<span class="material-symbols-outlined text-sm">trending_up</span>
+          Calculate Estimated Tariff
+        </button>
+<!-- Dynamic Result Card -->
+<div class="p-4 rounded-xl bg-surface-container border border-surface-container-high space-y-2" id="calculatorResult">
+<div class="flex items-center justify-between">
+<span class="text-label-md font-label-md text-on-surface-variant">Estimated Shipping Cost:</span>
+<span class="text-title-lg font-title-lg font-bold text-secondary" id="rateCost">SEK 4,850</span>
+</div>
+<div class="flex items-center justify-between text-body-sm font-body-sm text-on-surface-variant">
+<span>Approximate Transit:</span>
+<span class="font-label-md text-label-md text-on-surface" id="rateTransit">18 - 22 Days</span>
+</div>
+<p class="text-label-sm font-label-sm text-outline pt-1 italic">
+            *Rates include Scandinavian port export fees and customs handling. Excludes custom destination duties.
+          </p>
+</div>
+</form>
+</section>
+<!-- Departure Schedule Table -->
+<section class="space-y-3">
+<div class="flex items-center justify-between">
+<h2 class="font-title-lg text-title-lg text-on-surface">Upcoming Vessel Schedule</h2>
+<span class="font-label-sm text-label-sm text-secondary">October 2025</span>
+</div>
+<div class="bg-surface-container-lowest rounded-xl border border-outline-variant overflow-hidden shadow-sm">
+<div class="overflow-x-auto">
+<table class="w-full text-left text-body-sm font-body-sm">
+<thead class="bg-surface-container text-on-surface font-label-md text-label-md">
+<tr>
+<th class="py-2.5 px-3">Vessel / Voyage</th>
+<th class="py-2.5 px-2">Origin Port</th>
+<th class="py-2.5 px-2">ETD</th>
+<th class="py-2.5 px-3 text-right">Status</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container-high">
+<tr>
+<td class="py-3 px-3 font-label-md text-label-md text-on-surface">Nordic Star 094</td>
+<td class="py-3 px-2 text-on-surface-variant">Gothenburg</td>
+<td class="py-3 px-2 text-on-surface-variant">Oct 12</td>
+<td class="py-3 px-3 text-right">
+<span class="inline-block px-2 py-0.5 rounded-lg bg-surface-container text-secondary font-label-sm text-label-sm font-bold">Boarding</span>
+</td>
+</tr>
+<tr>
+<td class="py-3 px-3 font-label-md text-label-md text-on-surface">Vinci Carrier V</td>
+<td class="py-3 px-2 text-on-surface-variant">Stockholm</td>
+<td class="py-3 px-2 text-on-surface-variant">Oct 19</td>
+<td class="py-3 px-3 text-right">
+<span class="inline-block px-2 py-0.5 rounded-lg bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Booking Open</span>
+</td>
+</tr>
+<tr>
+<td class="py-3 px-3 font-label-md text-label-md text-on-surface">Baltic Express 11</td>
+<td class="py-3 px-2 text-on-surface-variant">Gothenburg</td>
+<td class="py-3 px-2 text-on-surface-variant">Oct 26</td>
+<td class="py-3 px-3 text-right">
+<span class="inline-block px-2 py-0.5 rounded-lg bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Planned</span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<!-- Fast Track Consignment Booking Form -->
+<section class="bg-surface-container-lowest rounded-xl border border-outline-variant p-5 shadow-sm space-y-4">
+<div class="border-b border-surface-container pb-2">
+<h2 class="font-title-lg text-title-lg text-on-surface">Reserve Shipment Allocation</h2>
+<p class="text-body-sm font-body-sm text-on-surface-variant">Request door-to-door pickup or terminal consolidation.</p>
+</div>
+<form class="space-y-3" onsubmit="event.preventDefault(); alert('Booking request submitted to the Scandinavia &amp; Lagos dispatch team.');">
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1">Company or Consignee Name</label>
+<input class="w-full text-body-sm rounded-lg border border-outline-variant bg-surface-container-lowest text-on-surface focus:border-secondary focus:ring-1 focus:ring-secondary py-2 px-3" placeholder="e.g. Nordic African Trading Ltd" required="" type="text"/>
+</div>
+<div class="grid grid-cols-2 gap-3">
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1">Phone Number</label>
+<input class="w-full text-body-sm rounded-lg border border-outline-variant bg-surface-container-lowest text-on-surface focus:border-secondary focus:ring-1 focus:ring-secondary py-2 px-3" placeholder="+234..." required="" type="tel"/>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1">Cargo Type</label>
+<select class="w-full text-body-sm rounded-lg border border-outline-variant bg-surface-container-lowest text-on-surface focus:border-secondary focus:ring-1 focus:ring-secondary py-2 px-2.5">
+<option>Industrial Machinery</option>
+<option>Tyres &amp; Automotive Spares</option>
+<option>Telecom &amp; Fibre Gear</option>
+<option>General Consumer Goods</option>
+</select>
+</div>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1">Pickup Address in Sweden (Optional)</label>
+<input class="w-full text-body-sm rounded-lg border border-outline-variant bg-surface-container-lowest text-on-surface focus:border-secondary focus:ring-1 focus:ring-secondary py-2 px-3" placeholder="Street, City, Postal Code" type="text"/>
+</div>
+<button class="w-full py-2.5 px-4 rounded-lg bg-primary text-on-primary font-label-lg text-label-lg font-bold shadow-sm hover:opacity-90 active:scale-98 transition-all flex items-center justify-center gap-2" type="submit">
+<span>Book Shipping Dispatch</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</form>
+</section>
+<!-- Operational Hub Contact & Logistics Hotline Desk -->
+<section class="bg-surface-container-lowest rounded-xl border border-outline-variant p-4 shadow-sm space-y-4">
+<div class="flex items-start gap-3">
+<div class="p-2.5 rounded-xl bg-surface-container text-secondary flex-shrink-0">
+<span class="material-symbols-outlined">headset_mic</span>
+</div>
+<div class="space-y-1">
+<h3 class="font-title-md text-title-md text-on-surface">Logistics Assistance Hotline</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant">Immediate corridor updates, waybill queries, and rate quotes.</p>
+<a class="inline-flex items-center gap-1.5 font-headline-sm text-headline-sm text-secondary font-bold hover:underline pt-1" href="tel:07013476095">
+<span class="material-symbols-outlined text-base">call</span>
+<span>0701 347 6095</span>
+</a>
+</div>
+</div>
+<div class="pt-3 border-t border-surface-container space-y-2">
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-secondary text-lg mt-0.5">apartment</span>
+<div>
+<p class="font-label-md text-label-md text-on-surface">Corporate Logistics Desk</p>
+<p class="text-body-sm font-body-sm text-on-surface-variant">
+              Plot 80, Jedidiah Gardens Centenary City, Enugu 400706.
+            </p>
+</div>
+</div>
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-secondary text-lg mt-0.5">warehouse</span>
+<div>
+<p class="font-label-md text-label-md text-on-surface">Sweden Consolidation Depot</p>
+<p class="text-body-sm font-body-sm text-on-surface-variant">
+              Terminalspåret 8, Port of Gothenburg, Sweden.
+            </p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer (From Shared Components JSON) -->
+<footer class="bg-surface-container-low text-on-surface-variant pb-20">
+<div class="w-full px-6 py-8 flex flex-col md:flex-row justify-between items-center gap-4 max-w-7xl mx-auto">
+<div class="text-center md:text-left space-y-1">
+<p class="text-title-md font-title-md font-bold text-on-surface">Vinci &amp; Vee Group</p>
+<p class="text-body-sm font-body-sm text-on-surface-variant">
+          © 2025 Vinci and Vee Group. All Rights Reserved. Enugu HQ: Plot 80, Jedidiah Gardens Centenary City, Enugu 400706. Tel: 0701 347 6095
+        </p>
+</div>
+<div class="flex flex-wrap justify-center gap-4 text-label-sm font-label-sm text-on-surface-variant">
+<a class="hover:text-secondary underline transition-colors duration-150" href="#">Privacy Policy</a>
+<a class="hover:text-secondary underline transition-colors duration-150" href="#">Terms of Service</a>
+<a class="hover:text-secondary underline transition-colors duration-150" href="#">Wholesale Portal</a>
+<a class="hover:text-secondary underline transition-colors duration-150" href="#">SLA Inquiries</a>
+</div>
+</div>
+</footer>
+<!-- BottomNavBar (From Shared Components JSON) -->
+<!-- Contextual Active Destination: "Logistics" maps precisely to the Logistics & Shipping page -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-2 py-2 safe-bottom bg-surface-container-lowest shadow-md md:hidden">
+<!-- Item 1: Overview (Inactive) -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant hover:text-secondary transition-colors duration-150 active:scale-95 py-1 px-2" href="#">
+<span class="material-symbols-outlined">domain</span>
+<span class="text-label-sm font-label-sm">Overview</span>
+</a>
+<!-- Item 2: Telecom (Inactive) -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant hover:text-secondary transition-colors duration-150 active:scale-95 py-1 px-2" href="#">
+<span class="material-symbols-outlined">lan</span>
+<span class="text-label-sm font-label-sm">Telecom</span>
+</a>
+<!-- Item 3: Logistics (ACTIVE: matches "Shipping Logistics & Sweden Route Services") -->
+<a class="flex flex-col items-center justify-center text-secondary font-bold hover:text-secondary transition-colors duration-150 active:scale-95 py-1 px-2" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">local_shipping</span>
+<span class="text-label-sm font-label-sm">Logistics</span>
+</a>
+<!-- Item 4: Tyres (Inactive) -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant hover:text-secondary transition-colors duration-150 active:scale-95 py-1 px-2" href="#">
+<span class="material-symbols-outlined">tire_repair</span>
+<span class="text-label-sm font-label-sm">Tyres</span>
+</a>
+<!-- Item 5: Cloud SaaS (Inactive) -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant hover:text-secondary transition-colors duration-150 active:scale-95 py-1 px-2" href="#">
+<span class="material-symbols-outlined">cloud_done</span>
+<span class="text-label-sm font-label-sm">Cloud SaaS</span>
+</a>
+</nav>
+<!-- Interactive Freight Calculator Logic -->
+<script>
+    function calculateFreight() {
+      const mode = document.querySelector('input[name="freightMode"]:checked').value;
+      const weight = parseFloat(document.getElementById('weightInput').value) || 0;
+      const volume = parseFloat(document.getElementById('volumeInput').value) || 0;
+      
+      let costSEK = 0;
+      let transit = '18 - 22 Days';
+
+      if (mode === 'sea_lcl') {
+        // Base handling 1200 SEK + 2400 per CBM
+        costSEK = Math.max(1500, Math.round(1200 + (volume * 2400) + (weight * 3.5)));
+        transit = '18 - 22 Days (Direct Sea)';
+      } else if (mode === 'sea_fcl') {
+        costSEK = 38500;
+        transit = '16 - 20 Days (Full 20ft Box)';
+      } else if (mode === 'air') {
+        // Air freight calculation based on chargeable weight
+        const volWeight = volume * 167; // IATA standard air freight factor
+        const chargeable = Math.max(weight, volWeight);
+        costSEK = Math.round( chargebleRate(chargeable) );
+        transit = '3 - 5 Business Days';
+      }
+
+      document.getElementById('rateCost').textContent = 'SEK ' + costSEK.toLocaleString();
+      document.getElementById('rateTransit').textContent = transit;
+    }
+
+    function chargebleRate(w) {
+      return 1200 + (w * 48);
+    }
+  </script>
+</body></html>

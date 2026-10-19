@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Vinci Telecom - Fibre Infrastructure &amp; Optical Projects | Vinci &amp; Vee Group</title>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Google Fonts: Space Grotesk, Plus Jakarta Sans, Inter -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS with Forms and Container Plugins -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "on-surface-variant": "#44474d",
+            "primary-fixed-dim": "#b9c7e4",
+            "tertiary-fixed-dim": "#f9b98c",
+            "on-secondary-fixed": "#2e1500",
+            "surface-dim": "#d2d9f4",
+            "on-background": "#131b2e",
+            "on-surface": "#131b2e",
+            "inverse-surface": "#283044",
+            "surface-variant": "#dae2fd",
+            "primary-container": "#0d1c32",
+            "inverse-on-surface": "#eef0ff",
+            "on-tertiary-fixed-variant": "#683c19",
+            "on-tertiary": "#ffffff",
+            "on-secondary-container": "#794c21",
+            "on-secondary": "#ffffff",
+            "primary": "#000000",
+            "surface-container-lowest": "#ffffff",
+            "on-tertiary-container": "#ae7850",
+            "on-tertiary-fixed": "#301400",
+            "secondary-fixed": "#ffdcc2",
+            "inverse-primary": "#b9c7e4",
+            "tertiary-container": "#301400",
+            "surface-bright": "#faf8ff",
+            "on-primary-fixed-variant": "#39475f",
+            "secondary-fixed-dim": "#f8ba86",
+            "on-primary-fixed": "#0d1c32",
+            "primary-fixed": "#d6e3ff",
+            "surface-container-low": "#f2f3ff",
+            "on-primary": "#ffffff",
+            "surface-container": "#eaedff",
+            "on-primary-container": "#76849f",
+            "background": "#faf8ff",
+            "surface-tint": "#515f78",
+            "outline-variant": "#c5c6cd",
+            "on-secondary-fixed-variant": "#673d13",
+            "error-container": "#ffdad6",
+            "tertiary-fixed": "#ffdcc5",
+            "tertiary": "#000000",
+            "secondary": "#835429",
+            "on-error-container": "#93000a",
+            "outline": "#75777e",
+            "surface-container-high": "#e2e7ff",
+            "on-error": "#ffffff",
+            "surface-container-highest": "#dae2fd",
+            "surface": "#faf8ff",
+            "secondary-container": "#febf8b",
+            "error": "#ba1a1a"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.125rem",
+            "lg": "0.25rem",
+            "xl": "0.5rem",
+            "full": "0.75rem"
+          },
+          "spacing": {
+            "gutter": "1.5rem",
+            "space-sm": "0.5rem",
+            "margin": "1.25rem",
+            "margin-tablet": "2.5rem",
+            "space-lg": "1.75rem",
+            "margin-desktop": "4rem",
+            "space-xs": "0.25rem",
+            "space-xl": "3rem",
+            "gutter-desktop": "2rem",
+            "space-md": "1rem"
+          },
+          "fontFamily": {
+            "headline-lg": ["Space Grotesk"],
+            "label-sm": ["Plus Jakarta Sans"],
+            "title-sm": ["Plus Jakarta Sans"],
+            "headline-md": ["Space Grotesk"],
+            "body-sm": ["Inter"],
+            "body-md": ["Inter"],
+            "headline-sm": ["Space Grotesk"],
+            "title-md": ["Plus Jakarta Sans"],
+            "label-md": ["Plus Jakarta Sans"],
+            "body-lg": ["Inter"],
+            "display-hero-mobile": ["Space Grotesk"],
+            "headline-lg-mobile": ["Space Grotesk"],
+            "display-hero": ["Space Grotesk"]
+          },
+          "fontSize": {
+            "headline-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "500" }],
+            "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.08em", "fontWeight": "700" }],
+            "title-sm": ["15px", { "lineHeight": "22px", "letterSpacing": "0em", "fontWeight": "600" }],
+            "headline-md": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.015em", "fontWeight": "500" }],
+            "body-sm": ["13px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "400" }],
+            "body-md": ["15px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "400" }],
+            "headline-sm": ["22px", { "lineHeight": "30px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "title-md": ["18px", { "lineHeight": "26px", "letterSpacing": "-0.005em", "fontWeight": "600" }],
+            "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.06em", "fontWeight": "600" }],
+            "body-lg": ["18px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "400" }],
+            "display-hero-mobile": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "600" }],
+            "headline-lg-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "500" }],
+            "display-hero": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.03em", "fontWeight": "600" }]
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+    .custom-scroll::-webkit-scrollbar {
+      height: 6px;
+      width: 6px;
+    }
+    .custom-scroll::-webkit-scrollbar-track {
+      background: #f2f3ff;
+    }
+    .custom-scroll::-webkit-scrollbar-thumb {
+      background: #c5c6cd;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body class="bg-surface text-on-surface antialiased selection:bg-secondary-fixed selection:text-on-secondary-fixed">
+<!-- TOP APP BAR / BRAND HEADER -->
+<header class="fixed top-0 left-0 w-full z-50 bg-surface/90 dark:bg-primary-container/90 backdrop-blur-md border-b border-outline-variant/30 dark:border-outline/20 shadow-sm dark:shadow-none transition-all duration-200 ease-in-out">
+<div class="max-w-7xl mx-auto px-margin-desktop h-20 flex items-center justify-between">
+<!-- Logo Identity -->
+<a class="flex items-center gap-3 group" href="#">
+<div class="w-9 h-9 rounded-lg bg-primary-container flex items-center justify-center border border-secondary/40 shadow-sm">
+<span class="material-symbols-outlined text-secondary-fixed text-xl" data-icon="hub">hub</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm font-bold tracking-tight text-primary dark:text-inverse-primary">Vinci &amp; Vee Group</span>
+<span class="font-label-sm text-label-sm text-secondary tracking-widest uppercase">Infrastructure &amp; Optical Networks</span>
+</div>
+</a>
+<!-- Desktop Navigation Links (Shared Component Match) -->
+<nav class="hidden lg:flex items-center space-x-7">
+<a class="text-on-surface-variant dark:text-outline-variant hover:text-on-surface dark:hover:text-inverse-on-surface font-title-sm text-title-sm transition-colors duration-150" href="#overview">Overview</a>
+<a class="text-secondary dark:text-secondary-fixed border-b-2 border-secondary dark:border-secondary-fixed pb-1 font-title-sm text-title-sm" href="#telecom">Telecom &amp; Fibre</a>
+<a class="text-on-surface-variant dark:text-outline-variant hover:text-on-surface dark:hover:text-inverse-on-surface font-title-sm text-title-sm transition-colors duration-150" href="#sweden">Sweden Shipping</a>
+<a class="text-on-surface-variant dark:text-outline-variant hover:text-on-surface dark:hover:text-inverse-on-surface font-title-sm text-title-sm transition-colors duration-150" href="#tyre">Tyre Distribution</a>
+<a class="text-on-surface-variant dark:text-outline-variant hover:text-on-surface dark:hover:text-inverse-on-surface font-title-sm text-title-sm transition-colors duration-150" href="#saas">Cloud SaaS</a>
+<a class="text-on-surface-variant dark:text-outline-variant hover:text-on-surface dark:hover:text-inverse-on-surface font-title-sm text-title-sm transition-colors duration-150" href="#construction">Construction &amp; Interiors</a>
+</nav>
+<!-- Trailing Action Clustered Controls -->
+<div class="flex items-center space-x-4">
+<a class="hidden sm:flex items-center gap-1.5 text-on-surface-variant font-title-sm text-title-sm hover:text-secondary transition-colors duration-150 px-2.5 py-1.5 border border-outline-variant/30 rounded-lg" href="tel:07013476095">
+<span class="material-symbols-outlined text-secondary text-sm" data-icon="call">call</span>
+<span>0701 347 6095</span>
+</a>
+<a class="bg-primary-container text-surface-container-lowest font-label-md text-label-md px-5 py-2.5 rounded-lg border border-secondary/30 hover:border-secondary transition-all duration-150 flex items-center gap-2 shadow-sm" href="#dispatch-form">
+<span>Engage Group HQ</span>
+<span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</div>
+</header>
+<!-- MAIN CANVAS CONTAINER -->
+<main class="pt-24 min-h-screen">
+<!-- 1. HERO SECTION & STRATEGIC HIGHLIGHT -->
+<section class="relative pt-12 pb-20 border-b border-outline-variant/30 overflow-hidden bg-gradient-to-b from-surface via-surface-bright to-surface-container-low">
+<!-- Ambient Graphic Lines -->
+<div class="absolute inset-0 pointer-events-none opacity-40">
+<div class="absolute top-0 right-1/4 w-[600px] h-[600px] bg-secondary-fixed-dim/20 rounded-full blur-3xl"></div>
+<div class="absolute -bottom-20 left-10 w-[500px] h-[500px] bg-surface-variant/40 rounded-full blur-2xl"></div>
+</div>
+<div class="max-w-7xl mx-auto px-margin-desktop relative z-10">
+<!-- Breadcrumb / Institutional Authority Label -->
+<div class="flex items-center gap-2 mb-6">
+<div class="inline-flex items-center gap-2 px-3 py-1 bg-surface-container-high border border-outline-variant/40 rounded-lg">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-label-sm text-label-sm tracking-wider uppercase text-on-surface-variant">CRITICAL INFRASTRUCTURE DIVISION // EASTERN NIGERIA &amp; NATIONAL BACKBONE</span>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop items-center">
+<!-- Left Column: Copy & Command CTAs -->
+<div class="lg:col-span-7 space-y-6">
+<h1 class="font-display-hero text-display-hero text-primary tracking-tight text-balance">
+              Carrier-Grade Fibre Optic Infrastructure &amp; Metro Transmission Networks
+            </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl leading-relaxed border-l-2 border-secondary pl-4">
+              We provide end-to-end fibre deployment services, ensuring reliable high-speed connectivity for residential, commercial, and enterprise clients.
+            </p>
+<div class="pt-2 flex flex-wrap items-center gap-4">
+<a class="inline-flex items-center gap-2.5 px-6 py-3.5 bg-primary-container text-surface-bright rounded-lg border border-secondary/40 font-title-sm text-title-sm hover:bg-black hover:border-secondary transition-all shadow-md" href="#dispatch-form">
+<span class="material-symbols-outlined text-secondary-fixed text-lg" data-icon="assignment">assignment</span>
+<span>Request Network Survey &amp; Quotation</span>
+</a>
+<a class="inline-flex items-center gap-2 px-6 py-3.5 bg-surface-container-lowest text-on-surface rounded-lg border border-outline-variant/60 font-title-sm text-title-sm hover:border-secondary hover:text-secondary transition-all shadow-sm" href="#coverage-explorer">
+<span class="material-symbols-outlined text-lg" data-icon="route">route</span>
+<span>Explore Metro Duct Corridors</span>
+</a>
+</div>
+<!-- Key SLA Trust Verification Badges -->
+<div class="pt-6 grid grid-cols-2 sm:grid-cols-4 gap-4 border-t border-outline-variant/30">
+<div class="p-3 bg-surface-container-lowest/80 rounded-lg border border-outline-variant/20 shadow-sm">
+<div class="font-headline-sm text-headline-sm font-bold text-primary">100Gbps+</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">DWDM Core Capacity</div>
+</div>
+<div class="p-3 bg-surface-container-lowest/80 rounded-lg border border-outline-variant/20 shadow-sm">
+<div class="font-headline-sm text-headline-sm font-bold text-secondary">&lt;4ms</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">Regional Latency SLA</div>
+</div>
+<div class="p-3 bg-surface-container-lowest/80 rounded-lg border border-outline-variant/20 shadow-sm">
+<div class="font-headline-sm text-headline-sm font-bold text-primary">99.98%</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">Carrier Availability</div>
+</div>
+<div class="p-3 bg-surface-container-lowest/80 rounded-lg border border-outline-variant/20 shadow-sm">
+<div class="font-headline-sm text-headline-sm font-bold text-secondary">2-Hour</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">Rapid Response MTTR</div>
+</div>
+</div>
+</div>
+<!-- Right Column: High-Fidelity Sovereign Visual Card -->
+<div class="lg:col-span-5">
+<div class="bg-primary-container text-surface-bright rounded-xl border border-secondary/30 p-6 shadow-2xl relative overflow-hidden">
+<div class="flex items-center justify-between pb-4 border-b border-outline/30">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary-fixed text-xl" data-icon="sensors">sensors</span>
+<span class="font-title-sm text-title-sm text-surface-container-lowest">Enugu &amp; Centenary Ring Status</span>
+</div>
+<span class="font-label-sm text-label-sm px-2.5 py-0.5 rounded bg-secondary/30 text-secondary-fixed border border-secondary/50">LIVE TELEMETRY</span>
+</div>
+<!-- Stylized Vector / Optical Schematic Simulation -->
+<div class="my-5 relative h-64 bg-[#081324] rounded-lg border border-outline/20 p-4 flex flex-col justify-between overflow-hidden">
+<!-- SVG Network Topology Lines -->
+<svg class="absolute inset-0 w-full h-full opacity-60" preserveaspectratio="none" viewbox="0 0 300 200">
+<path d="M 30,160 L 90,80 L 190,70 L 270,140 Z" fill="none" stroke="#925c2a" stroke-dasharray="4 2" stroke-width="2.5"></path>
+<path d="M 90,80 L 150,140 L 270,140" fill="none" stroke="#b9c7e4" stroke-dasharray="2 2" stroke-width="1.5"></path>
+<circle cx="30" cy="160" fill="#f8ba86" r="5"></circle>
+<circle cx="90" cy="80" fill="#ffdcc2" r="6"></circle>
+<circle cx="190" cy="70" fill="#f8ba86" r="5"></circle>
+<circle cx="270" cy="140" fill="#835429" r="7"></circle>
+<circle cx="150" cy="140" fill="#dae2fd" r="4"></circle>
+</svg>
+<div class="relative z-10 flex justify-between items-start">
+<div class="bg-primary-container/80 backdrop-blur px-2.5 py-1 rounded border border-secondary/30">
+<div class="font-label-sm text-label-sm text-secondary-fixed">CENTENARY CORRIDOR</div>
+<div class="font-body-sm text-body-sm text-inverse-primary">Ring Node 01 - Plot 80 Jedidiah HQ</div>
+</div>
+<div class="text-right">
+<span class="font-label-sm text-label-sm text-surface-tint">CORE ATTENUATION</span>
+<div class="font-title-sm text-title-sm text-secondary-fixed">0.19 dB/km</div>
+</div>
+</div>
+<!-- Center Optical Node Overlay -->
+<div class="relative z-10 bg-primary-container/90 border border-outline/40 p-3 rounded-lg mx-auto w-full max-w-xs space-y-2">
+<div class="flex justify-between items-center text-xs">
+<span class="text-on-primary-container font-label-sm">Primary Backbone</span>
+<span class="text-secondary-fixed font-semibold">48-Core Ribbon</span>
+</div>
+<div class="w-full bg-outline/30 h-1.5 rounded-full overflow-hidden">
+<div class="bg-secondary h-full rounded-full w-4/5"></div>
+</div>
+<div class="flex justify-between text-[11px] text-on-primary-container">
+<span>Active Wavelength: 1550nm DWDM</span>
+<span>Load: 38.4 Gbps</span>
+</div>
+</div>
+<div class="relative z-10 flex justify-between items-end text-xs text-on-primary-container">
+<div>
+<span class="block text-[10px] uppercase font-label-sm text-surface-tint">Route Density</span>
+<span class="font-semibold text-surface-bright">Heavy Armoured Sub-Duct</span>
+</div>
+<div class="text-right">
+<span class="block text-[10px] uppercase font-label-sm text-surface-tint">OTDR Loopback</span>
+<span class="text-secondary-fixed font-semibold">Continuous Pass</span>
+</div>
+</div>
+</div>
+<!-- Card Bottom Metric Strip -->
+<div class="pt-2 grid grid-cols-2 gap-3 text-xs">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary-fixed text-base" data-icon="verified_user">verified_user</span>
+<span class="text-surface-bright">NCC Licensed Deployment</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary-fixed text-base" data-icon="precision_manufacturing">precision_manufacturing</span>
+<span class="text-surface-bright">Fujikura Fusion Precision</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 2. FOUR CORE TELECOM PILLARS -->
+<section class="py-space-xl bg-surface border-b border-outline-variant/30" id="telecom">
+<div class="max-w-7xl mx-auto px-margin-desktop">
+<div class="text-center max-w-3xl mx-auto mb-14">
+<div class="font-label-sm text-label-sm text-secondary uppercase tracking-widest mb-2">ENGINEERING EXCELLENCE</div>
+<h2 class="font-headline-lg text-headline-lg text-primary">Strategic Optical Infrastructure Capabilities</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-3">
+            Deploying resilient, high-density physical layer transmission systems across federal highways, metropolitan corridors, and premier private estates.
+          </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<!-- Pillar 1 -->
+<div class="bg-surface-container-lowest p-6 rounded-lg border border-outline-variant/40 hover:border-secondary transition-all duration-200 flex flex-col justify-between group shadow-sm">
+<div>
+<div class="w-12 h-12 rounded-lg bg-surface-container-low flex items-center justify-center mb-5 group-hover:bg-secondary-fixed transition-colors">
+<span class="material-symbols-outlined text-secondary text-2xl" data-icon="construction">construction</span>
+</div>
+<h3 class="font-title-md text-title-md text-primary mb-2">Long-Haul &amp; Metro Trenching</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                HDD directional drilling, micro-trenching, sub-surface civil works, and heavy armoured optical cable laying with authorized Right of Way (RoW) clearances.
+              </p>
+</div>
+<div class="pt-6 mt-4 border-t border-outline-variant/20 flex items-center justify-between font-label-sm text-label-sm text-secondary">
+<span>HDPE DUCT NETWORKS</span>
+<span class="material-symbols-outlined text-sm" data-icon="chevron_right">chevron_right</span>
+</div>
+</div>
+<!-- Pillar 2 -->
+<div class="bg-surface-container-lowest p-6 rounded-lg border border-outline-variant/40 hover:border-secondary transition-all duration-200 flex flex-col justify-between group shadow-sm">
+<div>
+<div class="w-12 h-12 rounded-lg bg-surface-container-low flex items-center justify-center mb-5 group-hover:bg-secondary-fixed transition-colors">
+<span class="material-symbols-outlined text-secondary text-2xl" data-icon="home_work">home_work</span>
+</div>
+<h3 class="font-title-md text-title-md text-primary mb-2">FTTH &amp; Gated Estate Systems</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                Full-turnkey GPON &amp; XGS-PON distribution architecture customized for Centenary City estates, residential villas, and plug-and-play optical network terminals (ONT).
+              </p>
+</div>
+<div class="pt-6 mt-4 border-t border-outline-variant/20 flex items-center justify-between font-label-sm text-label-sm text-secondary">
+<span>SMART ESTATE BACKHAUL</span>
+<span class="material-symbols-outlined text-sm" data-icon="chevron_right">chevron_right</span>
+</div>
+</div>
+<!-- Pillar 3 -->
+<div class="bg-surface-container-lowest p-6 rounded-lg border border-outline-variant/40 hover:border-secondary transition-all duration-200 flex flex-col justify-between group shadow-sm">
+<div>
+<div class="w-12 h-12 rounded-lg bg-surface-container-low flex items-center justify-center mb-5 group-hover:bg-secondary-fixed transition-colors">
+<span class="material-symbols-outlined text-secondary text-2xl" data-icon="lan">lan</span>
+</div>
+<h3 class="font-title-md text-title-md text-primary mb-2">Enterprise DIA &amp; Dark Fibre</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                Dedicated 1:1 symmetrical Internet access, redundant BGP routing, and private point-to-point dark strand leasing for commercial banks and corporate campuses.
+              </p>
+</div>
+<div class="pt-6 mt-4 border-t border-outline-variant/20 flex items-center justify-between font-label-sm text-label-sm text-secondary">
+<span>UNLIMITED CARRIER LEASE</span>
+<span class="material-symbols-outlined text-sm" data-icon="chevron_right">chevron_right</span>
+</div>
+</div>
+<!-- Pillar 4 -->
+<div class="bg-surface-container-lowest p-6 rounded-lg border border-outline-variant/40 hover:border-secondary transition-all duration-200 flex flex-col justify-between group shadow-sm">
+<div>
+<div class="w-12 h-12 rounded-lg bg-surface-container-low flex items-center justify-center mb-5 group-hover:bg-secondary-fixed transition-colors">
+<span class="material-symbols-outlined text-secondary text-2xl" data-icon="bolt">bolt</span>
+</div>
+<h3 class="font-title-md text-title-md text-primary mb-2">24/7 Optical Splicing &amp; NOC</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                Factory-calibrated Fujikura fusion splicers, bidirectional OTDR trace verification, and rapid intervention crews for highway road-cut restoration.
+              </p>
+</div>
+<div class="pt-6 mt-4 border-t border-outline-variant/20 flex items-center justify-between font-label-sm text-label-sm text-secondary">
+<span>UNDER 2-HOUR MTTR</span>
+<span class="material-symbols-outlined text-sm" data-icon="chevron_right">chevron_right</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 3. INTERACTIVE ENTERPRISE COVERAGE & DUCT ROUTE EXPLORER -->
+<section class="py-space-xl bg-surface-container-low border-b border-outline-variant/30" id="coverage-explorer">
+<div class="max-w-7xl mx-auto px-margin-desktop">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-4">
+<div>
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest">NETWORK TOPOLOGY VISUALIZER</span>
+<h2 class="font-headline-lg text-headline-lg text-primary mt-1">Duct Corridors &amp; Enterprise Capacity Tool</h2>
+</div>
+<div class="text-on-surface-variant font-body-sm text-body-sm">
+            Active Nodes Centenary City Hub • Plot 80 Jedidiah Gardens HQ
+          </div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop">
+<!-- Corridor Status Interactive Selector -->
+<div class="lg:col-span-7 bg-surface-container-lowest p-6 rounded-xl border border-outline-variant/40 shadow-sm space-y-6">
+<h3 class="font-title-md text-title-md text-primary">Regional Metro Fibre Route Manifest</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Select an active sector to evaluate duct path redundancy, splice enclosure access, and optical handoff standards.
+            </p>
+<div class="space-y-3" id="route-manifest">
+<!-- Route Item 1 -->
+<div class="p-4 rounded-lg border border-secondary/50 bg-surface-container-low cursor-pointer transition-all hover:border-secondary flex items-start justify-between">
+<div class="space-y-1">
+<div class="flex items-center gap-2">
+<span class="font-title-sm text-title-sm text-primary">Centenary City Corridor</span>
+<span class="px-2 py-0.5 rounded text-[10px] font-label-sm bg-secondary/20 text-on-secondary-container border border-secondary/30">LIVE PRIMARY HUB</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Jedidiah Gardens HQ to Main Expressway Spine via 96-Core Armoured Duct</p>
+<div class="flex gap-4 text-xs text-on-surface-variant pt-2">
+<span><strong>Cable Spec:</strong> Loose Tube G.652.D</span>
+<span><strong>Splice Loss:</strong> ≤ 0.02 dB</span>
+</div>
+</div>
+<div class="text-right">
+<span class="font-title-sm text-title-sm text-secondary font-bold">100% Up</span>
+<div class="font-label-sm text-label-sm text-outline">96 Strands Ready</div>
+</div>
+</div>
+<!-- Route Item 2 -->
+<div class="p-4 rounded-lg border border-outline-variant/40 bg-surface-container-lowest cursor-pointer transition-all hover:border-secondary flex items-start justify-between">
+<div class="space-y-1">
+<div class="flex items-center gap-2">
+<span class="font-title-sm text-title-sm text-primary">Enugu Central Business District</span>
+<span class="px-2 py-0.5 rounded text-[10px] font-label-sm bg-surface-container-high text-on-surface-variant border border-outline-variant/50">OPERATIONAL DUAL RING</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Ogui Road - Okpara Avenue Interconnect with Financial District Splice Pod</p>
+<div class="flex gap-4 text-xs text-on-surface-variant pt-2">
+<span><strong>Bandwidth:</strong> Multi-Terabit Capable</span>
+<span><strong>Redundancy:</strong> Dual Sub-duct</span>
+</div>
+</div>
+<div class="text-right">
+<span class="font-title-sm text-title-sm text-secondary font-bold">Carrier Ready</span>
+<div class="font-label-sm text-label-sm text-outline">48 Strands Active</div>
+</div>
+</div>
+<!-- Route Item 3 -->
+<div class="p-4 rounded-lg border border-outline-variant/40 bg-surface-container-lowest cursor-pointer transition-all hover:border-secondary flex items-start justify-between">
+<div class="space-y-1">
+<div class="flex items-center gap-2">
+<span class="font-title-sm text-title-sm text-primary">Independence Layout Corporate Loop</span>
+<span class="px-2 py-0.5 rounded text-[10px] font-label-sm bg-surface-container-high text-on-surface-variant border border-outline-variant/50">FULLY COMMISSIONED</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Government Secretariats, Hotels, &amp; Tech Hub Backhaul Loop</p>
+<div class="flex gap-4 text-xs text-on-surface-variant pt-2">
+<span><strong>Latency:</strong> 1.8ms to Core Node</span>
+<span><strong>Power Backup:</strong> Solar Optical Shelters</span>
+</div>
+</div>
+<div class="text-right">
+<span class="font-title-sm text-title-sm text-secondary font-bold">Protected</span>
+<div class="font-label-sm text-label-sm text-outline">Low Attenuation</div>
+</div>
+</div>
+<!-- Route Item 4 -->
+<div class="p-4 rounded-lg border border-outline-variant/40 bg-surface-container-lowest cursor-pointer transition-all hover:border-secondary flex items-start justify-between">
+<div class="space-y-1">
+<div class="flex items-center gap-2">
+<span class="font-title-sm text-title-sm text-primary">Industrial Free Zone &amp; Emene Logistics Axis</span>
+<span class="px-2 py-0.5 rounded text-[10px] font-label-sm bg-secondary/10 text-secondary border border-secondary/20">EXPANSION CONDUIT</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Airport Road Spur to Factory Parks, Heavy Duty Micro-Trench Path</p>
+<div class="flex gap-4 text-xs text-on-surface-variant pt-2">
+<span><strong>Deployment:</strong> 7-Way Micro-Duct</span>
+<span><strong>Hand-off:</strong> Single Mode LC-UPC</span>
+</div>
+</div>
+<div class="text-right">
+<span class="font-title-sm text-title-sm text-primary font-bold">Active Intake</span>
+<div class="font-label-sm text-label-sm text-outline">Custom Splicing</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Interactive Speed & Bandwidth Estimator (Inline JS Powered) -->
+<div class="lg:col-span-5 bg-primary-container text-surface-bright p-6 rounded-xl border border-secondary/30 shadow-lg flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between pb-3 border-b border-outline/30 mb-5">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary-fixed text-xl" data-icon="tune">tune</span>
+<h3 class="font-title-md text-title-md text-surface-bright">Enterprise Bandwidth Estimator</h3>
+</div>
+<span class="font-label-sm text-label-sm text-secondary-fixed">SLA CONFIGURATOR</span>
+</div>
+<div class="space-y-5">
+<div>
+<label class="block font-label-sm text-label-sm text-inverse-primary uppercase mb-2">Committed Information Rate (CIR)</label>
+<input class="w-full accent-secondary bg-surface-container h-2 rounded-lg cursor-pointer" id="cir-slider" max="10000" min="100" step="100" type="range" value="1000"/>
+<div class="flex justify-between items-center text-xs mt-1 text-on-primary-container font-mono">
+<span>100 Mbps</span>
+<span class="text-secondary-fixed font-bold text-sm" id="cir-display">1,000 Mbps (1 Gbps)</span>
+<span>10 Gbps</span>
+</div>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-inverse-primary uppercase mb-2">Service Topology &amp; Redundancy</label>
+<select class="w-full bg-[#081324] border border-outline/40 text-surface-bright rounded-lg p-2.5 font-body-sm text-body-sm focus:border-secondary focus:ring-1 focus:ring-secondary" id="topology-select">
+<option value="single">Single Physical Tail with Rapid OTDR Restoration</option>
+<option selected="" value="dual">Dual Heterogeneous Sub-Duct (Active-Active BGP)</option>
+<option value="dark">Dedicated Dark Fibre Pair (Client Managed DWDM Optics)</option>
+</select>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-inverse-primary uppercase mb-2">Public IPv4 Allocation</label>
+<div class="grid grid-cols-3 gap-2">
+<button class="ip-btn py-2 text-xs rounded border border-outline/40 bg-[#081324] hover:border-secondary text-surface-bright active-ip font-mono text-center" type="button">/29 (8 IPs)</button>
+<button class="ip-btn py-2 text-xs rounded border border-secondary bg-secondary/20 text-secondary-fixed font-mono text-center" type="button">/28 (16 IPs)</button>
+<button class="ip-btn py-2 text-xs rounded border border-outline/40 bg-[#081324] hover:border-secondary text-surface-bright font-mono text-center" type="button">/27 (32 IPs)</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Dynamic Projection Card -->
+<div class="pt-6 mt-6 border-t border-outline/30 space-y-3">
+<div class="bg-[#081324] p-4 rounded-lg border border-secondary/30">
+<div class="flex justify-between text-xs text-on-primary-container">
+<span>Guaranteed Uptime Target</span>
+<span class="text-surface-bright font-semibold">99.98% Financial Tier</span>
+</div>
+<div class="flex justify-between text-xs text-on-primary-container mt-1">
+<span>Estimated Local Hand-Off</span>
+<span class="text-secondary-fixed font-mono font-semibold" id="handoff-spec">10G-LR Single Mode Optical</span>
+</div>
+<div class="flex justify-between text-xs text-on-primary-container mt-1">
+<span>Deployment Lead Time</span>
+<span class="text-surface-bright font-semibold">5 - 7 Business Days</span>
+</div>
+</div>
+<a class="w-full py-3 bg-secondary hover:bg-on-secondary-container text-surface-bright font-title-sm text-title-sm text-center rounded-lg flex items-center justify-center gap-2 transition-all" href="#dispatch-form">
+<span>Lock Survey Reservation</span>
+<span class="material-symbols-outlined text-sm" data-icon="send">send</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. FEATURED MAJOR CIVIL-TELECOM CASE STUDIES -->
+<section class="py-space-xl bg-surface border-b border-outline-variant/30">
+<div class="max-w-7xl mx-auto px-margin-desktop">
+<div class="text-center max-w-3xl mx-auto mb-14">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest">DEPLOYMENT RECORD</span>
+<h2 class="font-headline-lg text-headline-lg text-primary mt-1">Flagship Regional Fibre Deployments</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">
+            Engineering high-reliability physical infrastructure for sovereign real estate and enterprise hubs in Eastern Nigeria.
+          </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter-desktop">
+<!-- Case Study 1 -->
+<div class="bg-surface-container-lowest rounded-xl border border-outline-variant/40 overflow-hidden shadow-sm flex flex-col justify-between group">
+<div class="p-8">
+<div class="flex items-center justify-between mb-4">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest font-bold">PROJECT ALPHA // CENTENARY CITY</span>
+<span class="text-xs px-2.5 py-1 bg-surface-container text-on-surface-variant rounded border border-outline-variant/30">COMPLETED &amp; LIVE</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-3">Centenary City 48-Core High-Density Subterranean Ring</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 leading-relaxed">
+                Turnkey civil engineering and optical infrastructure connecting private residential estates and commercial zones across Centenary City. Comprises 14.5 kilometers of heavy-duty subterranean HDPE ducts, 12 weatherized street optical distribution cabinets (ODC), and dual redundancy feeds to guarantee perpetual uptime.
+              </p>
+<div class="grid grid-cols-3 gap-3 pt-4 border-t border-outline-variant/20">
+<div>
+<div class="font-headline-sm text-headline-sm font-bold text-primary">14.5 km</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">Trenching Length</div>
+</div>
+<div>
+<div class="font-headline-sm text-headline-sm font-bold text-secondary">48-Core</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">Single-Mode G.652D</div>
+</div>
+<div>
+<div class="font-headline-sm text-headline-sm font-bold text-primary">0.018dB</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">Avg Splice Atten.</div>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-low px-8 py-3.5 border-t border-outline-variant/30 flex justify-between items-center text-xs">
+<span class="text-on-surface-variant">Location: Jedidiah Gardens &amp; Outer Ring Corridors</span>
+<span class="font-semibold text-secondary flex items-center gap-1">
+<span>Verified Specs</span>
+<span class="material-symbols-outlined text-xs" data-icon="check_circle">check_circle</span>
+</span>
+</div>
+</div>
+<!-- Case Study 2 -->
+<div class="bg-surface-container-lowest rounded-xl border border-outline-variant/40 overflow-hidden shadow-sm flex flex-col justify-between group">
+<div class="p-8">
+<div class="flex items-center justify-between mb-4">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest font-bold">PROJECT BETA // DATA CARRIER</span>
+<span class="text-xs px-2.5 py-1 bg-surface-container text-on-surface-variant rounded border border-outline-variant/30">CRITICAL BACKBONE</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-3">Tier-3 Data Switch Centre Optical Interconnect</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 leading-relaxed">
+                Implementation of a multi-redundant optical umbilical connecting regional financial switching centers with primary national telecom carrier nodes. Built using steel-armoured micro-armoured cables laid via horizontal directional drilling (HDD) to bypass rail and highway crossings with zero surface disruption.
+              </p>
+<div class="grid grid-cols-3 gap-3 pt-4 border-t border-outline-variant/20">
+<div>
+<div class="font-headline-sm text-headline-sm font-bold text-primary">Dual-Path</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">Geographic Routing</div>
+</div>
+<div>
+<div class="font-headline-sm text-headline-sm font-bold text-secondary">0.0 ms</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">Failover Switch Lag</div>
+</div>
+<div>
+<div class="font-headline-sm text-headline-sm font-bold text-primary">100GbE</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">DWDM Transponder</div>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-low px-8 py-3.5 border-t border-outline-variant/30 flex justify-between items-center text-xs">
+<span class="text-on-surface-variant">Client: Enterprise Tier-3 Colocation Facilities</span>
+<span class="font-semibold text-secondary flex items-center gap-1">
+<span>Carrier Audited</span>
+<span class="material-symbols-outlined text-xs" data-icon="check_circle">check_circle</span>
+</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 5. TECHNICAL SLA & OPTICAL SPECIFICATIONS COMPARISON TABLE -->
+<section class="py-space-xl bg-surface-bright border-b border-outline-variant/30">
+<div class="max-w-7xl mx-auto px-margin-desktop">
+<div class="max-w-3xl mb-10">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest">PRECISION ENGINEERING STANDARDS</span>
+<h2 class="font-headline-lg text-headline-lg text-primary mt-1">Optical Specifications &amp; Carrier SLA Matrix</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">
+            Every metre of duct and optical strand is deployed according to ITU-T international recommendations and stringent IEEE carrier standards.
+          </p>
+</div>
+<div class="overflow-x-auto custom-scroll border border-outline-variant/40 rounded-xl bg-surface-container-lowest shadow-sm">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-high border-b border-outline-variant/40 text-on-surface font-title-sm text-title-sm">
+<th class="p-4 pl-6">Technical Parameter</th>
+<th class="p-4">Enterprise Dedicated (DIA)</th>
+<th class="p-4">Carrier Dark Fibre Lease</th>
+<th class="p-4">FTTH Residential Estate</th>
+<th class="p-4 pr-6">Testing Protocol</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-outline-variant/20 font-body-sm text-body-sm text-on-surface-variant">
+<tr class="hover:bg-surface-container-low/50">
+<td class="p-4 pl-6 font-semibold text-primary">Core Optical Standard</td>
+<td class="p-4">ITU-T G.652.D Low Water Peak</td>
+<td class="p-4">ITU-T G.657.A2 Bend Insensitive</td>
+<td class="p-4">ITU-T G.657.A1 / A2 Drop Cable</td>
+<td class="p-4 pr-6 font-mono text-xs">Spectral Dispersion Meter</td>
+</tr>
+<tr class="hover:bg-surface-container-low/50">
+<td class="p-4 pl-6 font-semibold text-primary">Attenuation Target (1310/1550nm)</td>
+<td class="p-4 text-secondary font-medium">≤ 0.32 / ≤ 0.19 dB/km</td>
+<td class="p-4 text-secondary font-medium">≤ 0.30 / ≤ 0.18 dB/km</td>
+<td class="p-4 text-secondary font-medium">≤ 0.35 / ≤ 0.22 dB/km</td>
+<td class="p-4 pr-6 font-mono text-xs">Bidirectional OTDR Trace</td>
+</tr>
+<tr class="hover:bg-surface-container-low/50">
+<td class="p-4 pl-6 font-semibold text-primary">Fusion Splice Insertion Loss</td>
+<td class="p-4">≤ 0.02 dB per joint</td>
+<td class="p-4">≤ 0.015 dB per joint</td>
+<td class="p-4">≤ 0.04 dB per joint</td>
+<td class="p-4 pr-6 font-mono text-xs">Fujikura FSM-90S Loss Est.</td>
+</tr>
+<tr class="hover:bg-surface-container-low/50">
+<td class="p-4 pl-6 font-semibold text-primary">Guaranteed CIR Contention Ratio</td>
+<td class="p-4 font-semibold text-primary">1:1 Dedicated Symmetrical</td>
+<td class="p-4 font-semibold text-primary">Unmetered Light Path</td>
+<td class="p-4">1:4 or 1:8 GPON Split</td>
+<td class="p-4 pr-6 font-mono text-xs">RFC 2544 Gigabit Tester</td>
+</tr>
+<tr class="hover:bg-surface-container-low/50">
+<td class="p-4 pl-6 font-semibold text-primary">Mean Time to Repair (MTTR)</td>
+<td class="p-4 font-bold text-secondary">≤ 2 Hours (24/7 Crew)</td>
+<td class="p-4 font-bold text-secondary">≤ 4 Hours</td>
+<td class="p-4">≤ 6 Hours</td>
+<td class="p-4 pr-6 font-mono text-xs">NOC Emergency Dispatch</td>
+</tr>
+<tr class="hover:bg-surface-container-low/50">
+<td class="p-4 pl-6 font-semibold text-primary">Duct Mechanical Protection</td>
+<td class="p-4">Double-Sheathed Armoured Steel</td>
+<td class="p-4">Subterranean HDPE 40mm</td>
+<td class="p-4">UV Resistant FRP Armoured</td>
+<td class="p-4 pr-6 font-mono text-xs">Crush Test ISO 9001</td>
+</tr>
+<tr class="hover:bg-surface-container-low/50">
+<td class="p-4 pl-6 font-semibold text-primary">Handoff Interface</td>
+<td class="p-4">LC/UPC SFP+ / QSFP28</td>
+<td class="p-4">Optical Patch Panel (ODF)</td>
+<td class="p-4">SC/APC Single Port ONT</td>
+<td class="p-4 pr-6 font-mono text-xs">Microscope Fiber Scope</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<!-- 6. NOC SURVEY & DARK FIBRE TENDER DISPATCH FORM -->
+<section class="py-space-xl bg-surface border-b border-outline-variant/30" id="dispatch-form">
+<div class="max-w-7xl mx-auto px-margin-desktop">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop items-start">
+<!-- Left Column: Context & Contact Details -->
+<div class="lg:col-span-5 space-y-6">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest">DISPATCH &amp; TENDER</span>
+<h2 class="font-headline-lg text-headline-lg text-primary">Initiate Route Survey or Network Tender</h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Chief engineers, estate general managers, and ISP technical directors can book an official sub-surface feasibility survey or request carrier dark strand allocations.
+            </p>
+<!-- Physical HQ Information Card -->
+<div class="bg-surface-container-lowest p-6 rounded-xl border border-outline-variant/40 space-y-4 shadow-sm">
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary text-xl mt-0.5" data-icon="location_on">location_on</span>
+<div>
+<div class="font-title-sm text-title-sm text-primary">Operational Headquarters</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+                    Plot 80, Jedidiah Gardens Centenary City, Enugu 400706, Nigeria.
+                  </p>
+</div>
+</div>
+<div class="flex items-start gap-3 pt-3 border-t border-outline-variant/20">
+<span class="material-symbols-outlined text-secondary text-xl mt-0.5" data-icon="call">call</span>
+<div>
+<div class="font-title-sm text-title-sm text-primary">Direct Technical Operations Line</div>
+<a class="font-body-sm text-body-sm text-secondary font-medium hover:underline" href="tel:07013476095">
+                    0701 347 6095
+                  </a>
+<div class="text-xs text-on-surface-variant mt-0.5">Available 24 Hours for Critical Fiber Cuts</div>
+</div>
+</div>
+<div class="flex items-start gap-3 pt-3 border-t border-outline-variant/20">
+<span class="material-symbols-outlined text-secondary text-xl mt-0.5" data-icon="mail">mail</span>
+<div>
+<div class="font-title-sm text-title-sm text-primary">Corporate Engineering Inquiries</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">telecom@vinciandvee.com</div>
+</div>
+</div>
+</div>
+<!-- Guarantee Notice -->
+<div class="p-4 bg-surface-container-high/60 rounded-lg border border-outline-variant/30 flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary text-2xl" data-icon="shield">shield</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Surveys include comprehensive GPS elevation profiling, civil RoW authorization checks, and optical budget calculations.
+              </p>
+</div>
+</div>
+<!-- Right Column: Survey Tender Form -->
+<div class="lg:col-span-7 bg-surface-container-lowest p-8 rounded-xl border border-outline-variant/40 shadow-md">
+<form class="space-y-5" id="telecom-survey-form" onsubmit="event.preventDefault(); alert('Survey Request Logged. Vinci &amp; Vee Telecom Operations will contact your team within 24 hours.');">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface-variant uppercase mb-1.5" for="name">Lead Representative Name *</label>
+<input class="w-full bg-surface-container-lowest border border-outline-variant/60 rounded-lg p-3 font-body-sm text-body-sm focus:border-secondary focus:ring-1 focus:ring-secondary text-on-surface" id="name" placeholder="Engr. Chukwuma Obi" required="" type="text"/>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface-variant uppercase mb-1.5" for="company">Organization / Estate / ISP *</label>
+<input class="w-full bg-surface-container-lowest border border-outline-variant/60 rounded-lg p-3 font-body-sm text-body-sm focus:border-secondary focus:ring-1 focus:ring-secondary text-on-surface" id="company" placeholder="e.g. Centenary Estates Development" required="" type="text"/>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface-variant uppercase mb-1.5" for="email">Official Corporate Email *</label>
+<input class="w-full bg-surface-container-lowest border border-outline-variant/60 rounded-lg p-3 font-body-sm text-body-sm focus:border-secondary focus:ring-1 focus:ring-secondary text-on-surface" id="email" placeholder="name@organization.com" required="" type="email"/>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface-variant uppercase mb-1.5" for="phone">Phone Contact *</label>
+<input class="w-full bg-surface-container-lowest border border-outline-variant/60 rounded-lg p-3 font-body-sm text-body-sm focus:border-secondary focus:ring-1 focus:ring-secondary text-on-surface" id="phone" placeholder="0701 347 6095" required="" type="tel"/>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface-variant uppercase mb-1.5" for="service-type">Required Solution Category</label>
+<select class="w-full bg-surface-container-lowest border border-outline-variant/60 rounded-lg p-3 font-body-sm text-body-sm focus:border-secondary focus:ring-1 focus:ring-secondary text-on-surface" id="service-type">
+<option>FTTH Turnkey (Gated Estate)</option>
+<option>Enterprise Dedicated Internet (DIA)</option>
+<option>Dark Fibre Strand Lease (Point-to-Point)</option>
+<option>Heavy Metro Trenching &amp; Duct Laying</option>
+<option>24/7 Optical Splicing Maintenance SLA</option>
+</select>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface-variant uppercase mb-1.5" for="preferred-date">Target Site Survey Date</label>
+<input class="w-full bg-surface-container-lowest border border-outline-variant/60 rounded-lg p-3 font-body-sm text-body-sm focus:border-secondary focus:ring-1 focus:ring-secondary text-on-surface" id="preferred-date" type="date"/>
+</div>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface-variant uppercase mb-1.5" for="coordinates">Route Coordinates / Project Address</label>
+<input class="w-full bg-surface-container-lowest border border-outline-variant/60 rounded-lg p-3 font-body-sm text-body-sm focus:border-secondary focus:ring-1 focus:ring-secondary text-on-surface" id="coordinates" placeholder="e.g. Centenary City Sector 4 to Independence Layout" type="text"/>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface-variant uppercase mb-1.5" for="project-scope">Engineering Scope &amp; Target Capacity (Gbps / Cores)</label>
+<textarea class="w-full bg-surface-container-lowest border border-outline-variant/60 rounded-lg p-3 font-body-sm text-body-sm focus:border-secondary focus:ring-1 focus:ring-secondary text-on-surface" id="project-scope" placeholder="Provide details regarding estimated core count, required redundancy levels, and distance specifications..." rows="3"></textarea>
+</div>
+<button class="w-full py-3.5 bg-primary-container text-surface-bright rounded-lg font-title-sm text-title-sm border border-secondary/40 hover:border-secondary hover:bg-black transition-all shadow-md flex items-center justify-center gap-2" type="submit">
+<span class="material-symbols-outlined text-secondary-fixed text-lg" data-icon="task_alt">task_alt</span>
+<span>Submit Technical Feasibility Tender</span>
+</button>
+</form>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- FOOTER (Shared Component Exact Match) -->
+<footer class="w-full bg-surface-container-low dark:bg-primary-container border-t border-outline-variant/30 dark:border-outline/20">
+<div class="max-w-7xl mx-auto px-margin-desktop py-space-xl">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8 mb-10 pb-8 border-b border-outline-variant/20">
+<!-- Logo & Brand summary -->
+<div class="md:col-span-4 space-y-3">
+<div class="font-headline-sm text-headline-sm font-bold tracking-tight text-primary dark:text-inverse-primary">
+            Vinci &amp; Vee Group
+          </div>
+<p class="font-body-sm text-body-sm text-on-surface-variant dark:text-outline-variant max-w-sm">
+            Achieving Dreams by making Connection. Deploying critical national infrastructure, strategic maritime logistics, and high-performance technologies across West Africa and Scandinavia.
+          </p>
+</div>
+<!-- Division Links 1 -->
+<div class="md:col-span-3 space-y-2">
+<div class="font-title-md text-title-md text-primary dark:text-inverse-primary mb-3">Operating Portfolios</div>
+<ul class="space-y-1.5 font-body-sm text-body-sm text-on-surface-variant dark:text-outline-variant">
+<li><a class="hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-150" href="#overview">Overview</a></li>
+<li><a class="text-secondary dark:text-secondary-fixed font-semibold" href="#telecom">Telecom &amp; Fibre</a></li>
+<li><a class="hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-150" href="#sweden">Sweden Shipping</a></li>
+<li><a class="hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-150" href="#tyre">Tyre Distribution</a></li>
+<li><a class="hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-150" href="#saas">Cloud SaaS</a></li>
+<li><a class="hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-150" href="#construction">Construction &amp; Interiors</a></li>
+</ul>
+</div>
+<!-- Corporate Governance -->
+<div class="md:col-span-3 space-y-2">
+<div class="font-title-md text-title-md text-primary dark:text-inverse-primary mb-3">Governance &amp; Group</div>
+<ul class="space-y-1.5 font-body-sm text-body-sm text-on-surface-variant dark:text-outline-variant">
+<li><a class="hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-150" href="#governance">Corporate Governance</a></li>
+<li><a class="hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-150" href="#investor">Investor Relations</a></li>
+<li><a class="hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-150" href="#legal">Legal &amp; Compliance</a></li>
+<li><a class="hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-150" href="#privacy">Privacy Notice</a></li>
+</ul>
+</div>
+<!-- Direct Contact Column -->
+<div class="md:col-span-2 space-y-2">
+<div class="font-title-md text-title-md text-primary dark:text-inverse-primary mb-3">Enugu Division HQ</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant dark:text-outline-variant">
+            Plot 80, Jedidiah Gardens Centenary City, Enugu 400706.
+          </p>
+<div class="pt-2">
+<a class="text-secondary dark:text-secondary-fixed font-title-sm text-title-sm hover:underline" href="tel:07013476095">
+              0701 347 6095
+            </a>
+</div>
+</div>
+</div>
+<!-- Copyright Notice & Disclaimer String verbatim -->
+<div class="text-center md:text-left text-on-surface-variant dark:text-outline-variant font-body-sm text-body-sm leading-relaxed">
+        © 2025 Vinci and Vee Group. Achieving Dreams by making Connection. All rights reserved. Plot 80, Jedidiah Gardens Centenary City, Enugu 400706. Tel: 0701 347 6095
+      </div>
+</div>
+</footer>
+<!-- LIGHTWEIGHT INTERACTIVE LOGIC (VANILLA JS) -->
+<script>
+    // Bandwidth Slider Calculator Interactive Display
+    const slider = document.getElementById('cir-slider');
+    const display = document.getElementById('cir-display');
+    const handoffSpec = document.getElementById('handoff-spec');
+
+    if (slider && display && handoffSpec) {
+      slider.addEventListener('input', (e) => {
+        const val = parseInt(e.target.value);
+        if (val < 1000) {
+          display.textContent = val + ' Mbps';
+          handoffSpec.textContent = '1G-SX Single Mode Optical';
+        } else {
+          const gbps = (val / 1000).toFixed(1);
+          display.textContent = val.toLocaleString() + ' Mbps (' + (gbps.endsWith('.0') ? parseInt(gbps) : gbps) + ' Gbps)';
+          if (val >= 5000) {
+            handoffSpec.textContent = '40G/100G QSFP28 Direct Core';
+          } else {
+            handoffSpec.textContent = '10G-LR Single Mode Optical';
+          }
+        }
+      });
+    }
+
+    // IP Selection button states
+    const ipButtons = document.querySelectorAll('.ip-btn');
+    ipButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        ipButtons.forEach(b => {
+          b.className = 'ip-btn py-2 text-xs rounded border border-outline/40 bg-[#081324] hover:border-secondary text-surface-bright font-mono text-center';
+        });
+        btn.className = 'ip-btn py-2 text-xs rounded border border-secondary bg-secondary/20 text-secondary-fixed font-mono text-center';
+      });
+    });
+
+    // Manifest Route Highlight Selection
+    const manifestItems = document.querySelectorAll('#route-manifest > div');
+    manifestItems.forEach(item => {
+      item.addEventListener('click', () => {
+        manifestItems.forEach(i => {
+          i.classList.remove('border-secondary', 'border-secondary/50', 'bg-surface-container-low');
+          i.classList.add('border-outline-variant/40', 'bg-surface-container-lowest');
+        });
+        item.classList.remove('border-outline-variant/40', 'bg-surface-container-lowest');
+        item.classList.add('border-secondary', 'bg-surface-container-low');
+      });
+    });
+  </script>
+</body></html>

@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Vinci &amp; Vee Group — Flagship Executive Group Portal &amp; Leadership Headquarters</title>
+<!-- Material Symbols & Typography -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "on-primary-fixed-variant": "#39475f",
+            "surface-tint": "#515f78",
+            "secondary-fixed": "#ffdcc2",
+            "inverse-primary": "#b9c7e4",
+            "primary": "#000000",
+            "on-surface": "#131b2e",
+            "surface-container-high": "#e2e7ff",
+            "on-secondary-fixed-variant": "#673d13",
+            "surface-container-low": "#f2f3ff",
+            "surface-container-lowest": "#ffffff",
+            "primary-fixed": "#d6e3ff",
+            "surface-container": "#eaedff",
+            "secondary-fixed-dim": "#f8ba86",
+            "on-primary-fixed": "#0d1c32",
+            "on-error-container": "#93000a",
+            "inverse-surface": "#283044",
+            "surface-variant": "#dae2fd",
+            "on-primary-container": "#76849f",
+            "tertiary-fixed": "#ffdcc5",
+            "on-tertiary-fixed-variant": "#683c19",
+            "on-secondary-fixed": "#2e1500",
+            "outline": "#75777e",
+            "surface-dim": "#d2d9f4",
+            "primary-fixed-dim": "#b9c7e4",
+            "on-secondary-container": "#794c21",
+            "background": "#faf8ff",
+            "on-surface-variant": "#44474d",
+            "on-primary": "#ffffff",
+            "tertiary-fixed-dim": "#f9b98c",
+            "on-background": "#131b2e",
+            "secondary": "#835429",
+            "surface": "#faf8ff",
+            "secondary-container": "#febf8b",
+            "primary-container": "#0d1c32",
+            "surface-bright": "#faf8ff",
+            "on-error": "#ffffff",
+            "error": "#ba1a1a",
+            "inverse-on-surface": "#eef0ff",
+            "outline-variant": "#c5c6cd",
+            "error-container": "#ffdad6",
+            "surface-container-highest": "#dae2fd",
+            "tertiary-container": "#301400",
+            "tertiary": "#000000",
+            "on-tertiary": "#ffffff",
+            "on-tertiary-container": "#ae7850",
+            "on-tertiary-fixed": "#301400",
+            "on-secondary": "#ffffff"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.125rem",
+            "lg": "0.25rem",
+            "xl": "0.5rem",
+            "full": "0.75rem"
+          },
+          "spacing": {
+            "space-lg": "1.75rem",
+            "margin-desktop": "4rem",
+            "space-sm": "0.5rem",
+            "margin-tablet": "2.5rem",
+            "gutter-desktop": "2rem",
+            "gutter": "1.5rem",
+            "space-md": "1rem",
+            "margin": "1.25rem",
+            "space-xl": "3rem",
+            "space-xs": "0.25rem"
+          },
+          "fontFamily": {
+            "headline-md": ["Space Grotesk"],
+            "body-lg": ["Inter"],
+            "headline-lg": ["Space Grotesk"],
+            "title-md": ["Plus Jakarta Sans"],
+            "label-md": ["Plus Jakarta Sans"],
+            "headline-sm": ["Space Grotesk"],
+            "headline-lg-mobile": ["Space Grotesk"],
+            "body-sm": ["Inter"],
+            "display-hero-mobile": ["Space Grotesk"],
+            "display-hero": ["Space Grotesk"],
+            "title-sm": ["Plus Jakarta Sans"],
+            "body-md": ["Inter"],
+            "label-sm": ["Plus Jakarta Sans"]
+          },
+          "fontSize": {
+            "headline-md": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.015em", "fontWeight": "500" }],
+            "body-lg": ["18px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "400" }],
+            "headline-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "500" }],
+            "title-md": ["18px", { "lineHeight": "26px", "letterSpacing": "-0.005em", "fontWeight": "600" }],
+            "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.06em", "fontWeight": "600" }],
+            "headline-sm": ["22px", { "lineHeight": "30px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "headline-lg-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "500" }],
+            "body-sm": ["13px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "400" }],
+            "display-hero-mobile": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "600" }],
+            "display-hero": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.03em", "fontWeight": "600" }],
+            "title-sm": ["15px", { "lineHeight": "22px", "letterSpacing": "0em", "fontWeight": "600" }],
+            "body-md": ["15px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "400" }],
+            "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.08em", "fontWeight": "700" }]
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+    .custom-edge {
+      border: 1px solid rgba(15, 23, 42, 0.08);
+    }
+    .bronze-edge {
+      border: 1px solid rgba(179, 125, 78, 0.35);
+    }
+    .executive-shadow {
+      box-shadow: 0 12px 32px -8px rgba(10, 25, 47, 0.06), 0 4px 12px -2px rgba(10, 25, 47, 0.03);
+    }
+  </style>
+</head>
+<body class="bg-surface text-on-surface antialiased font-body-md selection:bg-secondary-fixed selection:text-on-secondary-fixed">
+<!-- ================= TOP APP BAR (MANDATED SHARED COMPONENT) ================= -->
+<!-- Context Match: Group Portal / Leadership HQ acts as the master "Overview" -->
+<header class="fixed top-0 left-0 w-full z-50 bg-surface/90 dark:bg-primary-container/90 backdrop-blur-md border-b border-outline-variant/30 dark:border-outline/20 shadow-sm dark:shadow-none transition-all duration-200 ease-in-out">
+<div class="max-w-7xl mx-auto px-margin-desktop h-20 flex items-center justify-between">
+<!-- Brand Anchor -->
+<a class="flex items-center space-x-3 group" href="#">
+<div class="w-10 h-10 bg-primary-container text-surface-container-lowest flex items-center justify-center rounded border border-secondary/40 shadow-sm group-hover:border-secondary transition-colors">
+<span class="font-headline-sm text-headline-sm font-bold tracking-tight text-secondary">V</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm font-bold tracking-tight text-primary dark:text-inverse-primary leading-tight">Vinci &amp; Vee Group</span>
+<span class="font-label-sm text-label-sm text-secondary tracking-widest uppercase">Holding Directorate</span>
+</div>
+</a>
+<!-- Desktop Navigation Cluster (Mandated exact strings & active state: Overview) -->
+<nav class="hidden md:flex items-center space-x-6 lg:space-x-8">
+<a class="text-secondary dark:text-secondary-fixed border-b-2 border-secondary dark:border-secondary-fixed pb-1 font-title-sm text-title-sm" href="#overview">Overview</a>
+<a class="text-on-surface-variant dark:text-outline-variant hover:text-on-surface dark:hover:text-inverse-on-surface font-title-sm text-title-sm transition-colors duration-150" href="#divisions">Telecom &amp; Fibre</a>
+<a class="text-on-surface-variant dark:text-outline-variant hover:text-on-surface dark:hover:text-inverse-on-surface font-title-sm text-title-sm transition-colors duration-150" href="#divisions">Sweden Shipping</a>
+<a class="text-on-surface-variant dark:text-outline-variant hover:text-on-surface dark:hover:text-inverse-on-surface font-title-sm text-title-sm transition-colors duration-150" href="#divisions">Tyre Distribution</a>
+<a class="text-on-surface-variant dark:text-outline-variant hover:text-on-surface dark:hover:text-inverse-on-surface font-title-sm text-title-sm transition-colors duration-150" href="#divisions">Cloud SaaS</a>
+<a class="text-on-surface-variant dark:text-outline-variant hover:text-on-surface dark:hover:text-inverse-on-surface font-title-sm text-title-sm transition-colors duration-150" href="#divisions">Construction &amp; Interiors</a>
+</nav>
+<!-- Trailing Primary & Secondary Actions (Mandated Strings) -->
+<div class="flex items-center space-x-4">
+<a class="hidden xl:flex items-center space-x-1.5 text-on-surface-variant hover:text-secondary font-title-sm text-title-sm transition-colors" href="tel:07013476095">
+<span class="material-symbols-outlined text-[18px] text-secondary">phone</span>
+<span>0701 347 6095</span>
+</a>
+<a class="inline-flex items-center justify-center px-4 py-2 bg-primary-container text-surface-container-lowest rounded-lg border border-secondary/30 hover:border-secondary transition-colors text-title-sm font-title-sm" href="#engagement">
+<span>Engage Group HQ</span>
+<span class="material-symbols-outlined ml-1.5 text-[16px] text-secondary">arrow_forward</span>
+</a>
+</div>
+</div>
+</header>
+<main class="pt-20" id="overview">
+<!-- ================= CONGLOMERATE APEX HERO ================= -->
+<section class="relative bg-surface-container-low border-b border-outline-variant/30 overflow-hidden py-space-xl lg:py-24">
+<div class="max-w-7xl mx-auto px-margin-desktop">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop items-center">
+<!-- Briefing Column -->
+<div class="lg:col-span-7 space-y-6">
+<div class="inline-flex items-center space-x-2 px-3 py-1 bg-surface-container-lowest border border-secondary/30 rounded-lg text-secondary">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+<span class="font-label-md text-label-md uppercase tracking-wider">Group Executive Authority</span>
+</div>
+<h1 class="font-display-hero text-display-hero-mobile lg:text-display-hero text-on-surface tracking-tight font-headline-lg">
+              Achieving Dreams by making Connection.
+            </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl leading-relaxed">
+              Vinci &amp; Vee Group operates as a sovereign multinational holding conglomerate anchoring heavy infrastructure, pan-continental freight corridors, optical telecom networks, and high-tier enterprise cloud systems across West Africa and Northern Europe.
+            </p>
+<!-- Institutional Actions -->
+<div class="flex flex-wrap items-center gap-4 pt-2">
+<a class="inline-flex items-center px-6 py-3 bg-primary-container text-surface-container-lowest font-title-sm text-title-sm rounded-lg border border-secondary/40 hover:bg-on-background transition-all shadow-sm" href="#ecosystem">
+<span>Explore Conglomerate Matrix</span>
+<span class="material-symbols-outlined ml-2 text-[18px] text-secondary">domain</span>
+</a>
+<a class="inline-flex items-center px-6 py-3 bg-surface-container-lowest text-on-surface font-title-sm text-title-sm rounded-lg border border-outline-variant hover:border-secondary transition-all" href="#governance">
+<span>Directorate Briefing</span>
+<span class="material-symbols-outlined ml-2 text-[18px] text-on-surface-variant">account_balance</span>
+</a>
+</div>
+<!-- Conglomerate Sovereign Metrics Grid -->
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-6 border-t border-outline-variant/40">
+<div class="p-3 bg-surface-container-lowest rounded-lg border border-outline-variant/30">
+<div class="font-headline-sm text-headline-sm font-bold text-on-surface">6</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Sovereign Divisions</div>
+</div>
+<div class="p-3 bg-surface-container-lowest rounded-lg border border-outline-variant/30">
+<div class="font-headline-sm text-headline-sm font-bold text-secondary">₦12B+</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Capital Deployed</div>
+</div>
+<div class="p-3 bg-surface-container-lowest rounded-lg border border-outline-variant/30">
+<div class="font-headline-sm text-headline-sm font-bold text-on-surface">Nordic—NG</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Bilateral Axis</div>
+</div>
+<div class="p-3 bg-surface-container-lowest rounded-lg border border-outline-variant/30">
+<div class="font-headline-sm text-headline-sm font-bold text-on-surface">Tier-1</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Compliance Standard</div>
+</div>
+</div>
+</div>
+<!-- Apex Visual Showcase -->
+<div class="lg:col-span-5">
+<div class="relative bg-surface-container-lowest rounded-xl p-3 border border-outline-variant/40 executive-shadow">
+<div class="relative h-[420px] rounded-lg overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="An imposing modern corporate architectural headquarters with towering dark navy glass facades and brushed bronze mullions under crisp morning light. The setting showcases executive landscaping with clean geometric stone paving and discreet corporate signage reflecting deep midnight navy and refined architectural precision." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1-Ix_CRqL6qaOhxazaMD59Tj2G404qHfgrPxz3lHIRaFpqdAT_GP4qJmmVg48EknTLew0N9LQ3XFUwuL_dJlYVKZpLVvXBYo4wn8mVvrPAhKB3EwChzjwwcnJ4fzSRn5PE7RnQ0aSu1OZSQxmewKfvaDZAzhFbxQCfgYj6u8tjMFD9DpBXpPHXP75n5D_1dvkvRumCz_CwFYr5DecdR6IDqJ_2Wp5ZLGHuQIMGEE"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary-container/80 via-transparent to-transparent flex flex-col justify-end p-6 text-surface-container-lowest">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest">Sovereign Asset Anchor</span>
+<h3 class="font-title-md text-title-md font-bold mt-1 text-on-primary">Centenary City Bureau &amp; Executive Command</h3>
+<p class="font-body-sm text-body-sm text-outline-variant mt-1">Plot 80, Jedidiah Gardens, Centenary City, Enugu.</p>
+</div>
+</div>
+<!-- Inset Verification Seal -->
+<div class="absolute -bottom-4 -left-4 bg-primary-container text-surface-container-lowest p-4 rounded-lg border border-secondary/40 shadow-xl hidden sm:flex items-center space-x-3">
+<span class="material-symbols-outlined text-secondary text-[28px]">hub</span>
+<div>
+<div class="font-title-sm text-title-sm leading-tight text-surface-container-lowest">Central Command Backbone</div>
+<div class="font-label-sm text-label-sm text-outline-variant">Real-time sync across 6 subsidiaries</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ================= INTERACTIVE CONGLOMERATE ECOSYSTEM MATRIX ================= -->
+<section class="py-space-xl bg-surface border-b border-outline-variant/30" id="ecosystem">
+<div class="max-w-7xl mx-auto px-margin-desktop">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+<div>
+<div class="font-label-md text-label-md text-secondary uppercase tracking-widest">Conglomerate Architecture</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-bold mt-1">The 6 Sovereign Operating Divisions</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md mt-4 md:mt-0">
+            A balanced ecosystem spanning essential digital infrastructure, maritime freight corridors, industrial rubber supplies, and physical master development.
+          </p>
+</div>
+<!-- 6 Division Architectural Bento Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="divisions">
+<!-- 1. Telecom & Fibre -->
+<div class="bg-surface-container-lowest p-6 rounded-lg custom-edge hover:border-secondary/50 transition-all flex flex-col justify-between group">
+<div>
+<div class="flex items-center justify-between pb-4 border-b border-outline-variant/20">
+<div class="w-12 h-12 rounded bg-surface-container-low flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-[24px]">settings_ethernet</span>
+</div>
+<span class="font-label-sm text-label-sm px-2.5 py-1 bg-surface-container-low text-on-surface rounded border border-outline-variant/30">Division 01</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface font-bold mt-4 group-hover:text-secondary transition-colors">Telecom &amp; Fibre Networks</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">
+                Carrier-neutral optical backbone routing, DWDM long-haul metropolitan circuits, and high-density fiber-to-the-premise installations across key Nigerian commercial axes.
+              </p>
+</div>
+<div class="mt-6 pt-4 border-t border-outline-variant/20 flex items-center justify-between font-label-md text-label-md text-on-surface-variant">
+<span>Bandwidth Capacity</span>
+<span class="text-on-surface font-bold">100 Gbps Core</span>
+</div>
+</div>
+<!-- 2. Sweden Maritime Corridor -->
+<div class="bg-surface-container-lowest p-6 rounded-lg custom-edge hover:border-secondary/50 transition-all flex flex-col justify-between group">
+<div>
+<div class="flex items-center justify-between pb-4 border-b border-outline-variant/20">
+<div class="w-12 h-12 rounded bg-surface-container-low flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-[24px]">directions_boat</span>
+</div>
+<span class="font-label-sm text-label-sm px-2.5 py-1 bg-surface-container-low text-on-surface rounded border border-outline-variant/30">Division 02</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface font-bold mt-4 group-hover:text-secondary transition-colors">Sweden Shipping &amp; Freight</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">
+                Consolidated cargo vessels and maritime logistics bridging Gothenburg, Stockholm, and the Gulf of Guinea with bonded customs pre-clearance and container tracking.
+              </p>
+</div>
+<div class="mt-6 pt-4 border-t border-outline-variant/20 flex items-center justify-between font-label-md text-label-md text-on-surface-variant">
+<span>Transit Frequency</span>
+<span class="text-on-surface font-bold">Fortnightly Sailings</span>
+</div>
+</div>
+<!-- 3. Tyre Supply Chains -->
+<div class="bg-surface-container-lowest p-6 rounded-lg custom-edge hover:border-secondary/50 transition-all flex flex-col justify-between group">
+<div>
+<div class="flex items-center justify-between pb-4 border-b border-outline-variant/20">
+<div class="w-12 h-12 rounded bg-surface-container-low flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-[24px]">adjust</span>
+</div>
+<span class="font-label-sm text-label-sm px-2.5 py-1 bg-surface-container-low text-on-surface rounded border border-outline-variant/30">Division 03</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface font-bold mt-4 group-hover:text-secondary transition-colors">Tyre Distribution &amp; Logistics</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">
+                Wholesale commercial and heavy-equipment radial tyre syndication, serving national logistics fleets, mining concessions, and regional hauliers with SONCAP-certified grade.
+              </p>
+</div>
+<div class="mt-6 pt-4 border-t border-outline-variant/20 flex items-center justify-between font-label-md text-label-md text-on-surface-variant">
+<span>Annual Volume</span>
+<span class="text-on-surface font-bold">45,000+ Units</span>
+</div>
+</div>
+<!-- 4. Scalable SaaS Cloud -->
+<div class="bg-surface-container-lowest p-6 rounded-lg custom-edge hover:border-secondary/50 transition-all flex flex-col justify-between group">
+<div>
+<div class="flex items-center justify-between pb-4 border-b border-outline-variant/20">
+<div class="w-12 h-12 rounded bg-surface-container-low flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-[24px]">cloud_sync</span>
+</div>
+<span class="font-label-sm text-label-sm px-2.5 py-1 bg-surface-container-low text-on-surface rounded border border-outline-variant/30">Division 04</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface font-bold mt-4 group-hover:text-secondary transition-colors">Cloud SaaS &amp; Digital Solutions</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">
+                Enterprise resource pipelines, automated border compliance tooling, cross-currency ledgers, and institutional SaaS platforms built for emerging market friction points.
+              </p>
+</div>
+<div class="mt-6 pt-4 border-t border-outline-variant/20 flex items-center justify-between font-label-md text-label-md text-on-surface-variant">
+<span>SLA Target</span>
+<span class="text-on-surface font-bold">99.98% Uptime</span>
+</div>
+</div>
+<!-- 5. Civil Construction & Luxury Interiors -->
+<div class="bg-surface-container-lowest p-6 rounded-lg custom-edge hover:border-secondary/50 transition-all flex flex-col justify-between group">
+<div>
+<div class="flex items-center justify-between pb-4 border-b border-outline-variant/20">
+<div class="w-12 h-12 rounded bg-surface-container-low flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-[24px]">apartment</span>
+</div>
+<span class="font-label-sm text-label-sm px-2.5 py-1 bg-surface-container-low text-on-surface rounded border border-outline-variant/30">Division 05</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface font-bold mt-4 group-hover:text-secondary transition-colors">Construction &amp; Interiors</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">
+                Civil structural engineering, bespoke residential campuses in Centenary City, and high-specification corporate interior architecture utilizing imported European materials.
+              </p>
+</div>
+<div class="mt-6 pt-4 border-t border-outline-variant/20 flex items-center justify-between font-label-md text-label-md text-on-surface-variant">
+<span>Floor Space Executed</span>
+<span class="text-on-surface font-bold">120,000+ m²</span>
+</div>
+</div>
+<!-- 6. Corporate Capital Assets -->
+<div class="bg-primary-container text-surface-container-lowest p-6 rounded-lg border border-secondary/40 flex flex-col justify-between group">
+<div>
+<div class="flex items-center justify-between pb-4 border-b border-outline/30">
+<div class="w-12 h-12 rounded bg-surface-container-lowest/10 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[24px]">account_balance_wallet</span>
+</div>
+<span class="font-label-sm text-label-sm px-2.5 py-1 bg-surface-container-lowest/10 text-secondary-fixed rounded border border-secondary/30">Backbone</span>
+</div>
+<h3 class="font-title-md text-title-md text-surface-container-lowest font-bold mt-4">Corporate Capital &amp; Treasury</h3>
+<p class="font-body-sm text-body-sm text-outline-variant mt-2">
+                The group's centralized treasury vehicle handling intra-conglomerate liquidity, bilateral foreign exchange hedging, institutional bond issuances, and venture equity.
+              </p>
+</div>
+<div class="mt-6 pt-4 border-t border-outline/30 flex items-center justify-between font-label-md text-label-md text-outline-variant">
+<span>Asset Base</span>
+<span class="text-secondary font-bold">₦12.4 Billion</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ================= EXECUTIVE LEADERSHIP & GOVERNANCE BOARD ================= -->
+<section class="py-space-xl bg-surface-container-low border-b border-outline-variant/30" id="governance">
+<div class="max-w-7xl mx-auto px-margin-desktop">
+<div class="max-w-3xl mb-12">
+<div class="font-label-md text-label-md text-secondary uppercase tracking-widest">Directorate &amp; Stewardship</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-bold mt-1">Executive Governance &amp; Compliance</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">
+            The group is stewarded by an independent board of directors and senior operational executives executing strict ISO 9001 quality management, SONCAP product verification, and transparent capital deployment.
+          </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Leader Profile 1 -->
+<div class="bg-surface-container-lowest rounded-lg custom-edge p-6 executive-shadow">
+<div class="h-64 rounded-md overflow-hidden mb-6 relative">
+<img class="w-full h-full object-cover" data-alt="An authoritative executive portrait of a senior African corporate chairman in a tailored midnight navy bespoke suit, set against an executive frosted glass boardroom backdrop. The visual exudes high level sovereignty, measured leadership, and institutional prestige." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC1L1Z8FhwQn-NsOqE17ENg6IMAh2ODXujLxxHoGsU3R5sotYyF4kG4-WhDPw3cxnLcg80xEdjSOdJeABiNSkSW_YGQv6Qa68cjA5fzvcswgKuIdJ76FKrkhLKmB1SyqjyRm5jHgsLOO5_HyNXTGSt0UyBqIb8c5xUpHl0IzLLNHhj51ay7oQqPlyyOyGlDWgeORvsUtph6t6tXzK2CNGBRBZrhIk_iUQ_irb0b660"/>
+<div class="absolute bottom-2 left-2 px-2.5 py-1 bg-primary-container text-surface-container-lowest text-label-sm font-label-sm rounded border border-secondary/30">
+                Office of the Chairman
+              </div>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface font-bold">Group Executive Chairman</h3>
+<p class="font-body-sm text-body-sm text-secondary font-medium">Head of Sovereign Alliances</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-3">
+              Steering capital syndication, bilateral European trade protocols, and long-term infrastructure allocations for Vinci &amp; Vee Group holding operations.
+            </p>
+</div>
+<!-- Leader Profile 2 -->
+<div class="bg-surface-container-lowest rounded-lg custom-edge p-6 executive-shadow">
+<div class="h-64 rounded-md overflow-hidden mb-6 relative">
+<img class="w-full h-full object-cover" data-alt="A distinguished female executive managing director in professional corporate attire in a luminous modern Scandinavian office environment. Cool daylight filtering through architectural glass louvers conveys analytical precision and multinational executive clarity." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZjnXHKoyiQAb8eNuxK0IPMnW9OSjpdUDrQIpsvqmLsJT0Gt70fqzmPx3MadYSXr7FZgRo4QfBiVDdSM2ulXX8N5p-J6klmr_wDcolKA17O3iW4Swlkus7VgHAmMEc_0oxzMs31yYbeoLys5luwoWEAnEhb8h7HdQ-p2cYUxQtSpLxFflN2FOr3wm_XvT1ktddCYMJpWdtfNR6PRSDuD-rOOkYeS4aY96bsSs0taA"/>
+<div class="absolute bottom-2 left-2 px-2.5 py-1 bg-primary-container text-surface-container-lowest text-label-sm font-label-sm rounded border border-secondary/30">
+                Chief Operating Officer
+              </div>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface font-bold">Managing Director &amp; COO</h3>
+<p class="font-body-sm text-body-sm text-secondary font-medium">Maritime &amp; Supply Operations</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-3">
+              Directing maritime shipping corridors between Gothenburg and West African ports, customs integration frameworks, and national warehousing hubs.
+            </p>
+</div>
+<!-- Leader Profile 3 -->
+<div class="bg-surface-container-lowest rounded-lg custom-edge p-6 executive-shadow">
+<div class="h-64 rounded-md overflow-hidden mb-6 relative">
+<img class="w-full h-full object-cover" data-alt="An executive chief technical officer standing before an optical network operations center monitoring dashboard. Crisp modern lighting highlights mathematical clarity, infrastructure resilience, and deep systems engineering focus." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBNXGekj-HtChg-FBODlCF4dZuODePOkd_0_NOCvqUSp74awMpkG_9AKKthJXUoBvlHIyso2GyTt5aW9GfFOXNuBVXN0vDcjONvT7MqJgobACycHEQ9ILhmvKWFWDWTSknyT7Y8aWi_AMg5ruy2-5EI6VGzthZhRDcvvU6ZXFdgAVLU2WxF1qnLL2LBKSOPBmTmwqBNWSRQP9rGuDKVv7m0qPZMB9okfjtRg3PeVuU"/>
+<div class="absolute bottom-2 left-2 px-2.5 py-1 bg-primary-container text-surface-container-lowest text-label-sm font-label-sm rounded border border-secondary/30">
+                Chief Technology Officer
+              </div>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface font-bold">Group Technical Directorate</h3>
+<p class="font-body-sm text-body-sm text-secondary font-medium">Telecom &amp; Cloud Architecture</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-3">
+              Supervising long-distance terrestrial dark-fibre deployment, data center colocation architectures, and enterprise proprietary SaaS engineering divisions.
+            </p>
+</div>
+</div>
+<!-- Corporate Governance Ledger Cards -->
+<div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="p-6 bg-surface-container-lowest rounded-lg custom-edge flex items-start space-x-4">
+<span class="material-symbols-outlined text-[28px] text-secondary">verified_user</span>
+<div>
+<h4 class="font-title-sm text-title-sm font-bold text-on-surface">SONCAP &amp; ISO 9001 Regulatory Assurance</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+                Every imported component, radial tyre batch, and structural steel reinforcement undergoes third-party lab verification conforming directly with the Standards Organisation of Nigeria and Swedish export criteria.
+              </p>
+</div>
+</div>
+<div class="p-6 bg-surface-container-lowest rounded-lg custom-edge flex items-start space-x-4">
+<span class="material-symbols-outlined text-[28px] text-secondary">gavel</span>
+<div>
+<h4 class="font-title-sm text-title-sm font-bold text-on-surface">Institutional Stakeholder Protocols</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+                Quarterly audited financial disclosures, independent risk-audit committee oversight, and strict ESG compliance across all civil and telecom operational worksites.
+              </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ================= CENTENARY CITY CAMPUS & INNOVATION HUB ================= -->
+<section class="py-space-xl bg-surface border-b border-outline-variant/30">
+<div class="max-w-7xl mx-auto px-margin-desktop">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop items-center">
+<div class="lg:col-span-5 space-y-6">
+<div class="inline-flex items-center space-x-2 px-3 py-1 bg-surface-container-low border border-outline-variant/40 rounded-lg text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-secondary">location_on</span>
+<span class="font-label-md text-label-md">Headquarters Campus</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-bold">
+              Plot 80, Jedidiah Gardens, Centenary City
+            </h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Situated in the premier master-planned zone of Enugu 400706, Vinci &amp; Vee Group's flagship headquarters houses our group operational engineering bureau, satellite logistics command, and optical NOC.
+            </p>
+<div class="space-y-4 pt-2">
+<div class="flex items-center space-x-3 p-3 bg-surface-container-lowest rounded-lg custom-edge">
+<span class="material-symbols-outlined text-secondary">lan</span>
+<div>
+<div class="font-title-sm text-title-sm text-on-surface font-semibold">Optical Network Operations Center (NOC)</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">24/7 monitoring of inter-city fibre spans and enterprise bandwidth.</div>
+</div>
+</div>
+<div class="flex items-center space-x-3 p-3 bg-surface-container-lowest rounded-lg custom-edge">
+<span class="material-symbols-outlined text-secondary">anchor</span>
+<div>
+<div class="font-title-sm text-title-sm text-on-surface font-semibold">Maritime Freight Logistics Dispatch</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Real-time telemetry linking Swedish sea cargo with domestic haulage.</div>
+</div>
+</div>
+<div class="flex items-center space-x-3 p-3 bg-surface-container-lowest rounded-lg custom-edge">
+<span class="material-symbols-outlined text-secondary">architecture</span>
+<div>
+<div class="font-title-sm text-title-sm text-on-surface font-semibold">Civil Engineering &amp; Interiors Studio</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">BIM architectural design labs for high-end residential and commercial builds.</div>
+</div>
+</div>
+</div>
+</div>
+<div class="lg:col-span-7">
+<div class="relative bg-surface-container-lowest p-3 rounded-xl custom-edge executive-shadow">
+<div class="relative h-[480px] rounded-lg overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="An expansive architectural view of a contemporary glass and stone corporate campus at dusk with bronze-lit exterior walkways, lush geometric gardens, and modern executive offices. The visual evokes permanence, refined African corporate wealth, and sovereign industrial achievement." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDqgBiE1c0l5axYKY99unsT2NCpj-qknOahXRDJcLDYpb1tE6IPMsDvK_Pw4oX9qoQOqkC6A2vWPhAIlMtRBcqTkl-SVRFEG29T3AmHrzW3AAHVavyePwbamhFdOz55ruqv8vAoDu0YHegdwtBRldAZpd63UuAZIqT_QNEtQQDnYwUNFP-QXzM0O_4GHnpxYZf7j7MaoDjAGFxRtn3dvq6M3nrCk1AOX2FVUTduyIM"/>
+<div class="absolute top-4 right-4 bg-primary-container/90 backdrop-blur-md text-surface-container-lowest px-4 py-2 rounded-lg border border-secondary/40">
+<div class="font-label-sm text-label-sm text-secondary uppercase">Coordinates</div>
+<div class="font-title-sm text-title-sm font-mono">Enugu 400706, Nigeria</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ================= BILATERAL TRADE & INVESTOR RELATIONS ================= -->
+<section class="py-space-xl bg-surface-container-low border-b border-outline-variant/30">
+<div class="max-w-7xl mx-auto px-margin-desktop">
+<div class="text-center max-w-3xl mx-auto mb-12">
+<div class="font-label-md text-label-md text-secondary uppercase tracking-widest">Global Commerce Axis</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-bold mt-1">Sweden — Nigeria Bilateral Corridor</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">
+            Accelerating industrial cross-pollination between Nordic heavy manufacturing standards and West Africa’s dynamic trade infrastructure.
+          </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="bg-surface-container-lowest p-6 rounded-lg custom-edge">
+<div class="text-secondary font-headline-sm text-headline-sm font-bold">01. Direct Port Linking</div>
+<h3 class="font-title-md text-title-md font-bold mt-2 text-on-surface">Gothenburg to Lagos</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">
+              Uninterrupted maritime containerized shipping ensuring reliable delivery timetables for machinery, equipment, and certified industrial tyres.
+            </p>
+</div>
+<div class="bg-surface-container-lowest p-6 rounded-lg custom-edge">
+<div class="text-secondary font-headline-sm text-headline-sm font-bold">02. Currency Hedging</div>
+<h3 class="font-title-md text-title-md font-bold mt-2 text-on-surface">SEK / NGN Trade Clearing</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">
+              Proprietary bilateral currency clearing mechanisms mitigating foreign exchange volatility for institutional clients and long-term suppliers.
+            </p>
+</div>
+<div class="bg-surface-container-lowest p-6 rounded-lg custom-edge">
+<div class="text-secondary font-headline-sm text-headline-sm font-bold">03. Standards Transfer</div>
+<h3 class="font-title-md text-title-md font-bold mt-2 text-on-surface">Nordic Quality Benchmarks</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">
+              Enforcing Scandinavian durability benchmarks across fiber installations, building finishes, and high-load commercial fleet operations.
+            </p>
+</div>
+</div>
+</div>
+</section>
+<!-- ================= EXECUTIVE LIAISON & ENGAGEMENT DESK ================= -->
+<section class="py-space-xl bg-surface border-b border-outline-variant/30" id="engagement">
+<div class="max-w-7xl mx-auto px-margin-desktop">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop items-start">
+<div class="lg:col-span-5 space-y-6">
+<div class="font-label-md text-label-md text-secondary uppercase tracking-widest">Direct Institutional Access</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-bold">Engage Group Directorate</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              For sovereign partnerships, enterprise procurement across our 6 divisions, or investor briefings, connect directly with our central secretariat.
+            </p>
+<div class="p-6 bg-surface-container-low rounded-lg custom-edge space-y-4">
+<div class="flex items-center space-x-3">
+<span class="material-symbols-outlined text-secondary">phone</span>
+<div>
+<div class="font-label-sm text-label-sm text-on-surface-variant uppercase">Executive Hotline</div>
+<div class="font-title-sm text-title-sm font-bold text-on-surface">0701 347 6095</div>
+</div>
+</div>
+<div class="flex items-center space-x-3">
+<span class="material-symbols-outlined text-secondary">pin_drop</span>
+<div>
+<div class="font-label-sm text-label-sm text-on-surface-variant uppercase">Conglomerate Headquarters</div>
+<div class="font-body-sm text-body-sm text-on-surface">Plot 80, Jedidiah Gardens, Centenary City, Enugu 400706</div>
+</div>
+</div>
+<div class="flex items-center space-x-3">
+<span class="material-symbols-outlined text-secondary">schedule</span>
+<div>
+<div class="font-label-sm text-label-sm text-on-surface-variant uppercase">Directorate Hours</div>
+<div class="font-body-sm text-body-sm text-on-surface">Monday – Friday: 08:00 – 18:00 WAT / CET</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Formal Liaison Form -->
+<div class="lg:col-span-7 bg-surface-container-lowest p-8 rounded-xl custom-edge executive-shadow">
+<h3 class="font-title-md text-title-md font-bold text-on-surface mb-2">Executive Inquiry Dispatch</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-6">
+              All submissions are routed directly to the appropriate operational subsidiary directorate within 4 business hours.
+            </p>
+<form class="space-y-4" onsubmit="event.preventDefault(); alert('Inquiry dispatched directly to Vinci &amp; Vee Group Directorate.');">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div>
+<label class="block font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant mb-1">Full Legal Name</label>
+<input class="w-full px-3 py-2.5 rounded bg-surface border border-outline-variant focus:border-secondary focus:ring-1 focus:ring-secondary text-body-sm outline-none transition-all" placeholder="e.g. Chief O. Adebayo" required="" type="text"/>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant mb-1">Corporate / Institution Entity</label>
+<input class="w-full px-3 py-2.5 rounded bg-surface border border-outline-variant focus:border-secondary focus:ring-1 focus:ring-secondary text-body-sm outline-none transition-all" placeholder="e.g. Nordic African Trade Consortium" required="" type="text"/>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div>
+<label class="block font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant mb-1">Direct Telephone / Mobile</label>
+<input class="w-full px-3 py-2.5 rounded bg-surface border border-outline-variant focus:border-secondary focus:ring-1 focus:ring-secondary text-body-sm outline-none transition-all" placeholder="+234 ..." required="" type="tel"/>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant mb-1">Relevant Subsidiary Division</label>
+<select class="w-full px-3 py-2.5 rounded bg-surface border border-outline-variant focus:border-secondary focus:ring-1 focus:ring-secondary text-body-sm outline-none transition-all">
+<option>Telecom &amp; Fibre Networks</option>
+<option>Sweden Shipping &amp; Freight</option>
+<option>Tyre Distribution &amp; Fleet Supplies</option>
+<option>Cloud SaaS &amp; Digital Solutions</option>
+<option>Construction &amp; Interiors</option>
+<option>Group Treasury &amp; Bilateral Capital</option>
+</select>
+</div>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant mb-1">Inquiry Scope &amp; Brief</label>
+<textarea class="w-full px-3 py-2.5 rounded bg-surface border border-outline-variant focus:border-secondary focus:ring-1 focus:ring-secondary text-body-sm outline-none transition-all" placeholder="Detail the parameters of the proposed project, procurement batch, or institutional partnership..." required="" rows="4"></textarea>
+</div>
+<div class="flex items-center justify-between pt-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center">
+<span class="material-symbols-outlined text-[16px] text-secondary mr-1">lock</span>
+                  Encrypted Executive Routing
+                </span>
+<button class="px-6 py-2.5 bg-primary-container text-surface-container-lowest font-title-sm text-title-sm rounded-lg border border-secondary/40 hover:bg-on-background transition-all" type="submit">
+                  Submit to Headquarters
+                </button>
+</div>
+</form>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- ================= FOOTER (MANDATED SHARED COMPONENT) ================= -->
+<footer class="w-full bg-surface-container-low dark:bg-primary-container border-t border-outline-variant/30 dark:border-outline/20">
+<div class="max-w-7xl mx-auto px-margin-desktop py-space-xl">
+<div class="flex flex-col md:flex-row md:items-start justify-between gap-8 pb-10 border-b border-outline-variant/20">
+<!-- Brand & Mission statement -->
+<div class="max-w-md">
+<div class="font-headline-sm text-headline-sm font-bold tracking-tight text-primary dark:text-inverse-primary">
+            Vinci &amp; Vee Group
+          </div>
+<div class="font-label-md text-label-md text-secondary mt-1">
+            Achieving Dreams by making Connection.
+          </div>
+<p class="font-body-sm text-body-sm text-on-surface-variant dark:text-outline-variant mt-3">
+            Sovereign diversified holding conglomerate directing key infrastructure, bilateral Nordic commerce, and optical telecom operations from Centenary City, Enugu.
+          </p>
+</div>
+<!-- Links Grid (Exact string mapping from Mandated Footer) -->
+<div class="grid grid-cols-2 sm:grid-cols-3 gap-x-8 gap-y-2">
+<a class="text-secondary dark:text-secondary-fixed font-title-sm text-title-sm" href="#overview">Overview</a>
+<a class="text-on-surface-variant dark:text-outline-variant font-body-sm text-body-sm hover:text-on-surface dark:hover:text-inverse-on-surface transition-colors duration-150" href="#divisions">Telecom &amp; Fibre</a>
+<a class="text-on-surface-variant dark:text-outline-variant font-body-sm text-body-sm hover:text-on-surface dark:hover:text-inverse-on-surface transition-colors duration-150" href="#divisions">Sweden Shipping</a>
+<a class="text-on-surface-variant dark:text-outline-variant font-body-sm text-body-sm hover:text-on-surface dark:hover:text-inverse-on-surface transition-colors duration-150" href="#divisions">Tyre Distribution</a>
+<a class="text-on-surface-variant dark:text-outline-variant font-body-sm text-body-sm hover:text-on-surface dark:hover:text-inverse-on-surface transition-colors duration-150" href="#divisions">Cloud SaaS</a>
+<a class="text-on-surface-variant dark:text-outline-variant font-body-sm text-body-sm hover:text-on-surface dark:hover:text-inverse-on-surface transition-colors duration-150" href="#divisions">Construction &amp; Interiors</a>
+<a class="text-on-surface-variant dark:text-outline-variant font-body-sm text-body-sm hover:text-on-surface dark:hover:text-inverse-on-surface transition-colors duration-150" href="#governance">Corporate Governance</a>
+<a class="text-on-surface-variant dark:text-outline-variant font-body-sm text-body-sm hover:text-on-surface dark:hover:text-inverse-on-surface transition-colors duration-150" href="#governance">Investor Relations</a>
+<a class="text-on-surface-variant dark:text-outline-variant font-body-sm text-body-sm hover:text-on-surface dark:hover:text-inverse-on-surface transition-colors duration-150" href="#governance">Legal &amp; Compliance</a>
+<a class="text-on-surface-variant dark:text-outline-variant font-body-sm text-body-sm hover:text-on-surface dark:hover:text-inverse-on-surface transition-colors duration-150" href="#governance">Privacy Notice</a>
+</div>
+</div>
+<!-- Copyright Text (Mandated Exact String from JSON) -->
+<div class="pt-6 flex flex-col md:flex-row items-center justify-between text-on-surface-variant dark:text-outline-variant font-label-sm text-label-sm">
+<p>© 2025 Vinci and Vee Group. Achieving Dreams by making Connection. All rights reserved. Plot 80, Jedidiah Gardens Centenary City, Enugu 400706. Tel: 0701 347 6095</p>
+<div class="mt-4 md:mt-0 flex items-center space-x-4">
+<span class="inline-block w-2 h-2 rounded-full bg-secondary"></span>
+<span>Sovereign Executive Registry</span>
+</div>
+</div>
+</div>
+</footer>
+</body></html>
