@@ -6,7 +6,7 @@ const resendApiKey = process.env.RESEND_API_KEY;
 const resend = resendApiKey ? new Resend(resendApiKey) : null;
 
 // Target email address where all inquiries should land
-const DESTINATION_EMAIL = process.env.CENTRAL_COMPANY_EMAIL || 'info@vinciandvee.com';
+const DESTINATION_EMAIL = process.env.CENTRAL_COMPANY_EMAIL || 'osuagwuizuchukwu@vinciandvee.com';
 const SENDER_EMAIL = process.env.SENDER_EMAIL || 'notifications@vinciandvee.com';
 
 interface ContactPayload {
