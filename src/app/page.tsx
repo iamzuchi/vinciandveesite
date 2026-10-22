@@ -45,6 +45,7 @@ export default function CorporateHub() {
     phone: '',
     sector: 'Telecom & Fibre Installation',
     message: '',
+    website_trap: '',
   });
   const [hqStatus, setHqStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
   const [hqError, setHqError] = useState('');
@@ -725,7 +726,7 @@ export default function CorporateHub() {
                         type="button"
                         onClick={() => {
                           setHqStatus('idle');
-                          setHqForm({ name: '', email: '', phone: '', sector: 'Telecom & Fibre Installation', message: '' });
+                          setHqForm({ name: '', email: '', phone: '', sector: 'Telecom & Fibre Installation', message: '', website_trap: '' });
                         }}
                         className="mt-2 text-xs font-semibold text-[#8C5324] hover:underline"
                       >
@@ -745,13 +746,14 @@ export default function CorporateHub() {
                             headers: { 'Content-Type': 'application/json' },
                             body: JSON.stringify({
                               deskSource: `HQ Secretariat Dispatch - ${hqForm.sector}`,
-                              fullName: hqForm.name,
-                              email: hqForm.email,
-                              phone: hqForm.phone,
+                              fullName: hqForm.name.trim(),
+                              email: hqForm.email.trim(),
+                              phone: hqForm.phone.trim(),
                               details: {
                                 'Target Division / Sector': hqForm.sector,
                               },
-                              message: hqForm.message,
+                              message: hqForm.message.trim(),
+                              website_trap: hqForm.website_trap,
                             }),
                           });
 
@@ -768,6 +770,18 @@ export default function CorporateHub() {
                       }}
                       className="space-y-4"
                     >
+                      {/* Honeypot Trap Field */}
+                      <div className="hidden" aria-hidden="true" style={{ display: 'none' }}>
+                        <input
+                          type="text"
+                          name="website_trap"
+                          value={hqForm.website_trap}
+                          onChange={(e) => setHqForm({ ...hqForm, website_trap: e.target.value })}
+                          tabIndex={-1}
+                          autoComplete="off"
+                        />
+                      </div>
+
                       {hqError && (
                         <div className="p-3 text-xs bg-red-50 border border-red-300 text-red-700 rounded-sm">
                           {hqError}
@@ -783,6 +797,8 @@ export default function CorporateHub() {
                           <input 
                             type="text" 
                             required
+                            minLength={2}
+                            maxLength={120}
                             value={hqForm.name}
                             onChange={(e) => setHqForm({ ...hqForm, name: e.target.value })}
                             placeholder="e.g. Chief Executive / Director" 
@@ -797,6 +813,7 @@ export default function CorporateHub() {
                           <input 
                             type="email" 
                             required
+                            maxLength={254}
                             value={hqForm.email}
                             onChange={(e) => setHqForm({ ...hqForm, email: e.target.value })}
                             placeholder="executive@institution.com" 
@@ -814,6 +831,10 @@ export default function CorporateHub() {
                           <input 
                             type="tel" 
                             required
+                            minLength={7}
+                            maxLength={25}
+                            pattern="[0-9+()\- ]{7,25}"
+                            title="Please enter a valid telephone number (7-25 digits/symbols)"
                             value={hqForm.phone}
                             onChange={(e) => setHqForm({ ...hqForm, phone: e.target.value })}
                             placeholder="0810 954 4821" 

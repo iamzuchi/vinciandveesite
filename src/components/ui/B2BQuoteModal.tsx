@@ -37,15 +37,15 @@ export default function B2BQuoteModal({
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           deskSource: `Enterprise RFQ - ${sector}`,
-          fullName: formData.contactName,
-          email: formData.email,
-          phone: formData.phone,
-          company: formData.companyName,
+          fullName: formData.contactName.trim(),
+          email: formData.email.trim(),
+          phone: formData.phone.trim(),
+          company: formData.companyName.trim(),
           details: {
             'Selected Sector': sector,
-            'Specifications / Volume': formData.quantityDetails,
+            'Specifications / Volume': formData.quantityDetails.trim(),
           },
-          message: formData.quantityDetails,
+          message: formData.quantityDetails.trim(),
           website_trap: formData.website_trap,
         }),
       });
@@ -171,6 +171,8 @@ export default function B2BQuoteModal({
                       <input 
                         type="text"
                         required
+                        minLength={2}
+                        maxLength={120}
                         placeholder="e.g. Apex Telecom Ltd"
                         value={formData.companyName}
                         onChange={(e) => setFormData({...formData, companyName: e.target.value})}
@@ -184,6 +186,8 @@ export default function B2BQuoteModal({
                       <input 
                         type="text"
                         required
+                        minLength={2}
+                        maxLength={120}
                         placeholder="e.g. Engr. David Okafor"
                         value={formData.contactName}
                         onChange={(e) => setFormData({...formData, contactName: e.target.value})}
@@ -200,6 +204,7 @@ export default function B2BQuoteModal({
                       <input 
                         type="email"
                         required
+                        maxLength={254}
                         placeholder="procurement@company.com"
                         value={formData.email}
                         onChange={(e) => setFormData({...formData, email: e.target.value})}
@@ -212,6 +217,10 @@ export default function B2BQuoteModal({
                       </label>
                       <input 
                         type="tel"
+                        minLength={7}
+                        maxLength={25}
+                        pattern="[0-9+()\- ]{7,25}"
+                        title="Please enter a valid phone number (7-25 digits/symbols)"
                         placeholder="0810 954 4821"
                         value={formData.phone}
                         onChange={(e) => setFormData({...formData, phone: e.target.value})}

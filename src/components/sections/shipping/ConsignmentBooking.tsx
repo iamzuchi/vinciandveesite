@@ -60,25 +60,32 @@ export default function ConsignmentBooking() {
     const shipperContact = (formEl.get('shipperContact') as string) || '';
     const isEmail = shipperContact.includes('@');
 
+    const shipper = ((formEl.get('shipper') as string) || '').trim();
+    const consignee = ((formEl.get('consignee') as string) || '').trim();
+    const address = ((formEl.get('address') as string) || '').trim();
+    const manifest = ((formEl.get('manifest') as string) || '').trim();
+    const websiteTrap = (formEl.get('website_trap') as string) || '';
+
     try {
       const res = await fetch('/api/contact', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           deskSource: 'Cargo Consignment & Maritime Booking',
-          fullName: formEl.get('shipper') as string,
-          company: `${formEl.get('shipper')} -> ${formEl.get('consignee')}`,
+          fullName: shipper,
+          company: `${shipper} -> ${consignee}`,
           email: isEmail ? shipperContact : 'booking@vinciandvee.com',
           phone: !isEmail ? shipperContact : '',
           details: {
-            'Consignee Entity': formEl.get('consignee') as string,
-            'Delivery Destination': formEl.get('address') as string,
+            'Consignee Entity': consignee,
+            'Delivery Destination': address,
             'Freight Classification': formEl.get('classification') as string,
             'Estimated Weight (kg)': formEl.get('weight') as string,
             'Total CBM (m³)': formEl.get('cbm') as string,
             'Regional Pickup Requested': formEl.get('pickup') ? 'Yes' : 'No',
           },
-          message: formEl.get('manifest') as string,
+          message: manifest,
+          website_trap: websiteTrap,
         }),
       });
 
@@ -104,6 +111,17 @@ export default function ConsignmentBooking() {
           onSubmit={handleSubmit}
           className="lg:col-span-8 bg-white border border-slate-200/90 rounded-md shadow-sm p-6 sm:p-8 space-y-5"
         >
+          {/* Honeypot Trap Field */}
+          <div className="hidden" aria-hidden="true" style={{ display: 'none' }}>
+            <input type="text" name="website_trap" tabIndex={-1} autoComplete="off" />
+          </div>
+
+          {errorMsg && (
+            <div className="p-3 text-xs bg-red-50 border border-red-300 text-red-700 rounded-sm">
+              {errorMsg}
+            </div>
+          )}
+
           <div className="space-y-2 pb-2">
             <span className="text-[10px] font-semibold tracking-[0.12em] text-slate-600 uppercase block">
               Immediate Slot Reservation
@@ -117,20 +135,20 @@ export default function ConsignmentBooking() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div>
-              <label htmlFor="cb-shipper" className={labelCls}>Shipper Name / Entity (Switzerland)</label>
-              <input id="cb-shipper" name="shipper" required placeholder="e.g. Novartis AG / ABB Switzerland Ltd" className={fieldCls} />
+              <label htmlFor="cb-shipper" className={labelCls}>Shipper Name / Entity (Switzerland) *</label>
+              <input id="cb-shipper" name="shipper" required minLength={2} maxLength={120} placeholder="e.g. Novartis AG / ABB Switzerland Ltd" className={fieldCls} />
             </div>
             <div>
-              <label htmlFor="cb-shipper-contact" className={labelCls}>Shipper Email / Phone</label>
-              <input id="cb-shipper-contact" name="shipperContact" required placeholder="contact@swisslogistics.ch" className={fieldCls} />
+              <label htmlFor="cb-shipper-contact" className={labelCls}>Shipper Email / Phone *</label>
+              <input id="cb-shipper-contact" name="shipperContact" required maxLength={254} placeholder="contact@swisslogistics.ch" className={fieldCls} />
             </div>
             <div>
-              <label htmlFor="cb-consignee" className={labelCls}>Consignee Name / Company (Nigeria)</label>
-              <input id="cb-consignee" name="consignee" required placeholder="e.g. Pinnacle Industrial Ventures Ltd" className={fieldCls} />
+              <label htmlFor="cb-consignee" className={labelCls}>Consignee Name / Company (Nigeria) *</label>
+              <input id="cb-consignee" name="consignee" required minLength={2} maxLength={120} placeholder="e.g. Pinnacle Industrial Ventures Ltd" className={fieldCls} />
             </div>
             <div>
-              <label htmlFor="cb-address" className={labelCls}>Consignee Delivery Address</label>
-              <input id="cb-address" name="address" required placeholder="e.g. Centenary City, Enugu or Apapa Depot" className={fieldCls} />
+              <label htmlFor="cb-address" className={labelCls}>Consignee Delivery Address *</label>
+              <input id="cb-address" name="address" required minLength={3} maxLength={200} placeholder="e.g. Centenary City, Enugu or Apapa Depot" className={fieldCls} />
             </div>
           </div>
 

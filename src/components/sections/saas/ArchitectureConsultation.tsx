@@ -17,6 +17,7 @@ export default function ArchitectureConsultation() {
     sector: 'Tyre Distribution & Automotive Retail',
     scale: 'Small Business (1 - 15 Staff)',
     bottlenecks: '',
+    website_trap: '',
   });
 
   const [submitted, setSubmitted] = useState(false);
@@ -34,13 +35,14 @@ export default function ArchitectureConsultation() {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           deskSource: 'SaaS Enterprise Architecture Desk',
-          fullName: formData.name,
-          email: formData.email,
+          fullName: formData.name.trim(),
+          email: formData.email.trim(),
           details: {
             'Target Sector': formData.sector,
             'Staff & Workload Scale': formData.scale,
           },
-          message: formData.bottlenecks,
+          message: formData.bottlenecks.trim(),
+          website_trap: formData.website_trap,
         }),
       });
 
@@ -147,6 +149,23 @@ export default function ArchitectureConsultation() {
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-5">
+                {/* Honeypot Trap Field */}
+                <div className="hidden" aria-hidden="true" style={{ display: 'none' }}>
+                  <input
+                    type="text"
+                    name="website_trap"
+                    value={formData.website_trap}
+                    onChange={(e) => setFormData({ ...formData, website_trap: e.target.value })}
+                    tabIndex={-1}
+                    autoComplete="off"
+                  />
+                </div>
+
+                {errorMsg && (
+                  <div className="p-3 text-xs bg-red-50 border border-red-300 text-red-700 rounded-md">
+                    {errorMsg}
+                  </div>
+                )}
 
                 {/* Row 1: Name and Email */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -161,6 +180,8 @@ export default function ArchitectureConsultation() {
                       id="exec-name"
                       type="text"
                       required
+                      minLength={2}
+                      maxLength={120}
                       value={formData.name}
                       onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                       placeholder="e.g. Chief Victor Obi"
@@ -179,6 +200,7 @@ export default function ArchitectureConsultation() {
                       id="exec-email"
                       type="email"
                       required
+                      maxLength={254}
                       value={formData.email}
                       onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                       placeholder="v.obi@company.ng"

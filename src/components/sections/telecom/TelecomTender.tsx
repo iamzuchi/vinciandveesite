@@ -58,16 +58,17 @@ export default function TelecomTender() {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           deskSource: 'Telecom Feasibility & Infrastructure Tender',
-          fullName: formEl.get('name') as string,
-          company: formEl.get('organization') as string,
-          email: formEl.get('email') as string,
-          phone: formEl.get('phone') as string,
+          fullName: ((formEl.get('name') as string) || '').trim(),
+          company: ((formEl.get('organization') as string) || '').trim(),
+          email: ((formEl.get('email') as string) || '').trim(),
+          phone: ((formEl.get('phone') as string) || '').trim(),
           details: {
             'Solution Category': formEl.get('solution') as string,
             'Target Survey Date': formEl.get('surveyDate') as string,
-            'Project Address / Route': formEl.get('address') as string,
+            'Project Address / Route': ((formEl.get('address') as string) || '').trim(),
           },
-          message: formEl.get('scope') as string,
+          message: ((formEl.get('scope') as string) || '').trim(),
+          website_trap: (formEl.get('website_trap') as string) || '',
         }),
       });
 
@@ -139,6 +140,11 @@ export default function TelecomTender() {
             onSubmit={handleSubmit}
             className="bg-white border border-slate-200/90 rounded-md shadow-sm p-6 sm:p-8 grid grid-cols-1 sm:grid-cols-2 gap-x-5 gap-y-5"
           >
+            {/* Honeypot Trap Field */}
+            <div className="hidden" aria-hidden="true" style={{ display: 'none' }}>
+              <input type="text" name="website_trap" tabIndex={-1} autoComplete="off" />
+            </div>
+
             {errorMsg && (
               <div className="sm:col-span-2 p-3 text-xs bg-red-50 border border-red-300 text-red-700 rounded-md">
                 {errorMsg}
@@ -146,19 +152,19 @@ export default function TelecomTender() {
             )}
             <div>
               <label htmlFor="tender-name" className={labelCls}>Lead Representative Name *</label>
-              <input id="tender-name" name="name" required placeholder="Engr. Chukwuma Obi" className={inputCls} />
+              <input id="tender-name" name="name" required minLength={2} maxLength={120} placeholder="Engr. Chukwuma Obi" className={inputCls} />
             </div>
             <div>
               <label htmlFor="tender-org" className={labelCls}>Organization / Estate / ISP *</label>
-              <input id="tender-org" name="organization" required placeholder="e.g. Centenary Estates Development" className={inputCls} />
+              <input id="tender-org" name="organization" required minLength={2} maxLength={120} placeholder="e.g. Centenary Estates Development" className={inputCls} />
             </div>
             <div>
               <label htmlFor="tender-email" className={labelCls}>Official Corporate Email *</label>
-              <input id="tender-email" name="email" type="email" required placeholder="name@organization.com" className={inputCls} />
+              <input id="tender-email" name="email" type="email" required maxLength={254} placeholder="name@organization.com" className={inputCls} />
             </div>
             <div>
               <label htmlFor="tender-phone" className={labelCls}>Phone Contact *</label>
-              <input id="tender-phone" name="phone" type="tel" required placeholder="0810 954 4821" className={inputCls} />
+              <input id="tender-phone" name="phone" type="tel" required minLength={7} maxLength={25} pattern="[0-9+()\- ]{7,25}" title="Please enter a valid phone number (7-25 digits/symbols)" placeholder="0810 954 4821" className={inputCls} />
             </div>
             <div>
               <label htmlFor="tender-solution" className={labelCls}>Required Solution Category</label>

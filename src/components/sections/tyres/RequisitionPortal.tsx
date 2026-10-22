@@ -12,6 +12,7 @@ export default function RequisitionPortal() {
     tier: 'tier2',
     sizes: '',
     notes: '',
+    website_trap: '',
   });
 
   const [submitted, setSubmitted] = useState(false);
@@ -29,15 +30,16 @@ export default function RequisitionPortal() {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           deskSource: 'Tyre Wholesale Requisition Portal',
-          fullName: formData.fullName,
-          company: formData.companyName,
-          phone: formData.phone,
-          email: formData.email,
+          fullName: formData.fullName.trim(),
+          company: formData.companyName.trim(),
+          phone: formData.phone.trim(),
+          email: formData.email.trim(),
           details: {
             'Procurement Tier': formData.tier,
-            'Tyre Sizes & Fleet Requirements': formData.sizes,
+            'Tyre Sizes & Fleet Requirements': formData.sizes.trim(),
           },
-          message: formData.notes,
+          message: formData.notes.trim(),
+          website_trap: formData.website_trap,
         }),
       });
 
@@ -93,6 +95,18 @@ export default function RequisitionPortal() {
             </div>
           ) : (
             <form onSubmit={handleSubmit} className="space-y-6">
+              {/* Honeypot Trap Field */}
+              <div className="hidden" aria-hidden="true" style={{ display: 'none' }}>
+                <input
+                  type="text"
+                  name="website_trap"
+                  value={formData.website_trap}
+                  onChange={(e) => setFormData({ ...formData, website_trap: e.target.value })}
+                  tabIndex={-1}
+                  autoComplete="off"
+                />
+              </div>
+
               {errorMsg && (
                 <div className="p-3 text-xs bg-red-50 border border-red-300 text-red-700 rounded-md">
                   {errorMsg}
@@ -109,6 +123,8 @@ export default function RequisitionPortal() {
                     id="full-name"
                     type="text"
                     required
+                    minLength={2}
+                    maxLength={120}
                     value={formData.fullName}
                     onChange={(e) => setFormData({ ...formData, fullName: e.target.value })}
                     placeholder="e.g. Chief Emeka Okonkwo"
@@ -124,6 +140,8 @@ export default function RequisitionPortal() {
                     id="company-name"
                     type="text"
                     required
+                    minLength={2}
+                    maxLength={120}
                     value={formData.companyName}
                     onChange={(e) => setFormData({ ...formData, companyName: e.target.value })}
                     placeholder="e.g. Southlink Haulage Ltd"
@@ -142,9 +160,13 @@ export default function RequisitionPortal() {
                     id="phone-number"
                     type="tel"
                     required
+                    minLength={7}
+                    maxLength={25}
+                    pattern="[0-9+()\- ]{7,25}"
+                    title="Please enter a valid phone number (7-25 digits/symbols)"
                     value={formData.phone}
                     onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                    placeholder="e.g.  0810 954 4821"
+                    placeholder="e.g. 0810 954 4821"
                     className="w-full bg-white border border-slate-200/90 rounded-md px-4 py-3 text-xs sm:text-sm text-slate-900 placeholder:text-slate-400 focus:outline-none focus:border-[#8C5324] focus:ring-1 focus:ring-[#8C5324] transition"
                   />
                 </div>
@@ -157,6 +179,7 @@ export default function RequisitionPortal() {
                     id="email-address"
                     type="email"
                     required
+                    maxLength={254}
                     value={formData.email}
                     onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                     placeholder="procurement@company.com"
